@@ -5,8 +5,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 01 - xiaohe",
-      "server": "172.67.208.1",
+      "tag": "🇮🇳 印度 (India) 01 - wspnj",
+      "server": "104.21.69.118",
       "server_port": 443,
       "uuid": "1443b7a1-7ba9-4ec9-b904-2e867367b5d7",
       "tls": {
@@ -27,8 +27,20 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇮🇳 印度 (India) 02 - wspnj",
+      "server": "65.2.191.73",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-in-001.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - xiaohe",
+      "tag": "🇮🇳 印度 (India) 03 - wspnj",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -48,7 +60,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇮🇳 印度 (India) 03 - xiaohe",
+      "tag": "🇮🇳 印度 (India) 04 - wspnj",
       "server": "65.2.178.161",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -60,19 +72,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇮🇳 印度 (India) 04 - xiaohe",
-      "server": "65.2.191.73",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-in-001.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇮🇳 印度 (India) 05 - xiaohe",
+      "tag": "🇮🇳 印度 (India) 05 - wspnj",
       "server": "vpn-in-001.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -83,39 +83,26 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 06 - xiaohe",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 - xiaohe",
-        "🇮🇳 印度 (India) 02 - xiaohe",
-        "🇮🇳 印度 (India) 03 - xiaohe",
-        "🇮🇳 印度 (India) 04 - xiaohe",
-        "🇮🇳 印度 (India) 05 - xiaohe",
-        "🇮🇳 印度 (India) 06 - xiaohe"
+        "🇮🇳 印度 (India) 01 - wspnj",
+        "🇮🇳 印度 (India) 02 - wspnj",
+        "🇮🇳 印度 (India) 03 - wspnj",
+        "🇮🇳 印度 (India) 04 - wspnj",
+        "🇮🇳 印度 (India) 05 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 - xiaohe",
-        "🇮🇳 印度 (India) 02 - xiaohe",
-        "🇮🇳 印度 (India) 03 - xiaohe",
-        "🇮🇳 印度 (India) 04 - xiaohe",
-        "🇮🇳 印度 (India) 05 - xiaohe",
-        "🇮🇳 印度 (India) 06 - xiaohe"
+        "🇮🇳 印度 (India) 01 - wspnj",
+        "🇮🇳 印度 (India) 02 - wspnj",
+        "🇮🇳 印度 (India) 03 - wspnj",
+        "🇮🇳 印度 (India) 04 - wspnj",
+        "🇮🇳 印度 (India) 05 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

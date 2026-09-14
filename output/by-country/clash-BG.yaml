@@ -4,8 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
-  server: neth9.lunariai.ru
+- name: 🇧🇬 保加利亚 (Bulgaria) 01 - wspnj
+  server: 192.145.31.5
   port: 8443
   udp: true
   type: vless
@@ -13,17 +13,18 @@ proxies:
   tls: true
   servername: neth9.lunariai.ru
   skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - wspnj
 rules:
 - MATCH,PROXIES

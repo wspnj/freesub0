@@ -5,7 +5,28 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 01 - xiaohe",
+      "tag": "🇮🇱 以色列 (Israel) 01 - wspnj",
+      "server": "185.95.231.156",
+      "server_port": 443,
+      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
+          "short_id": "a3a578ab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 02 - wspnj",
       "server": "140.235.168.2",
       "server_port": 8443,
       "uuid": "dca76b88-b038-e82b-45e1-1d76b476d7ca",
@@ -28,41 +49,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 02 - xiaohe",
-      "server": "185.95.231.156",
-      "server_port": 443,
-      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-          "short_id": "a3a578ab"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01 - xiaohe",
-        "🇮🇱 以色列 (Israel) 02 - xiaohe"
+        "🇮🇱 以色列 (Israel) 01 - wspnj",
+        "🇮🇱 以色列 (Israel) 02 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01 - xiaohe",
-        "🇮🇱 以色列 (Israel) 02 - xiaohe"
+        "🇮🇱 以色列 (Israel) 01 - wspnj",
+        "🇮🇱 以色列 (Israel) 02 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

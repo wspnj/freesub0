@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.16.174.164",
-      "server_port": 443,
-      "uuid": "73796e63-0000-4000-8000-000000000000",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - wspnj",
+      "server": "116.204.164.60",
+      "server_port": 7443,
+      "uuid": "fc85cf23-75e6-4b91-b468-8adc9407047b",
       "tls": {
         "enabled": true,
-        "server_name": "wireguard.ahmad-kh5716.workers.dev",
+        "server_name": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/sync",
+        "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "wireguard.ahmad-kh5716.workers.dev"
+          "Host": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev"
         }
       }
     },
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

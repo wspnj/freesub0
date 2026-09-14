@@ -5,8 +5,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe",
-      "server": "104.24.31.89",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - wspnj",
+      "server": "172.67.67.178",
       "server_port": 443,
       "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
       "tls": {
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
