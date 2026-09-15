@@ -4,36 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01 - wspnj",
-      "server": "104.18.9.83",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false,
-        "alpn": [
-          "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 02 - wspnj",
-      "server": "172.67.133.136",
+      "tag": "🌐 其他地区 (Other) 01 - wspnj",
+      "server": "172.67.140.160",
       "server_port": 443,
       "uuid": "1aa96574-c28b-4ee9-855d-ebdbbf1f7e90",
       "tls": {
         "enabled": true,
-        "server_name": "4-m13.1332aFdC-0737-4BB1-8cA8-EE4f0cd20BC6.KDnS.FR",
+        "server_name": "5-stAtic-ImG-m13.xDC.ccWu.cC",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -44,7 +22,7 @@
         "type": "ws",
         "path": "/ED3ZQPu7lqyeDGD58KabZ",
         "headers": {
-          "Host": "4-m13.1332AfDC-0737-4bB1-8cA8-EE4f0cd20Bc6.kDNS.Fr"
+          "Host": "5-StATIc-iMG-M13.xdC.CCwU.Cc"
         }
       }
     },
@@ -53,16 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - wspnj",
-        "🌐 其他地区 (Other) 02 - wspnj"
+        "🌐 其他地区 (Other) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - wspnj",
-        "🌐 其他地区 (Other) 02 - wspnj"
+        "🌐 其他地区 (Other) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
