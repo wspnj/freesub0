@@ -6,18 +6,18 @@
     {
       "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - wspnj",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - wspnj",
       "server": "108.181.121.226",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "WSyL4XTwNsdv"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - wspnj",
+      "server": "140.174.184.5",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "qItG8SueYQcP"
     },
     {
       "type": "vless",
@@ -30,57 +30,12 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
           "short_id": "29e8dcd2b37aaa7f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - wspnj",
-      "server": "130.49.77.4",
-      "server_port": 8443,
-      "uuid": "0ab925b6-35f7-6e27-e713-925bea65455e",
-      "tls": {
-        "enabled": true,
-        "server_name": "download.nvidia.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hwwiWVqYq5b7S0JaXNSxjWSEv_1OUFMaWJGHzeAGyRM",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - wspnj",
-      "server": "46.28.71.247",
-      "server_port": 443,
-      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
-          "short_id": "0dfc23fe80778c00"
         }
       }
     },
@@ -91,9 +46,7 @@
         "auto",
         "🇪🇸 西班牙 (Spain) 01 - wspnj",
         "🇪🇸 西班牙 (Spain) 02 - wspnj",
-        "🇪🇸 西班牙 (Spain) 03 - wspnj",
-        "🇪🇸 西班牙 (Spain) 04 - wspnj",
-        "🇪🇸 西班牙 (Spain) 05 - wspnj"
+        "🇪🇸 西班牙 (Spain) 03 - wspnj"
       ]
     },
     {
@@ -102,9 +55,7 @@
       "outbounds": [
         "🇪🇸 西班牙 (Spain) 01 - wspnj",
         "🇪🇸 西班牙 (Spain) 02 - wspnj",
-        "🇪🇸 西班牙 (Spain) 03 - wspnj",
-        "🇪🇸 西班牙 (Spain) 04 - wspnj",
-        "🇪🇸 西班牙 (Spain) 05 - wspnj"
+        "🇪🇸 西班牙 (Spain) 03 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

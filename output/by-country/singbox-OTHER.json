@@ -6,7 +6,26 @@
     {
       "type": "trojan",
       "tag": "🌐 其他地区 (Other) 01 - wspnj",
-      "server": "104.16.71.213",
+      "server": "172.64.150.28",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 02 - wspnj",
+      "server": "104.16.72.41",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -27,14 +46,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - wspnj"
+        "🌐 其他地区 (Other) 01 - wspnj",
+        "🌐 其他地区 (Other) 02 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - wspnj"
+        "🌐 其他地区 (Other) 01 - wspnj",
+        "🌐 其他地区 (Other) 02 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

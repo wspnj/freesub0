@@ -5,60 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - wspnj
-  server: 104.18.39.218
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
-  server: 162.159.24.131
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
-  server: 172.64.42.85
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
-  server: 46.17.40.234
-  port: 7018
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
   server: 46.17.42.166
   port: 50111
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 6b39ae3234dfd68b
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
-  server: 103.136.150.95
-  port: 8388
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
+  server: 202.144.192.76
+  port: 13779
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: XTy3WkCf95LVBY7x
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - wspnj
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  tls: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
   server: 162.128.157.164
   port: 443
   udp: true
@@ -70,7 +35,44 @@ proxies:
     public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
     short-id: 14156e3ac23212cc
   servername: www.bing.com
-  client-fingerprint: edge
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
+  server: 119.246.1.143
+  port: 443
+  udp: true
+  type: trojan
+  password: BxceQaOe
+  sni: t.me/ripaojiedian
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - wspnj
+  server: 34.92.123.152
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5d77df4a-0b55-4597-b0e6-ae3ef70a72c0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: aZfMRLVe6AAcWbF9SpJ0s1RXN-OP5bqdTJ4C74_jTi0
+    short-id: 56c35a22730a22e5
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - wspnj
   server: hk-1.gsafevpnapi.com
   port: 20270
@@ -90,41 +92,9 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - wspnj
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - wspnj
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - wspnj
-  server: 119.246.1.143
-  port: 443
-  udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: 119.246.1.143
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - wspnj
-  server: mz.hkychina.com
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - wspnj
   server: www.wto.org
   port: 443
   udp: true
@@ -139,6 +109,58 @@ proxies:
     path: /cdn/packages/runtime-core.tar.gz
     headers:
       Host: hk.152568.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - wspnj
+  server: 31.58.181.88
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 1e158ab2-d28a-41c8-b31d-8ea2d8706fe7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - wspnj
+  server: mz.hkychina.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - wspnj
+  server: 47.86.107.119
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - wspnj
+  server: 47.76.197.72
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: m01c7b2z26dtqgee.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: m01c7b2z26dtqgee.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
