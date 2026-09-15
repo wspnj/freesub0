@@ -15,7 +15,7 @@
         "server_name": "sync-bridge.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -25,8 +25,29 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - wspnj",
+      "server": "107.161.174.26",
+      "server_port": 443,
+      "uuid": "069ba4cf-e8af-4561-b11e-18bd07b0dbd3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "books.blackbigdog.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - wspnj",
       "server": "188.132.174.236",
       "server_port": 1080,
       "method": "chacha20-ietf-poly1305",
@@ -34,20 +55,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - wspnj",
-      "server": "172.67.134.170",
-      "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-635698a6bb9c",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - wspnj",
+      "server": "151.241.226.201",
+      "server_port": 2053,
+      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
       "tls": {
         "enabled": true,
-        "server_name": "jdzit4e4urks.xwzohsebujps.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/stream/PANEL_ZEUS/635698a6bb9c/loc-0",
-        "headers": {
-          "Host": "jdzit4e4urks.xwzohsebujps.workers.dev"
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
+          "short_id": "9e419c0759b54d6f"
         }
       }
     },
@@ -58,7 +80,8 @@
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - wspnj",
         "🇹🇷 土耳其 (Turkey) 02 - wspnj",
-        "🇹🇷 土耳其 (Turkey) 03 - wspnj"
+        "🇹🇷 土耳其 (Turkey) 03 - wspnj",
+        "🇹🇷 土耳其 (Turkey) 04 - wspnj"
       ]
     },
     {
@@ -67,7 +90,8 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - wspnj",
         "🇹🇷 土耳其 (Turkey) 02 - wspnj",
-        "🇹🇷 土耳其 (Turkey) 03 - wspnj"
+        "🇹🇷 土耳其 (Turkey) 03 - wspnj",
+        "🇹🇷 土耳其 (Turkey) 04 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

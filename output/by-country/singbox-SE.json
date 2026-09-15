@@ -5,38 +5,37 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - wspnj",
-      "server": "94.183.170.135",
+      "tag": "🇸🇪 瑞典 (Sweden) 01 - wspnj",
+      "server": "143.246.193.215",
       "server_port": 443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - wspnj",
-      "server": "109.206.241.10",
-      "server_port": 449,
-      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "uuid": "77da6e30-ad4e-11f1-94d5-525400d1d4f7",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "109.206.241.10",
-        "insecure": true
+        "server_name": "www.blocket.se",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c",
+          "short_id": ""
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - wspnj",
-      "server": "ee.shamanapp.online",
-      "server_port": 443,
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - wspnj",
+      "server": "91.193.17.156",
+      "server_port": 9458,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
         "enabled": true,
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -54,18 +53,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - wspnj",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - wspnj",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - wspnj"
+        "🇸🇪 瑞典 (Sweden) 01 - wspnj",
+        "🇸🇪 瑞典 (Sweden) 02 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - wspnj",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - wspnj",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - wspnj"
+        "🇸🇪 瑞典 (Sweden) 01 - wspnj",
+        "🇸🇪 瑞典 (Sweden) 02 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
