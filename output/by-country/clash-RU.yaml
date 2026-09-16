@@ -5,27 +5,57 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - wspnj
-  server: 195.133.5.102
-  port: 9011
+  server: 104.18.39.218
+  port: 2052
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 895b4b796a357570
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - wspnj
+  server: 104.18.39.218
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 03 - wspnj
   server: 194.87.196.13
   port: 9011
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 4938e975724d0ed1
-- name: 🇷🇺 俄罗斯 (Russia) 03 - wspnj
+- name: 🇷🇺 俄罗斯 (Russia) 04 - wspnj
+  server: 195.133.5.102
+  port: 9011
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
+- name: 🇷🇺 俄罗斯 (Russia) 05 - wspnj
   server: 195.58.48.137
   port: 9019
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 8ad9d72a5571df86
-- name: 🇷🇺 俄罗斯 (Russia) 04 - wspnj
+- name: 🇷🇺 俄罗斯 (Russia) 06 - wspnj
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: hy.quattro-tech.ru
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 07 - wspnj
   server: msk.frkn.org
   port: 443
   udp: true
@@ -33,13 +63,13 @@ proxies:
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 05 - wspnj
-  server: 91.240.86.70
-  port: 22443
+- name: 🇷🇺 俄罗斯 (Russia) 08 - wspnj
+  server: ru.xiaoliyu.cyou
+  port: 4433
   udp: true
   type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: ru.xiaoliyu.cyou
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -51,6 +81,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 04 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 05 - wspnj
+  - 🇷🇺 俄罗斯 (Russia) 06 - wspnj
+  - 🇷🇺 俄罗斯 (Russia) 07 - wspnj
+  - 🇷🇺 俄罗斯 (Russia) 08 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +94,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 04 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 05 - wspnj
+  - 🇷🇺 俄罗斯 (Russia) 06 - wspnj
+  - 🇷🇺 俄罗斯 (Russia) 07 - wspnj
+  - 🇷🇺 俄罗斯 (Russia) 08 - wspnj
 rules:
 - MATCH,PROXIES
