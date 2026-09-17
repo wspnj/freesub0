@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - wspnj
+  server: 194.233.74.160
+  port: 2342
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: XV4bvaJIWoxl3IYEC1e6W7
+- name: 🇸🇬 新加坡 (Singapore) 02 - wspnj
   server: 149.88.23.207
   port: 18000
   udp: true
@@ -12,37 +19,14 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 02 - wspnj
-  server: 194.233.74.160
-  port: 2342
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: XV4bvaJIWoxl3IYEC1e6W7
 - name: 🇸🇬 新加坡 (Singapore) 03 - wspnj
-  server: 139.180.220.175
-  port: 8388
+  server: 167.150.100.115
+  port: 27755
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: qpSevKaUXYQKvSjp
+  cipher: 2022-blake3-aes-256-gcm
+  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
 - name: 🇸🇬 新加坡 (Singapore) 04 - wspnj
-  server: 149.88.23.202
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 05 - wspnj
-  server: 138.2.73.238
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 138.2.73.238
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 06 - wspnj
   server: 146.235.16.130
   port: 19825
   udp: true
@@ -55,20 +39,15 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: sg2-8sb.6121999.dpdns.org
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 07 - wspnj
-  server: sg-1.gsafevpnapi.com
-  port: 20270
+- name: 🇸🇬 新加坡 (Singapore) 05 - wspnj
+  server: 13.212.32.171
+  port: 443
   udp: true
-  type: vless
-  uuid: 2bf192f1-7d86-43a3-88b3-8f72b7eb5ad9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0
-    short-id: fc13d6208ebbae16
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 08 - wspnj
+  type: hysteria2
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 06 - wspnj
   server: 103.137.22.71
   port: 443
   udp: true
@@ -83,6 +62,28 @@ proxies:
     path: /register?ed=2560
     headers:
       Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 07 - wspnj
+  server: 138.2.73.238
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: f87376e17da040ed04c9665ce8972930
+  sni: 138.2.73.238
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 08 - wspnj
+  server: 45.202.247.152
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
 - name: 🇸🇬 新加坡 (Singapore) 09 - wspnj
   server: 217.217.254.126
   port: 2053
@@ -94,9 +95,22 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
     short-id: 87829de0e2bb82cb
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 10 - wspnj
-  server: 207.148.112.220
+  server: 3.0.111.82
+  port: 17623
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇸🇬 新加坡 (Singapore) 11 - wspnj
+  server: 209.33.167.234
   port: 443
   udp: true
   type: vless
@@ -107,10 +121,38 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /discuss?ed=2560
+    path: /
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 11 - wspnj
+- name: 🇸🇬 新加坡 (Singapore) 12 - wspnj
+  server: 140.245.38.33
+  port: 2096
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /class/season
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 13 - wspnj
+  server: 103.190.178.195
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /topic/htm?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 14 - wspnj
   server: 45.77.241.190
   port: 8441
   udp: true
@@ -124,61 +166,7 @@ proxies:
     path: /act/company/intro
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 12 - wspnj
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /p/docs/soft?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 13 - wspnj
-  server: 210.152.85.154
-  port: 19364
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /collect/user/products?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 14 - wspnj
-  server: 170.114.46.6
-  port: 80
-  udp: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
 - name: 🇸🇬 新加坡 (Singapore) 15 - wspnj
-  server: 141.193.213.21
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 16 - wspnj
   server: 43.159.4.80
   port: 443
   udp: true
@@ -186,79 +174,21 @@ proxies:
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
   servername: cdn8848.776676.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /episode/files?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 16 - wspnj
+  server: 13.212.83.43
+  port: 443
+  udp: true
+  type: hysteria2
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 17 - wspnj
-  server: 3.0.111.82
-  port: 10574
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 18 - wspnj
-  server: 104.21.5.75
-  port: 443
-  udp: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 19 - wspnj
-  server: 140.245.38.33
-  port: 2096
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /class/season?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 20 - wspnj
-  server: cloud.lakshan.us
-  port: 119
-  udp: true
-  type: trojan
-  password: skynet
-  sni: cloud.lakshan.us
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 21 - wspnj
-  server: 8.222.84.103
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /member/discount
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 22 - wspnj
   server: 3.0.111.82
   port: 12972
   udp: true
@@ -271,19 +201,14 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: qq
-- name: 🇸🇬 新加坡 (Singapore) 23 - wspnj
-  server: 3.0.111.82
-  port: 17623
+- name: 🇸🇬 新加坡 (Singapore) 18 - wspnj
+  server: sg3.xiaoliyu.us
+  port: 2052
   udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: edge
+  type: hysteria2
+  password: b8949dae-cb53-4b5a-ad9c-50f58c4656fb
+  sni: sg3.xiaoliyu.us
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -307,11 +232,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 16 - wspnj
   - 🇸🇬 新加坡 (Singapore) 17 - wspnj
   - 🇸🇬 新加坡 (Singapore) 18 - wspnj
-  - 🇸🇬 新加坡 (Singapore) 19 - wspnj
-  - 🇸🇬 新加坡 (Singapore) 20 - wspnj
-  - 🇸🇬 新加坡 (Singapore) 21 - wspnj
-  - 🇸🇬 新加坡 (Singapore) 22 - wspnj
-  - 🇸🇬 新加坡 (Singapore) 23 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -335,10 +255,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 16 - wspnj
   - 🇸🇬 新加坡 (Singapore) 17 - wspnj
   - 🇸🇬 新加坡 (Singapore) 18 - wspnj
-  - 🇸🇬 新加坡 (Singapore) 19 - wspnj
-  - 🇸🇬 新加坡 (Singapore) 20 - wspnj
-  - 🇸🇬 新加坡 (Singapore) 21 - wspnj
-  - 🇸🇬 新加坡 (Singapore) 22 - wspnj
-  - 🇸🇬 新加坡 (Singapore) 23 - wspnj
 rules:
 - MATCH,PROXIES

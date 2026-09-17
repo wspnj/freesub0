@@ -14,6 +14,22 @@
     {
       "type": "vmess",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj",
+      "server": "82259754d625.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "82259754d625.oylfmxz.cn",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj",
       "server": "7dba81fc3a0b.oylfmxz.cn",
       "server_port": 443,
       "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
@@ -29,22 +45,6 @@
         "headers": {
           "Host": "7dba81fc3a0b.oylfmxz.cn"
         }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj",
-      "server": "82259754d625.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "82259754d625.oylfmxz.cn",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
       }
     },
     {

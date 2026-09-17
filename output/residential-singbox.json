@@ -4,32 +4,26 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - wspnj",
+      "server": "162.159.43.187",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wspnj",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj",
       "server": "R3MRCG00129437X.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj",
-      "server": "7dba81fc3a0b.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "7dba81fc3a0b.oylfmxz.cn",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "7dba81fc3a0b.oylfmxz.cn"
-        }
-      }
     },
     {
       "type": "vmess",
@@ -48,22 +42,44 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - wspnj",
+      "server": "7dba81fc3a0b.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "7dba81fc3a0b.oylfmxz.cn",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "7dba81fc3a0b.oylfmxz.cn"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wspnj",
+        "🇺🇸 美国 (United States) 01 (家宽) - wspnj",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj"
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wspnj",
+        "🇺🇸 美国 (United States) 01 (家宽) - wspnj",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj"
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
