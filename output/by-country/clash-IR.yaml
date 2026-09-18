@@ -4,8 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 捷克 (Czech) 01 - wspnj
-  server: 138.124.25.250
+- name: 🇮🇷 IR 01 - wspnj
+  server: 89.110.66.154
   port: 443
   udp: true
   type: vless
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 捷克 (Czech) 01 - wspnj
+  - 🇮🇷 IR 01 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 (Czech) 01 - wspnj
+  - 🇮🇷 IR 01 - wspnj
 rules:
 - MATCH,PROXIES
