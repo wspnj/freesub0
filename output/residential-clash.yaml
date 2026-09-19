@@ -4,31 +4,44 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - wspnj
-  server: 172.64.42.85
-  port: 2052
+- name: 🇯🇵 日本 (Japan) 01 (家宽) - wspnj
+  server: 128.241.25.3
+  port: 30021
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: e18901aa-2836-44ce-a1d7-af6b174ccae7
+  tls: true
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /@Marisa_kristi
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj
-  server: 36.224.185.173
-  port: 50099
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+- name: 🇺🇸 美国 (United States) 02 (家宽) - wspnj
+  server: 104.21.78.225
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj
-  server: 36.224.185.143
-  port: 50099
+  type: vless
+  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
+  tls: true
+  servername: curly-night-6928.ggdhchjk.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: curly-night-6928.ggdhchjk.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - wspnj
+  server: cf3935cb-tly2o0-tqbai3-1hpo0.hk3.hyhuawei.com
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  type: hysteria2
+  password: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
+  sni: cf3935cb-tly2o0-tqbai3-1hpo0.hk3.hyhuawei.com
+  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - wspnj
   server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   port: 443
@@ -43,25 +56,23 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - wspnj
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj
+  - 🇯🇵 日本 (Japan) 01 (家宽) - wspnj
+  - 🇺🇸 美国 (United States) 02 (家宽) - wspnj
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - wspnj
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - wspnj
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj
+  - 🇯🇵 日本 (Japan) 01 (家宽) - wspnj
+  - 🇺🇸 美国 (United States) 02 (家宽) - wspnj
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - wspnj
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - wspnj
 rules:
 - MATCH,PROXIES
