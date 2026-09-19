@@ -33,7 +33,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -43,39 +43,8 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 04 - wspnj",
-      "server": "vpn-au-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "whatsapp.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - wspnj",
-      "server": "188.166.49.168",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/lessons?ed=2560fp=chrome",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 06 - wspnj",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -95,6 +64,18 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 05 - wspnj",
+      "server": "vpn-au-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "whatsapp.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -103,8 +84,7 @@
         "🇦🇺 澳大利亚 (Australia) 02 - wspnj",
         "🇦🇺 澳大利亚 (Australia) 03 - wspnj",
         "🇦🇺 澳大利亚 (Australia) 04 - wspnj",
-        "🇦🇺 澳大利亚 (Australia) 05 - wspnj",
-        "🇦🇺 澳大利亚 (Australia) 06 - wspnj"
+        "🇦🇺 澳大利亚 (Australia) 05 - wspnj"
       ]
     },
     {
@@ -115,8 +95,7 @@
         "🇦🇺 澳大利亚 (Australia) 02 - wspnj",
         "🇦🇺 澳大利亚 (Australia) 03 - wspnj",
         "🇦🇺 澳大利亚 (Australia) 04 - wspnj",
-        "🇦🇺 澳大利亚 (Australia) 05 - wspnj",
-        "🇦🇺 澳大利亚 (Australia) 06 - wspnj"
+        "🇦🇺 澳大利亚 (Australia) 05 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

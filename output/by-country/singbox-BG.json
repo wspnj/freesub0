@@ -6,22 +6,6 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - wspnj",
-      "server": "192.145.31.5",
-      "server_port": 8443,
-      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
-      "tls": {
-        "enabled": true,
-        "server_name": "neth9.lunariai.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - wspnj",
       "server": "193.148.59.178",
       "server_port": 443,
       "uuid": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
@@ -42,18 +26,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - wspnj",
-      "server": "87.120.196.212",
-      "server_port": 443,
-      "uuid": "5561acfb-0adc-4c76-bfbf-767a76c7cbf0",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - wspnj",
+      "server": "192.145.31.5",
+      "server_port": 8443,
+      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
       "tls": {
         "enabled": true,
-        "server_name": "holo-stream.videocactus.xyz",
+        "server_name": "neth9.lunariai.ru",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       }
     },
@@ -63,8 +46,7 @@
       "outbounds": [
         "auto",
         "🇧🇬 保加利亚 (Bulgaria) 01 - wspnj",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - wspnj",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - wspnj"
+        "🇧🇬 保加利亚 (Bulgaria) 02 - wspnj"
       ]
     },
     {
@@ -72,8 +54,7 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇬 保加利亚 (Bulgaria) 01 - wspnj",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - wspnj",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - wspnj"
+        "🇧🇬 保加利亚 (Bulgaria) 02 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

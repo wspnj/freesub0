@@ -4,9 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - wspnj",
-      "server": "shprcdn.quest",
+      "server": "185.135.86.175",
+      "server_port": 9036,
+      "method": "aes-256-cfb",
+      "password": "hbtvgUz5uNYyB3Rf"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - wspnj",
+      "server": "185.135.86.175",
+      "server_port": 9033,
+      "method": "aes-256-cfb",
+      "password": "UTJA57ypk2XKQpnm"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - wspnj",
+      "server": "46.243.142.227",
       "server_port": 10443,
       "uuid": "a85ddf9f-329b-4c31-a80a-cd0f2e5b2a30",
       "tls": {
@@ -32,14 +48,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 拉脱维亚 (Latvia) 01 - wspnj"
+        "🇱🇻 拉脱维亚 (Latvia) 01 - wspnj",
+        "🇱🇻 拉脱维亚 (Latvia) 02 - wspnj",
+        "🇱🇻 拉脱维亚 (Latvia) 03 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 拉脱维亚 (Latvia) 01 - wspnj"
+        "🇱🇻 拉脱维亚 (Latvia) 01 - wspnj",
+        "🇱🇻 拉脱维亚 (Latvia) 02 - wspnj",
+        "🇱🇻 拉脱维亚 (Latvia) 03 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

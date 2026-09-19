@@ -5,16 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - wspnj
-  server: 192.145.31.5
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  tls: true
-  servername: neth9.lunariai.ru
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - wspnj
   server: 193.148.59.178
   port: 443
   udp: true
@@ -27,17 +17,16 @@ proxies:
     short-id: e3daad69
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - wspnj
-  server: 87.120.196.212
-  port: 443
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - wspnj
+  server: 192.145.31.5
+  port: 8443
   udp: true
   type: vless
-  uuid: 5561acfb-0adc-4c76-bfbf-767a76c7cbf0
-  flow: xtls-rprx-vision
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   tls: true
-  servername: holo-stream.videocactus.xyz
+  servername: neth9.lunariai.ru
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,7 +34,6 @@ proxy-groups:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01 - wspnj
   - 🇧🇬 保加利亚 (Bulgaria) 02 - wspnj
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - wspnj
   - 🇧🇬 保加利亚 (Bulgaria) 02 - wspnj
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - wspnj
 rules:
 - MATCH,PROXIES

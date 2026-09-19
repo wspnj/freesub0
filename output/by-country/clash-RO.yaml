@@ -5,29 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - wspnj
-  server: bogging-eyeteeth-fly.freesocks.work
+  server: 185.156.44.99
   port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - wspnj
-  server: 162.249.126.2
-  port: 8443
-  udp: true
   type: hysteria2
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hopp-germany-new.ddnsguru.com
+  password: gf1:gfhysteria2024
+  sni: speedtest.tinkoff.ru
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - wspnj
-  server: 85.204.107.178
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - wspnj
+  server: 85.204.107.171
   port: 8443
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - wspnj
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - wspnj
   server: 162.249.125.133
   port: 443
   udp: true
@@ -37,13 +30,20 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - wspnj
-  server: 185.156.44.99
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - wspnj
+  server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - wspnj
+  server: 162.249.126.7
+  port: 8443
+  udp: true
   type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: www.bing.com
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hopp-germany-new.ddnsguru.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES

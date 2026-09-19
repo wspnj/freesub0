@@ -6,20 +6,12 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - wspnj",
-      "server": "188.130.207.30",
-      "server_port": 2053,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true
-      },
+      "server": "194.87.59.104",
+      "server_port": 2085,
+      "uuid": "7b07d862-b698-47c1-884b-3e7dd6c8b862",
       "transport": {
-        "type": "ws",
-        "path": "/m",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {

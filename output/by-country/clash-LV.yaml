@@ -5,7 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - wspnj
-  server: shprcdn.quest
+  server: 185.135.86.175
+  port: 9036
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: hbtvgUz5uNYyB3Rf
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - wspnj
+  server: 185.135.86.175
+  port: 9033
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - wspnj
+  server: 46.243.142.227
   port: 10443
   udp: true
   type: vless
@@ -24,11 +38,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇱🇻 拉脱维亚 (Latvia) 01 - wspnj
+  - 🇱🇻 拉脱维亚 (Latvia) 02 - wspnj
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - wspnj
+  - 🇱🇻 拉脱维亚 (Latvia) 02 - wspnj
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - wspnj
 rules:
 - MATCH,PROXIES

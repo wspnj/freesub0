@@ -32,30 +32,8 @@ proxies:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
     short-id: d725f0dd8cce210f
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 - name: 🇦🇺 澳大利亚 (Australia) 04 - wspnj
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: whatsapp.com
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 05 - wspnj
-  server: 188.166.49.168
-  port: 2083
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /lessons?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇦🇺 澳大利亚 (Australia) 06 - wspnj
   server: 51.161.204.244
   port: 443
   udp: true
@@ -68,6 +46,14 @@ proxies:
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇦🇺 澳大利亚 (Australia) 05 - wspnj
+  server: vpn-au-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: whatsapp.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,7 +64,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - wspnj
   - 🇦🇺 澳大利亚 (Australia) 04 - wspnj
   - 🇦🇺 澳大利亚 (Australia) 05 - wspnj
-  - 🇦🇺 澳大利亚 (Australia) 06 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,6 +74,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - wspnj
   - 🇦🇺 澳大利亚 (Australia) 04 - wspnj
   - 🇦🇺 澳大利亚 (Australia) 05 - wspnj
-  - 🇦🇺 澳大利亚 (Australia) 06 - wspnj
 rules:
 - MATCH,PROXIES
