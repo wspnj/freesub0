@@ -11,23 +11,8 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: 🇯🇵 日本 (Japan) 02 (家宽) - wspnj
-  server: 45.77.241.190
-  port: 8441
-  udp: true
-  type: vless
-  uuid: 3011e40c-228f-4f2e-9dbf-5b256887e071
-  tls: true
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj
-  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj
+  server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
   port: 443
   udp: true
   type: vmess
@@ -35,13 +20,15 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
-  servername: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  servername: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - wspnj
-  server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+    headers:
+      Host: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj
+  server: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
   port: 443
   udp: true
   type: vmess
@@ -49,7 +36,7 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
-  servername: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+  servername: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
   skip-cert-verify: false
   network: ws
   ws-opts:
@@ -60,17 +47,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wspnj
-  - 🇯🇵 日本 (Japan) 02 (家宽) - wspnj
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wspnj
-  - 🇯🇵 日本 (Japan) 02 (家宽) - wspnj
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - wspnj
 rules:
 - MATCH,PROXIES

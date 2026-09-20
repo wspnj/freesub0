@@ -5,26 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - wspnj
-  server: 185.164.175.81
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 02 - wspnj
   server: 57.131.48.45
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: itzvpn@321
-- name: 🇮🇹 意大利 (Italy) 03 - wspnj
-  server: 204.216.216.23
-  port: 10086
+- name: 🇮🇹 意大利 (Italy) 02 - wspnj
+  server: 185.164.175.81
+  port: 19999
   udp: true
-  type: vless
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-- name: 🇮🇹 意大利 (Italy) 04 - wspnj
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 03 - wspnj
   server: 172.238.232.239
   port: 32833
   udp: true
@@ -45,7 +39,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - wspnj
   - 🇮🇹 意大利 (Italy) 02 - wspnj
   - 🇮🇹 意大利 (Italy) 03 - wspnj
-  - 🇮🇹 意大利 (Italy) 04 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,6 +47,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - wspnj
   - 🇮🇹 意大利 (Italy) 02 - wspnj
   - 🇮🇹 意大利 (Italy) 03 - wspnj
-  - 🇮🇹 意大利 (Italy) 04 - wspnj
 rules:
 - MATCH,PROXIES
