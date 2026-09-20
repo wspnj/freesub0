@@ -4,14 +4,22 @@
   },
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wspnj",
+      "server": "36.224.185.173",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
+    },
+    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - wspnj",
-      "server": "210.152.85.154",
-      "server_port": 19364,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tag": "🇯🇵 日本 (Japan) 02 (家宽) - wspnj",
+      "server": "45.77.241.190",
+      "server_port": 8441,
+      "uuid": "3011e40c-228f-4f2e-9dbf-5b256887e071",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
+        "server_name": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,51 +28,15 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/collect/user/products?ed=2560",
+        "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "cdn8848.776676.xyz"
+          "Host": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
         }
       }
     },
     {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj",
-      "server": "dee2309db4944c248b6d4672c6641e25.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "dee2309db4944c248b6d4672c6641e25.oylfmxz.cn",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - wspnj",
       "server": "dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn",
       "server_port": 443,
       "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
@@ -80,12 +52,28 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - wspnj",
+      "server": "dee2309db4944c248b6d4672c6641e25.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "dee2309db4944c248b6d4672c6641e25.oylfmxz.cn",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wspnj",
+        "🇯🇵 日本 (Japan) 02 (家宽) - wspnj",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - wspnj"
       ]
@@ -94,8 +82,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj",
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wspnj",
+        "🇯🇵 日本 (Japan) 02 (家宽) - wspnj",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - wspnj"
       ],
