@@ -6,22 +6,6 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - wspnj",
-      "server": "192.145.31.5",
-      "server_port": 8443,
-      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
-      "tls": {
-        "enabled": true,
-        "server_name": "neth9.lunariai.ru",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - wspnj",
       "server": "108.165.233.223",
       "server_port": 443,
       "uuid": "2388e166-3890-33ae-f77e-efac00000001",
@@ -44,7 +28,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - wspnj",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - wspnj",
       "server": "45.9.156.103",
       "server_port": 443,
       "uuid": "e633de28-bfc0-4aca-aa67-e2e12e2c9e58",
@@ -60,6 +44,22 @@
           "enabled": true,
           "public_key": "SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8",
           "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - wspnj",
+      "server": "192.145.31.5",
+      "server_port": 8443,
+      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "neth9.lunariai.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },

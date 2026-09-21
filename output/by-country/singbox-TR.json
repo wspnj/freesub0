@@ -6,9 +6,9 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - wspnj",
-      "server": "93.190.9.9",
+      "server": "93.190.9.40",
       "server_port": 3090,
-      "uuid": "c4a36c29-39db-4782-b7cb-6e391461a999",
+      "uuid": "b1ca4f7c-d50a-41b2-b779-07c3e6ed09b2",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
