@@ -5,20 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇷 IR 01 - wspnj",
-      "server": "138.124.25.250",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true
-      },
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - wspnj",
+      "server": "93.190.9.9",
+      "server_port": 3090,
+      "uuid": "c4a36c29-39db-4782-b7cb-6e391461a999",
       "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
@@ -26,14 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01 - wspnj"
+        "🇹🇷 土耳其 (Turkey) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01 - wspnj"
+        "🇹🇷 土耳其 (Turkey) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

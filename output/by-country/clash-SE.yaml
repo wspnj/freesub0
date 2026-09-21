@@ -11,31 +11,20 @@ proxies:
   type: hysteria2
   password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
   sni: cf2.rumedia-cdn.com
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇸🇪 瑞典 (Sweden) 02 - wspnj
-  server: 143.246.195.98
-  port: 8081
+  server: svvedko.nxxzxaw.beer
+  port: 443
   udp: true
   type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 03 - wspnj
-  server: 109.107.155.76
-  port: 2053
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
   tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tv/member/auth?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
+  reality-opts:
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  servername: svvedko.nxxzxaw.beer
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - wspnj
   - 🇸🇪 瑞典 (Sweden) 02 - wspnj
-  - 🇸🇪 瑞典 (Sweden) 03 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - wspnj
   - 🇸🇪 瑞典 (Sweden) 02 - wspnj
-  - 🇸🇪 瑞典 (Sweden) 03 - wspnj
 rules:
 - MATCH,PROXIES

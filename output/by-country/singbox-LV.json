@@ -4,21 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01 - wspnj",
-      "server": "188.114.98.0",
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - wspnj",
+      "server": "104.25.217.189",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "7a657573-627d-c5d7-4e7b-9e260f5cfff1",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
+        "server_name": "imzajnekupas.a3-60-morteza.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/stream/PANEL_ZEUS/9e260f5cfff1/loc-0",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "imzajnekupas.a3-60-morteza.workers.dev"
         }
       }
     },
@@ -27,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - wspnj"
+        "🇱🇻 拉脱维亚 (Latvia) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - wspnj"
+        "🇱🇻 拉脱维亚 (Latvia) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
