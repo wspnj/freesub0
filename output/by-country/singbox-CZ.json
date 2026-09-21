@@ -6,28 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - wspnj",
-      "server": "153.76.185.186",
-      "server_port": 3090,
-      "uuid": "9912a5ca-3ee1-45ac-b182-46fec2610ee0",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - wspnj",
-      "server": "153.76.185.189",
-      "server_port": 3090,
-      "uuid": "5ebdc9ee-8b41-4487-93af-231cb0b47d60",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - wspnj",
       "server": "95.85.230.35",
       "server_port": 443,
       "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
@@ -37,7 +15,7 @@
         "server_name": "de.oblaco.bet",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -47,35 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 04 - wspnj",
-      "server": "153.76.185.188",
-      "server_port": 3090,
-      "uuid": "9912a5ca-3ee1-45ac-b182-46fec2610ee0",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - wspnj",
-        "🇨🇿 捷克 (Czech) 02 - wspnj",
-        "🇨🇿 捷克 (Czech) 03 - wspnj",
-        "🇨🇿 捷克 (Czech) 04 - wspnj"
+        "🇨🇿 捷克 (Czech) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - wspnj",
-        "🇨🇿 捷克 (Czech) 02 - wspnj",
-        "🇨🇿 捷克 (Czech) 03 - wspnj",
-        "🇨🇿 捷克 (Czech) 04 - wspnj"
+        "🇨🇿 捷克 (Czech) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

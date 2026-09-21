@@ -4,12 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - wspnj",
-      "server": "sth.free-outline.giize.com",
-      "server_port": 1081,
-      "method": "chacha20-ietf-poly1305",
-      "password": "r6tptrwvddxap6al"
+      "server": "216.23.87.204",
+      "server_port": 443,
+      "uuid": "c5748477-7bdb-4f85-a1ac-882eb58e49cb",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gVdP_cyXB6Zt8UQm5yzDJsP_39lNZ33EzEOIhwNAPCk",
+          "short_id": "42a80081eacba586"
+        }
+      }
     },
     {
       "type": "trojan",
@@ -26,12 +39,12 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 03 - wspnj",
-      "server": "202.146.222.89",
+      "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vk.com",
+        "server_name": "https://t.me/oneclickvpnkeys",
         "insecure": true
       }
     },
@@ -43,40 +56,39 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%91%d1%80%d2%b9%d2%af%d1%96",
+        "server_name": "css.rbxcdn.com",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 05 - wspnj",
-      "server": "202.146.222.174",
+      "server": "202.146.222.89",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "server_name": "off",
         "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 06 - wspnj",
-      "server": "162.128.157.164",
-      "server_port": 443,
-      "uuid": "5e8e81ac-a1c4-4543-b81e-651bf9872b54",
-      "flow": "xtls-rprx-vision",
+      "server": "195.58.144.56",
+      "server_port": 11907,
+      "uuid": "07cb07b9-0c4d-46c1-a15a-b147511b6b07",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "195.58.144.56",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0",
-          "short_id": "14156e3ac23212cc"
         }
       }
     },
@@ -91,7 +103,7 @@
         "server_name": "tesla.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -111,7 +123,7 @@
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 09 - wspnj",
-      "server": "px2.5ibtc.cn",
+      "server": "104.21.29.202",
       "server_port": 443,
       "uuid": "326227e2-f2d1-4f43-8715-9da854f5f4c0",
       "tls": {
@@ -132,24 +144,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 10 - wspnj",
-      "server": "47.239.6.251",
-      "server_port": 13779,
-      "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0",
-      "flow": "xtls-rprx-vision",
+      "server": "mz.hkychina.com",
+      "server_port": 8443,
+      "password": "HysTeria2026!Proxy",
       "tls": {
         "enabled": true,
-        "server_name": "tesla.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg",
-          "short_id": "af1bdd293097b664"
-        }
+        "server_name": "mz.hkychina.com",
+        "insecure": false
       }
     },
     {

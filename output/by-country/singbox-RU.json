@@ -4,20 +4,61 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - wspnj",
+      "server": "172.237.120.201",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
+      "server": "103.31.77.108",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/channels/act",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
         "server_name": "hy.quattro-tech.ru",
-        "insecure": true
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - wspnj",
       "server": "46.8.200.91",
       "server_port": 443,
       "uuid": "b8201bab-fa6c-4f6e-b289-b5da660c6f69",
@@ -35,15 +76,23 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
-      "server": "msk.frkn.org",
-      "server_port": 443,
-      "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - wspnj",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
       "tls": {
         "enabled": true,
-        "server_name": "msk.frkn.org",
-        "insecure": false
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
+        }
       }
     },
     {
@@ -53,7 +102,9 @@
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - wspnj",
         "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 03 - wspnj"
+        "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
+        "🇷🇺 俄罗斯 (Russia) 04 - wspnj",
+        "🇷🇺 俄罗斯 (Russia) 05 - wspnj"
       ]
     },
     {
@@ -62,7 +113,9 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - wspnj",
         "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 03 - wspnj"
+        "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
+        "🇷🇺 俄罗斯 (Russia) 04 - wspnj",
+        "🇷🇺 俄罗斯 (Russia) 05 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

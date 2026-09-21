@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 - wspnj",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 02 - wspnj",
+      "tag": "🇰🇷 韩国 (South Korea) 01 - wspnj",
       "server": "34.64.149.137",
       "server_port": 443,
       "uuid": "700a7a0e-3f27-406c-81d1-aa1abe411af8",
@@ -32,14 +24,35 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - wspnj",
-      "server": "3.36.93.74",
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 02 - wspnj",
+      "server": "47.80.14.8",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "uuid": "581cb8c3-dadb-4e10-a18b-5e79bfe7bd93",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "3.36.93.74",
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w",
+          "short_id": "71110d3f7ef57760"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - wspnj",
+      "server": "vpn-kr-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ9wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-kr-002.fastervpn.world",
         "insecure": true
       }
     },
@@ -76,7 +89,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -88,18 +101,30 @@
     {
       "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 06 - wspnj",
-      "server": "152.67.200.82",
-      "server_port": 50160,
-      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
+      "server": "3.36.93.74",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "google.com",
+        "server_name": "vk.com",
         "insecure": true
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 07 - wspnj",
+      "server": "152-69-231-175.liao.kdns.fr",
+      "server_port": 50160,
+      "password": "1beb216e3f60aea9555dae60d219a5ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "152-69-231-175.liao.kdns.fr",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 08 - wspnj",
       "server": "151.245.106.49",
       "server_port": 2053,
       "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
@@ -108,7 +133,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -119,25 +144,13 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 08 - wspnj",
-      "server": "vpn-kr-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ9wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-kr-002.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 09 - wspnj",
-      "server": "154.90.62.70",
-      "server_port": 56127,
-      "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
+      "server": "152.67.200.82",
+      "server_port": 50160,
+      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
       "tls": {
         "enabled": true,
-        "server_name": "154.90.62.70",
+        "server_name": "152.67.200.82",
         "insecure": true
       }
     },
@@ -150,39 +163,6 @@
       "tls": {
         "enabled": true,
         "server_name": "150-230-252-217.liao.kdns.fr",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 11 - wspnj",
-      "server": "47.80.14.8",
-      "server_port": 443,
-      "uuid": "581cb8c3-dadb-4e10-a18b-5e79bfe7bd93",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w",
-          "short_id": "71110d3f7ef57760"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 12 - wspnj",
-      "server": "152-69-231-175.liao.kdns.fr",
-      "server_port": 50160,
-      "password": "1beb216e3f60aea9555dae60d219a5ca",
-      "tls": {
-        "enabled": true,
-        "server_name": "152-69-231-175.liao.kdns.fr",
         "insecure": false
       }
     },
@@ -200,9 +180,7 @@
         "🇰🇷 韩国 (South Korea) 07 - wspnj",
         "🇰🇷 韩国 (South Korea) 08 - wspnj",
         "🇰🇷 韩国 (South Korea) 09 - wspnj",
-        "🇰🇷 韩国 (South Korea) 10 - wspnj",
-        "🇰🇷 韩国 (South Korea) 11 - wspnj",
-        "🇰🇷 韩国 (South Korea) 12 - wspnj"
+        "🇰🇷 韩国 (South Korea) 10 - wspnj"
       ]
     },
     {
@@ -218,9 +196,7 @@
         "🇰🇷 韩国 (South Korea) 07 - wspnj",
         "🇰🇷 韩国 (South Korea) 08 - wspnj",
         "🇰🇷 韩国 (South Korea) 09 - wspnj",
-        "🇰🇷 韩国 (South Korea) 10 - wspnj",
-        "🇰🇷 韩国 (South Korea) 11 - wspnj",
-        "🇰🇷 韩国 (South Korea) 12 - wspnj"
+        "🇰🇷 韩国 (South Korea) 10 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
