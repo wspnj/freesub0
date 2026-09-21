@@ -4,21 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 - wspnj",
-      "server": "se-node.rumedia-cdn.com",
-      "server_port": 25443,
-      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf2.rumedia-cdn.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - wspnj",
-      "server": "45.38.139.23",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - wspnj",
+      "server": "132.243.203.218",
       "server_port": 8443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
@@ -32,7 +20,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/jumping/class/bt?ed=2560",
+        "path": "/v?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -43,16 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 02 - wspnj"
+        "🇧🇷 巴西 (Brazil) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 02 - wspnj"
+        "🇧🇷 巴西 (Brazil) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
