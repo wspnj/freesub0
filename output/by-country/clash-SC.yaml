@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - wspnj
-  server: 199.232.78.101
-  port: 443
-  udp: true
-  type: trojan
-  password: MiTIVPN
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - wspnj
   server: hk3n.wxgqlfx.vip
   port: 35193
   udp: true
@@ -34,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - wspnj
-  - 🇸🇨 塞舌尔 (Seychelles) 02 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - wspnj
-  - 🇸🇨 塞舌尔 (Seychelles) 02 - wspnj
 rules:
 - MATCH,PROXIES

@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - wspnj
-  server: 172.64.229.170
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 02 - wspnj
   server: 91.240.86.70
   port: 22443
   udp: true
@@ -23,21 +12,18 @@ proxies:
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: hy.quattro-tech.ru
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - wspnj
-  server: 104.16.72.30
-  port: 443
+- name: 🇷🇺 俄罗斯 (Russia) 02 - wspnj
+  server: 45.12.75.242
+  port: 26424
   udp: true
   type: vless
-  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   tls: true
-  servername: xstack.mahanfixe.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /xiron
-    headers:
-      Host: xstack.mahanfixe.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 02 - wspnj
-  - 🇷🇺 俄罗斯 (Russia) 03 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 02 - wspnj
-  - 🇷🇺 俄罗斯 (Russia) 03 - wspnj
 rules:
 - MATCH,PROXIES

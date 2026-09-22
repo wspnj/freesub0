@@ -13,22 +13,6 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 02 - wspnj
-  server: 66.163.113.176
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 03 - wspnj
-  server: 23.162.200.198
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 04 - wspnj
   server: 134.195.196.211
   port: 18000
   udp: true
@@ -36,6 +20,21 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 03 - wspnj
+  server: 66.163.113.176
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 04 - wspnj
+  server: 142.4.216.225
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: mrs2e9a
 - name: 🇨🇦 加拿大 (Canada) 05 - wspnj
   server: 15.235.75.71
   port: 8388
@@ -51,13 +50,6 @@ proxies:
   cipher: aes-256-gcm
   password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
 - name: 🇨🇦 加拿大 (Canada) 07 - wspnj
-  server: 51.222.12.127
-  port: 445
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-- name: 🇨🇦 加拿大 (Canada) 08 - wspnj
   server: 130.107.73.148
   port: 41373
   udp: true
@@ -70,7 +62,26 @@ proxies:
     short-id: 0e
   servername: google.com
   client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 08 - wspnj
+  server: 138.197.141.58
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇨🇦 加拿大 (Canada) 09 - wspnj
+  server: 66.70.179.198
+  port: 2053
+  udp: true
+  type: vless
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  tls: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 10 - wspnj
   server: 158.69.112.254
   port: 443
   udp: true
@@ -83,40 +94,40 @@ proxies:
     short-id: 3d3c1e645f763ee3
   servername: www.speedtest.net
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 10 - wspnj
-  server: 66.70.179.198
-  port: 2053
-  udp: true
-  type: vless
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  tls: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-    short-id: 83f8317a948bb769
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇨🇦 加拿大 (Canada) 11 - wspnj
-  server: 23.132.28.51
+  server: mygptagent.org
   port: 443
   udp: true
-  type: vless
-  uuid: dcf8e133-09a2-4884-abf9-80356bb334ac
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: xcTXD3of3Yt5hHdIwYGZ1LjMBgiL6sqj5J33J4U4ozM
-    short-id: a7c31f92
-  servername: candy.atlasparser.site
-  client-fingerprint: safari
+  servername: mygptagent.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: mygptagent.org
 - name: 🇨🇦 加拿大 (Canada) 12 - wspnj
   server: 15.223.122.197
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 15.223.122.197
+  sni: t.me
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 13 - wspnj
+  server: 184.107.106.68
+  port: 443
+  udp: true
+  type: vless
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  tls: true
+  servername: lizca2.footballfantasyforum.com
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 14 - wspnj
   server: 209.200.246.148
   port: 443
   udp: true
@@ -128,8 +139,8 @@ proxies:
     public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
     short-id: f98843107912e782
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 14 - wspnj
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 15 - wspnj
   server: 148.113.196.75
   port: 8443
   udp: true
@@ -141,7 +152,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless/
-- name: 🇨🇦 加拿大 (Canada) 15 - wspnj
+- name: 🇨🇦 加拿大 (Canada) 16 - wspnj
   server: 104.21.8.201
   port: 2096
   udp: true
@@ -156,7 +167,7 @@ proxies:
     path: /fqg7aacd8s
     headers:
       Host: cdn-ca.skyvora.app
-- name: 🇨🇦 加拿大 (Canada) 16 - wspnj
+- name: 🇨🇦 加拿大 (Canada) 17 - wspnj
   server: 66.70.179.124
   port: 443
   udp: true
@@ -169,6 +180,29 @@ proxies:
     short-id: af7e79b5
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 18 - wspnj
+  server: 23.162.200.198
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 19 - wspnj
+  server: 134.195.198.214
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 20 - wspnj
+  server: 51.79.49.116
+  port: 8882
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
 proxy-groups:
 - name: PROXIES
   type: select
@@ -190,6 +224,10 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 14 - wspnj
   - 🇨🇦 加拿大 (Canada) 15 - wspnj
   - 🇨🇦 加拿大 (Canada) 16 - wspnj
+  - 🇨🇦 加拿大 (Canada) 17 - wspnj
+  - 🇨🇦 加拿大 (Canada) 18 - wspnj
+  - 🇨🇦 加拿大 (Canada) 19 - wspnj
+  - 🇨🇦 加拿大 (Canada) 20 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -211,5 +249,9 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 14 - wspnj
   - 🇨🇦 加拿大 (Canada) 15 - wspnj
   - 🇨🇦 加拿大 (Canada) 16 - wspnj
+  - 🇨🇦 加拿大 (Canada) 17 - wspnj
+  - 🇨🇦 加拿大 (Canada) 18 - wspnj
+  - 🇨🇦 加拿大 (Canada) 19 - wspnj
+  - 🇨🇦 加拿大 (Canada) 20 - wspnj
 rules:
 - MATCH,PROXIES
