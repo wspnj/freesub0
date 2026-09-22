@@ -4,13 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wspnj
-  server: 36.224.141.124
-  port: 50099
+- name: 🇯🇵 日本 (Japan) 01 (家宽) - wspnj
+  server: 116.204.164.30
+  port: 7443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  type: vless
+  uuid: 097e0483-50a9-4adf-8f62-031057710d11
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj
   server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   port: 443
@@ -30,14 +38,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wspnj
+  - 🇯🇵 日本 (Japan) 01 (家宽) - wspnj
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wspnj
+  - 🇯🇵 日本 (Japan) 01 (家宽) - wspnj
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj
 rules:
 - MATCH,PROXIES

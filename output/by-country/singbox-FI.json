@@ -14,49 +14,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - wspnj",
-      "server": "185.79.138.71",
-      "server_port": 448,
-      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
-          "short_id": "cd21e552537c7c0b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - wspnj",
-      "server": "202.166.187.132",
-      "server_port": 443,
-      "uuid": "8be20011-59b1-4118-91ed-83e8e6b662cd",
-      "tls": {
-        "enabled": true,
-        "server_name": "f.yoptybla.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "f.yoptybla.ru"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - wspnj",
       "server": "fi1.cache-4d8a.com",
       "server_port": 443,
       "uuid": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
@@ -80,22 +37,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - wspnj",
-      "server": "est1313.ggisopi.su",
-      "server_port": 443,
-      "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - wspnj",
+      "server": "95.217.24.119",
+      "server_port": 2087,
+      "uuid": "ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "est1313.ggisopi.su",
+        "server_name": "62.238.103.54",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-          "short_id": ""
+          "public_key": "_FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc",
+          "short_id": "e9fae729e40ae07e"
         }
       }
     },
@@ -106,9 +63,7 @@
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - wspnj",
         "🇫🇮 芬兰 (Finland) 02 - wspnj",
-        "🇫🇮 芬兰 (Finland) 03 - wspnj",
-        "🇫🇮 芬兰 (Finland) 04 - wspnj",
-        "🇫🇮 芬兰 (Finland) 05 - wspnj"
+        "🇫🇮 芬兰 (Finland) 03 - wspnj"
       ]
     },
     {
@@ -117,9 +72,7 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - wspnj",
         "🇫🇮 芬兰 (Finland) 02 - wspnj",
-        "🇫🇮 芬兰 (Finland) 03 - wspnj",
-        "🇫🇮 芬兰 (Finland) 04 - wspnj",
-        "🇫🇮 芬兰 (Finland) 05 - wspnj"
+        "🇫🇮 芬兰 (Finland) 03 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
