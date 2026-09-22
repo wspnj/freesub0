@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - wspnj
-  server: 31.58.181.88
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 7c97de67-9586-4aa5-8adf-ff3ce469149e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 02 - wspnj
   server: 130.49.161.70
   port: 443
   udp: true
@@ -26,6 +14,18 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 02 - wspnj
+  server: 31.58.181.88
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 863ce48d-6b5e-4682-b5d7-0c9b43895841
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 03 - wspnj
   server: 94.183.224.45
   port: 443
@@ -40,7 +40,7 @@ proxies:
   servername: dzen.ru
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 04 - wspnj
-  server: 85.204.107.171
+  server: 85.204.107.178
   port: 8080
   udp: true
   type: hysteria2
@@ -48,7 +48,7 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 05 - wspnj
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -56,21 +56,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - wspnj
-  server: clhkzzzdbgwxxndnlm.cfooov.xyz
-  port: 45081
-  udp: true
-  type: vless
-  uuid: edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AzOs0Mh5_Ax-CrvFYTYXAp78syFjgkotED2cKO_kbyw
-    short-id: 461b0192ec23b6
-  servername: www.lamer.com.hk
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,7 +66,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - wspnj
   - 🇦🇪 阿联酋 (UAE) 04 - wspnj
   - 🇦🇪 阿联酋 (UAE) 05 - wspnj
-  - 🇦🇪 阿联酋 (UAE) 06 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,6 +76,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - wspnj
   - 🇦🇪 阿联酋 (UAE) 04 - wspnj
   - 🇦🇪 阿联酋 (UAE) 05 - wspnj
-  - 🇦🇪 阿联酋 (UAE) 06 - wspnj
 rules:
 - MATCH,PROXIES

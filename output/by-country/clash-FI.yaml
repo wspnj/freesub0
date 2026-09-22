@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - wspnj
-  server: 95.216.27.15
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 02 - wspnj
   server: 2.27.175.71
   port: 443
   udp: true
@@ -29,19 +17,15 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-- name: 🇫🇮 芬兰 (Finland) 03 - wspnj
-  server: 185.79.138.71
-  port: 448
+- name: 🇫🇮 芬兰 (Finland) 02 - wspnj
+  server: iq5ny.pleiades.codes
+  port: 8443
   udp: true
-  type: vless
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  tls: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - wspnj
+  type: hysteria2
+  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  sni: iq5ny.pleiades.codes
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 03 - wspnj
   server: 62.238.103.54
   port: 2083
   udp: true
@@ -54,57 +38,7 @@ proxies:
     short-id: d059fb98048c5318
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - wspnj
-  server: 95.217.24.119
-  port: 2087
-  udp: true
-  type: vless
-  uuid: ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc
-    short-id: e9fae729e40ae07e
-  servername: 62.238.103.54
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - wspnj
-  server: iq5ny.pleiades.codes
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  sni: iq5ny.pleiades.codes
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 07 - wspnj
-  server: 92.255.79.246
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8057eabc-921d-0001-9acb-80ccc6b48379
-  tls: true
-  reality-opts:
-    public-key: 8P2rVrZZ8v1q7WpYiRWnZ_nk2UI_4PqpN_DdZP91700
-  servername: supbober.mafioznik.xyz
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: Lizat
-- name: 🇫🇮 芬兰 (Finland) 08 - wspnj
-  server: 202.166.187.132
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
-  tls: true
-  servername: f.yoptybla.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f.yoptybla.ru
-- name: 🇫🇮 芬兰 (Finland) 09 - wspnj
+- name: 🇫🇮 芬兰 (Finland) 04 - wspnj
   server: 31.76.80.230
   port: 8443
   udp: true
@@ -126,11 +60,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - wspnj
   - 🇫🇮 芬兰 (Finland) 03 - wspnj
   - 🇫🇮 芬兰 (Finland) 04 - wspnj
-  - 🇫🇮 芬兰 (Finland) 05 - wspnj
-  - 🇫🇮 芬兰 (Finland) 06 - wspnj
-  - 🇫🇮 芬兰 (Finland) 07 - wspnj
-  - 🇫🇮 芬兰 (Finland) 08 - wspnj
-  - 🇫🇮 芬兰 (Finland) 09 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -140,10 +69,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - wspnj
   - 🇫🇮 芬兰 (Finland) 03 - wspnj
   - 🇫🇮 芬兰 (Finland) 04 - wspnj
-  - 🇫🇮 芬兰 (Finland) 05 - wspnj
-  - 🇫🇮 芬兰 (Finland) 06 - wspnj
-  - 🇫🇮 芬兰 (Finland) 07 - wspnj
-  - 🇫🇮 芬兰 (Finland) 08 - wspnj
-  - 🇫🇮 芬兰 (Finland) 09 - wspnj
 rules:
 - MATCH,PROXIES
