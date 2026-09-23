@@ -27,7 +27,22 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇹🇭 泰国 (Thailand) 03 - wspnj
+  server: 104.16.10.185
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  tls: true
+  servername: v2ray.simspeedup.com
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +50,7 @@ proxy-groups:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - wspnj
   - 🇹🇭 泰国 (Thailand) 02 - wspnj
+  - 🇹🇭 泰国 (Thailand) 03 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,5 +58,6 @@ proxy-groups:
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - wspnj
   - 🇹🇭 泰国 (Thailand) 02 - wspnj
+  - 🇹🇭 泰国 (Thailand) 03 - wspnj
 rules:
 - MATCH,PROXIES
