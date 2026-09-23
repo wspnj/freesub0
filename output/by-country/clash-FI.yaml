@@ -17,6 +17,40 @@ proxies:
   servername: www.samsung.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - wspnj
+  server: assets-fi.pleiades.codes
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  tls: true
+  servername: assets-fi.pleiades.codes
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+- name: 🇫🇮 芬兰 (Finland) 03 - wspnj
+  server: iq5ny.pleiades.codes
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  sni: iq5ny.pleiades.codes
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 04 - wspnj
+  server: fintanil228.vvzzkontaktezzvv.garden
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
+    short-id: d110331f200987ae
+  servername: fintanil228.vvzzkontaktezzvv.garden
+  client-fingerprint: ios
+- name: 🇫🇮 芬兰 (Finland) 05 - wspnj
   server: 193.23.201.65
   port: 5432
   udp: true
@@ -34,6 +68,9 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - wspnj
   - 🇫🇮 芬兰 (Finland) 02 - wspnj
+  - 🇫🇮 芬兰 (Finland) 03 - wspnj
+  - 🇫🇮 芬兰 (Finland) 04 - wspnj
+  - 🇫🇮 芬兰 (Finland) 05 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +78,8 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - wspnj
   - 🇫🇮 芬兰 (Finland) 02 - wspnj
+  - 🇫🇮 芬兰 (Finland) 03 - wspnj
+  - 🇫🇮 芬兰 (Finland) 04 - wspnj
+  - 🇫🇮 芬兰 (Finland) 05 - wspnj
 rules:
 - MATCH,PROXIES
