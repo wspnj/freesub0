@@ -15,7 +15,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -46,29 +46,37 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 03 - wspnj",
-      "server": "karo.rick313.dpdns.org",
-      "server_port": 2087,
-      "uuid": "2e4e6812-be87-415b-a2e8-b0e17e9f2da7",
+      "server": "est1313.ggisopi.su",
+      "server_port": 443,
+      "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "karo.rick313.dpdns.org",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1",
-          "h3"
-        ],
+        "server_name": "est1313.ggisopi.su",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+          "short_id": ""
         }
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇫🇮 芬兰 (Finland) 04 - wspnj",
-      "server": "p1tun3.greewebservices.ir",
-      "server_port": 2070,
+      "server": "me6.movieseryalirani.ir",
+      "server_port": 57361,
+      "uuid": "ed815caa-bff1-4419-8c61-1d108eabaf1f",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - wspnj",
+      "server": "p1tun4.greewebservices.ir",
+      "server_port": 1080,
       "method": "chacha20-ietf-poly1305",
       "password": "cVvgP0Bz69hsErPBvqKbwQ"
     },
@@ -80,7 +88,8 @@
         "🇫🇮 芬兰 (Finland) 01 - wspnj",
         "🇫🇮 芬兰 (Finland) 02 - wspnj",
         "🇫🇮 芬兰 (Finland) 03 - wspnj",
-        "🇫🇮 芬兰 (Finland) 04 - wspnj"
+        "🇫🇮 芬兰 (Finland) 04 - wspnj",
+        "🇫🇮 芬兰 (Finland) 05 - wspnj"
       ]
     },
     {
@@ -90,7 +99,8 @@
         "🇫🇮 芬兰 (Finland) 01 - wspnj",
         "🇫🇮 芬兰 (Finland) 02 - wspnj",
         "🇫🇮 芬兰 (Finland) 03 - wspnj",
-        "🇫🇮 芬兰 (Finland) 04 - wspnj"
+        "🇫🇮 芬兰 (Finland) 04 - wspnj",
+        "🇫🇮 芬兰 (Finland) 05 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
