@@ -19,14 +19,26 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 03 - wspnj
-  server: 143.246.194.60
-  port: 8081
+  server: se-node.rumedia-cdn.com
+  port: 25443
+  udp: true
+  type: hysteria2
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  sni: cf2.rumedia-cdn.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 04 - wspnj
+  server: surstreming.vvzzkontaktezzvv.garden
+  port: 443
   udp: true
   type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  servername: surstreming.vvzzkontaktezzvv.garden
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +47,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - wspnj
   - 🇸🇪 瑞典 (Sweden) 02 - wspnj
   - 🇸🇪 瑞典 (Sweden) 03 - wspnj
+  - 🇸🇪 瑞典 (Sweden) 04 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +56,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - wspnj
   - 🇸🇪 瑞典 (Sweden) 02 - wspnj
   - 🇸🇪 瑞典 (Sweden) 03 - wspnj
+  - 🇸🇪 瑞典 (Sweden) 04 - wspnj
 rules:
 - MATCH,PROXIES
