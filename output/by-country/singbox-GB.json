@@ -4,109 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 01 - wspnj",
-      "server": "172.67.157.183",
-      "server_port": 443,
-      "uuid": "401d950d-4f5c-45c7-bf44-8b69acf35f6f",
-      "tls": {
-        "enabled": true,
-        "server_name": "7x70yyvT7eQOtx-IQ9N3RJT1xn1jwkh9.asDFsAFdsAF.WORkerS.Dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiR2xWQ1FCQzYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
-        "headers": {
-          "Host": "7x70yyvt7eqotx-iq9n3rjt1xn1jwkh9.asdfsafdsaf.workers.dev"
-        }
-      }
+      "server": "143.110.161.156",
+      "server_port": 17000,
+      "method": "aes-256-gcm",
+      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
     },
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 02 - wspnj",
-      "server": "149.102.149.207",
+      "server": "141.98.101.181",
       "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "LXchLsIwtCeUAUgu"
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
     },
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 03 - wspnj",
-      "server": "149.102.132.184",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "g5h5jleTRSyO3Rk4"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 04 - wspnj",
-      "server": "146.70.61.37",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 05 - wspnj",
-      "server": "66.90.104.42",
-      "server_port": 2083,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 06 - wspnj",
-      "server": "51.38.71.51",
-      "server_port": 2083,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 07 - wspnj",
-      "server": "51.77.225.200",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "zRZNBszYyWo5"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 08 - wspnj",
       "server": "158.173.221.214",
       "server_port": 11001,
       "method": "chacha20-ietf-poly1305",
       "password": "c58d16e593d44f42"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 09 - wspnj",
-      "server": "149.102.149.207",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "LXchLsIwtCeUAUgu"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 10 - wspnj",
-      "server": "149.102.132.184",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "g5h5jleTRSyO3Rk4"
-    },
-    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 11 - wspnj",
+      "tag": "🇬🇧 英国 (United Kingdom) 04 - wspnj",
       "server": "35.234.143.34",
       "server_port": 443,
       "uuid": "9743b4f9-24c3-4e53-8b03-c3b5cd9b71b2",
@@ -115,7 +38,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -125,28 +48,104 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇬🇧 英国 (United Kingdom) 12 - wspnj",
-      "server": "de.i-love-russia.online",
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 05 - wspnj",
+      "server": "51.77.225.200",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "zRZNBszYyWo5"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 06 - wspnj",
+      "server": "tomaz1337shellbuy.vvzzkontaktezzvv.garden",
       "server_port": 443,
-      "password": "a6cf39b3-0424-42a2-abf7-b426da69b1a4",
+      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "de.i-love-russia.online",
-        "insecure": false
+        "server_name": "tomaz1337shellbuy.vvzzkontaktezzvv.garden",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk",
+          "short_id": "2e124af254a65e7c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 07 - wspnj",
+      "server": "23.81.34.204",
+      "server_port": 443,
+      "uuid": "99955907-9070-46f0-a200-9c7a0b9d74fe",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "speed.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s",
+          "short_id": "b19b017d6f453873"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 08 - wspnj",
+      "server": "66.90.104.42",
+      "server_port": 2083,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
       "type": "vmess",
-      "tag": "🇬🇧 英国 (United Kingdom) 13 - wspnj",
-      "server": "66.163.117.58",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
+      "tag": "🇬🇧 英国 (United Kingdom) 09 - wspnj",
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "google.com"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 14 - wspnj",
+      "tag": "🇬🇧 英国 (United Kingdom) 10 - wspnj",
+      "server": "46.250.250.149",
+      "server_port": 2053,
+      "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M",
+          "short_id": "9922313fffed1c63"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 11 - wspnj",
       "server": "31.76.88.10",
       "server_port": 443,
       "uuid": "03c48eca-e0aa-4e18-998c-1f53f1de293c",
@@ -169,54 +168,40 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 15 - wspnj",
-      "server": "tomaz1337shellbuy.vvzzkontaktezzvv.garden",
+      "tag": "🇬🇧 英国 (United Kingdom) 12 - wspnj",
+      "server": "193.163.203.170",
       "server_port": 443,
-      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "uuid": "11aabba0-5fd1-4f15-8068-74c1a466cefc",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "tomaz1337shellbuy.vvzzkontaktezzvv.garden",
+        "server_name": "yandex.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk",
-          "short_id": "2e124af254a65e7c"
+          "public_key": "GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o",
+          "short_id": "b28db60d77c50b4f"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 16 - wspnj",
-      "server": "46.250.250.149",
-      "server_port": 2053,
-      "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M",
-          "short_id": "9922313fffed1c63"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 13 - wspnj",
+      "server": "146.70.61.37",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 17 - wspnj",
-      "server": "2.27.205.59",
-      "server_port": 443,
-      "uuid": "c21631d5-36c9-4664-b575-97eca17456be",
-      "transport": {
-        "type": "ws"
-      }
+      "type": "vmess",
+      "tag": "🇬🇧 英国 (United Kingdom) 14 - wspnj",
+      "server": "66.163.117.58",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
     },
     {
       "type": "selector",
@@ -236,10 +221,7 @@
         "🇬🇧 英国 (United Kingdom) 11 - wspnj",
         "🇬🇧 英国 (United Kingdom) 12 - wspnj",
         "🇬🇧 英国 (United Kingdom) 13 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 14 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 15 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 16 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 17 - wspnj"
+        "🇬🇧 英国 (United Kingdom) 14 - wspnj"
       ]
     },
     {
@@ -259,10 +241,7 @@
         "🇬🇧 英国 (United Kingdom) 11 - wspnj",
         "🇬🇧 英国 (United Kingdom) 12 - wspnj",
         "🇬🇧 英国 (United Kingdom) 13 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 14 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 15 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 16 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 17 - wspnj"
+        "🇬🇧 英国 (United Kingdom) 14 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

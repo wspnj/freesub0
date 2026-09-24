@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - wspnj
-  server: 108.165.233.223
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2388e166-3890-33ae-f77e-efac00000001
-  tls: true
-  servername: netlivpn4813.ddhshhshs.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - wspnj
   server: 136.175.82.85
   port: 18775
   udp: true
@@ -32,7 +17,7 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: addons.mozilla.org
   client-fingerprint: ''
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - wspnj
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - wspnj
   server: 131.123.41.18
   port: 443
   udp: true
@@ -52,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01 - wspnj
   - 🇧🇬 保加利亚 (Bulgaria) 02 - wspnj
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - wspnj
   - 🇧🇬 保加利亚 (Bulgaria) 02 - wspnj
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - wspnj
 rules:
 - MATCH,PROXIES
