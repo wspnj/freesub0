@@ -13,7 +13,7 @@ proxies:
   tls: true
   servername: assets-fi.pleiades.codes
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
@@ -30,17 +30,13 @@ proxies:
   servername: www.google.com
   client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 03 - wspnj
-  server: est1313.ggisopi.su
-  port: 443
+  server: iq5ny.pleiades.codes
+  port: 8443
   udp: true
-  type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: est1313.ggisopi.su
-  client-fingerprint: chrome
+  type: hysteria2
+  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  sni: iq5ny.pleiades.codes
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 04 - wspnj
   server: me6.movieseryalirani.ir
   port: 57361
@@ -49,13 +45,6 @@ proxies:
   uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
   alterId: 0
   cipher: auto
-- name: 🇫🇮 芬兰 (Finland) 05 - wspnj
-  server: p1tun4.greewebservices.ir
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: cVvgP0Bz69hsErPBvqKbwQ
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,7 +54,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - wspnj
   - 🇫🇮 芬兰 (Finland) 03 - wspnj
   - 🇫🇮 芬兰 (Finland) 04 - wspnj
-  - 🇫🇮 芬兰 (Finland) 05 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,6 +63,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - wspnj
   - 🇫🇮 芬兰 (Finland) 03 - wspnj
   - 🇫🇮 芬兰 (Finland) 04 - wspnj
-  - 🇫🇮 芬兰 (Finland) 05 - wspnj
 rules:
 - MATCH,PROXIES

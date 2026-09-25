@@ -15,7 +15,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
@@ -44,24 +44,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 03 - wspnj",
-      "server": "est1313.ggisopi.su",
-      "server_port": 443,
-      "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
-      "flow": "xtls-rprx-vision",
+      "server": "iq5ny.pleiades.codes",
+      "server_port": 8443,
+      "password": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
       "tls": {
         "enabled": true,
-        "server_name": "est1313.ggisopi.su",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-          "short_id": ""
-        }
+        "server_name": "iq5ny.pleiades.codes",
+        "insecure": true
       }
     },
     {
@@ -73,14 +64,6 @@
       "security": "auto"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - wspnj",
-      "server": "p1tun4.greewebservices.ir",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "cVvgP0Bz69hsErPBvqKbwQ"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -88,8 +71,7 @@
         "🇫🇮 芬兰 (Finland) 01 - wspnj",
         "🇫🇮 芬兰 (Finland) 02 - wspnj",
         "🇫🇮 芬兰 (Finland) 03 - wspnj",
-        "🇫🇮 芬兰 (Finland) 04 - wspnj",
-        "🇫🇮 芬兰 (Finland) 05 - wspnj"
+        "🇫🇮 芬兰 (Finland) 04 - wspnj"
       ]
     },
     {
@@ -99,8 +81,7 @@
         "🇫🇮 芬兰 (Finland) 01 - wspnj",
         "🇫🇮 芬兰 (Finland) 02 - wspnj",
         "🇫🇮 芬兰 (Finland) 03 - wspnj",
-        "🇫🇮 芬兰 (Finland) 04 - wspnj",
-        "🇫🇮 芬兰 (Finland) 05 - wspnj"
+        "🇫🇮 芬兰 (Finland) 04 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
