@@ -5,6 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - wspnj
+  server: 89.223.95.77
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
+  server: 47.240.80.220
+  port: 2052
+  udp: true
+  type: trojan
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  sni: vpn.12169.top
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
   server: 34.92.145.185
   port: 443
   udp: true
@@ -15,35 +31,14 @@ proxies:
     public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
     short-id: 64b3f192fc0669e1
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
-  server: 141.11.238.17
-  port: 443
-  udp: true
-  type: vless
-  uuid: 596be9d9-0bb9-41bc-bff5-1adb483cbc32
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3xV5ZMHcMyfWXOAD_-FdX5M973QiqUfdCo8OgPcz_k8
-    short-id: 8eb5
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
+  sni: https%3a%2f%2ft.me%2fclashv8
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
   server: 202.146.222.29
@@ -51,15 +46,15 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.29
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
-  server: 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
-  password: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
-  sni: 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - wspnj
   server: mz.hkychina.com
@@ -70,28 +65,12 @@ proxies:
   sni: mz.hkychina.com
   skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - wspnj
-  server: 47.240.80.220
-  port: 2052
-  udp: true
-  type: trojan
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  sni: vpn.12169.top
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - wspnj
-  server: hk2.xiaoliyu.cyou
-  port: 4433
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - wspnj
   server: 119.246.1.143
   port: 443
   udp: true
   type: trojan
   password: BxceQaOe
-  sni: 119.246.1.143
+  sni: t.me%252fripaojiedian
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -106,8 +85,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 07 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 08 - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 09 - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 10 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -121,7 +98,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 07 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 08 - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 09 - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 10 - wspnj
 rules:
 - MATCH,PROXIES

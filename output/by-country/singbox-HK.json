@@ -4,8 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - wspnj",
+      "server": "89.223.95.77",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - wspnj",
+      "server": "47.240.80.220",
+      "server_port": 2052,
+      "password": "tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.12169.top",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - wspnj",
       "server": "34.92.145.185",
       "server_port": 443,
       "uuid": "75d38591-267e-4d89-98bc-164f25b50880",
@@ -14,7 +34,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -24,47 +44,14 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - wspnj",
-      "server": "141.11.238.17",
-      "server_port": 443,
-      "uuid": "596be9d9-0bb9-41bc-bff5-1adb483cbc32",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3xV5ZMHcMyfWXOAD_-FdX5M973QiqUfdCo8OgPcz_k8",
-          "short_id": "8eb5"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - wspnj",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - wspnj",
       "server": "202.146.222.89",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vk.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - wspnj",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/oneclickvpnkeys",
+        "server_name": "https%3a%2f%2ft.me%2fclashv8",
         "insecure": true
       }
     },
@@ -76,19 +63,19 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "202.146.222.29",
+        "server_name": "https://t.me/wangcai2🇨🇳",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 06 - wspnj",
-      "server": "193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com",
+      "server": "202.146.222.174",
       "server_port": 443,
-      "password": "c12f73f6-e8c7-11ed-9246-f23c9164ca5d",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com",
+        "server_name": "t.me",
         "insecure": true
       }
     },
@@ -107,36 +94,12 @@
     {
       "type": "trojan",
       "tag": "🇭🇰 中国香港 (Hong Kong) 08 - wspnj",
-      "server": "47.240.80.220",
-      "server_port": 2052,
-      "password": "tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.12169.top",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - wspnj",
-      "server": "hk2.xiaoliyu.cyou",
-      "server_port": 4433,
-      "password": "19f72087-4591-4d72-930b-2697078ec2be",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk2.xiaoliyu.cyou",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - wspnj",
       "server": "119.246.1.143",
       "server_port": 443,
       "password": "BxceQaOe",
       "tls": {
         "enabled": true,
-        "server_name": "119.246.1.143",
+        "server_name": "t.me%252fripaojiedian",
         "insecure": true
       }
     },
@@ -152,9 +115,7 @@
         "🇭🇰 中国香港 (Hong Kong) 05 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 06 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 07 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 08 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 09 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 10 - wspnj"
+        "🇭🇰 中国香港 (Hong Kong) 08 - wspnj"
       ]
     },
     {
@@ -168,9 +129,7 @@
         "🇭🇰 中国香港 (Hong Kong) 05 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 06 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 07 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 08 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 09 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 10 - wspnj"
+        "🇭🇰 中国香港 (Hong Kong) 08 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
