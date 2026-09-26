@@ -5,56 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - wspnj
-  server: 63.141.128.22
-  port: 443
+  server: 149.102.149.207
+  port: 80
   udp: true
-  type: vless
-  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
-  tls: true
-  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+  type: ss
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
 - name: 🇬🇧 英国 (United Kingdom) 02 - wspnj
-  server: 51.38.71.51
-  port: 2083
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
-- name: 🇬🇧 英国 (United Kingdom) 03 - wspnj
-  server: 149.102.132.184
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-- name: 🇬🇧 英国 (United Kingdom) 04 - wspnj
-  server: 149.102.149.207
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-- name: 🇬🇧 英国 (United Kingdom) 05 - wspnj
   server: 149.102.149.207
   port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: LXchLsIwtCeUAUgu
-- name: 🇬🇧 英国 (United Kingdom) 06 - wspnj
-  server: 158.173.221.214
-  port: 11001
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
-- name: 🇬🇧 英国 (United Kingdom) 07 - wspnj
-  server: 66.90.104.42
+- name: 🇬🇧 英国 (United Kingdom) 03 - wspnj
+  server: 66.90.104.43
   port: 2083
   udp: true
   type: vless
@@ -62,7 +27,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇬🇧 英国 (United Kingdom) 08 - wspnj
+- name: 🇬🇧 英国 (United Kingdom) 04 - wspnj
   server: 66.90.105.211
   port: 2083
   udp: true
@@ -71,51 +36,28 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇬🇧 英国 (United Kingdom) 09 - wspnj
+- name: 🇬🇧 英国 (United Kingdom) 05 - wspnj
   server: 141.98.101.181
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 10 - wspnj
-  server: 51.77.225.200
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
-- name: 🇬🇧 英国 (United Kingdom) 11 - wspnj
-  server: 57.129.132.223
+- name: 🇬🇧 英国 (United Kingdom) 06 - wspnj
+  server: 149.102.132.184
   port: 80
   udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 12 - wspnj
-  server: 188.166.146.136
-  port: 11186
-  udp: true
-  type: vless
-  uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
-  network: h2
-  h2-opts:
-    host: []
-    path: /
-- name: 🇬🇧 英国 (United Kingdom) 13 - wspnj
+  type: ss
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+- name: 🇬🇧 英国 (United Kingdom) 07 - wspnj
   server: 146.70.61.37
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 14 - wspnj
+- name: 🇬🇧 英国 (United Kingdom) 08 - wspnj
   server: 23.81.34.204
   port: 443
   udp: true
@@ -128,7 +70,28 @@ proxies:
     short-id: b19b017d6f453873
   servername: speed.cloudflare.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 15 - wspnj
+- name: 🇬🇧 英国 (United Kingdom) 09 - wspnj
+  server: 164.37.100.195
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
+    short-id: 2e124af254a65e7c
+  servername: tomaz1337shellbuy.vvzzkontaktezzvv.garden
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 10 - wspnj
+  server: se1.chromevpn.cc
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 02bd8b5a-170b-4a79-8e68-9cec710272c7
+  sni: se1.chromevpn.cc
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 11 - wspnj
   server: 46.250.250.149
   port: 2053
   udp: true
@@ -139,68 +102,23 @@ proxies:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
     short-id: 9922313fffed1c63
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 16 - wspnj
-  server: 57.129.130.10
-  port: 52014
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 12 - wspnj
+  server: 158.173.221.214
+  port: 11001
   udp: true
-  type: vless
-  uuid: bca740c6-6704-48ba-99da-7d7a31768d73
-  tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 17 - wspnj
-  server: se1.chromevpn.cc
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
+- name: 🇬🇧 英国 (United Kingdom) 13 - wspnj
+  server: fi2.chromevpn.cc
   port: 443
   udp: true
   type: hysteria2
   password: 02bd8b5a-170b-4a79-8e68-9cec710272c7
-  sni: se1.chromevpn.cc
+  sni: fi2.chromevpn.cc
   skip-cert-verify: false
-- name: 🇬🇧 英国 (United Kingdom) 18 - wspnj
-  server: 176.123.162.100
-  port: 9880
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabb
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇬🇧 英国 (United Kingdom) 19 - wspnj
-  server: 94.156.250.148
-  port: 7001
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇬🇧 英国 (United Kingdom) 20 - wspnj
-  server: 176.108.243.18
-  port: 9872
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc
-    short-id: aabb
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇬🇧 英国 (United Kingdom) 21 - wspnj
+- name: 🇬🇧 英国 (United Kingdom) 14 - wspnj
   server: 66.163.117.58
   port: 22324
   udp: true
@@ -227,13 +145,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 12 - wspnj
   - 🇬🇧 英国 (United Kingdom) 13 - wspnj
   - 🇬🇧 英国 (United Kingdom) 14 - wspnj
-  - 🇬🇧 英国 (United Kingdom) 15 - wspnj
-  - 🇬🇧 英国 (United Kingdom) 16 - wspnj
-  - 🇬🇧 英国 (United Kingdom) 17 - wspnj
-  - 🇬🇧 英国 (United Kingdom) 18 - wspnj
-  - 🇬🇧 英国 (United Kingdom) 19 - wspnj
-  - 🇬🇧 英国 (United Kingdom) 20 - wspnj
-  - 🇬🇧 英国 (United Kingdom) 21 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -253,12 +164,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 12 - wspnj
   - 🇬🇧 英国 (United Kingdom) 13 - wspnj
   - 🇬🇧 英国 (United Kingdom) 14 - wspnj
-  - 🇬🇧 英国 (United Kingdom) 15 - wspnj
-  - 🇬🇧 英国 (United Kingdom) 16 - wspnj
-  - 🇬🇧 英国 (United Kingdom) 17 - wspnj
-  - 🇬🇧 英国 (United Kingdom) 18 - wspnj
-  - 🇬🇧 英国 (United Kingdom) 19 - wspnj
-  - 🇬🇧 英国 (United Kingdom) 20 - wspnj
-  - 🇬🇧 英国 (United Kingdom) 21 - wspnj
 rules:
 - MATCH,PROXIES

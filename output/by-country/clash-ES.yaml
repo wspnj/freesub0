@@ -42,16 +42,8 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 05 - wspnj
-  server: 66.163.118.73
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇪🇸 西班牙 (Spain) 06 - wspnj
   server: esbe.vihodest.net
   port: 443
   udp: true
@@ -74,7 +66,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 03 - wspnj
   - 🇪🇸 西班牙 (Spain) 04 - wspnj
   - 🇪🇸 西班牙 (Spain) 05 - wspnj
-  - 🇪🇸 西班牙 (Spain) 06 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,6 +76,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 03 - wspnj
   - 🇪🇸 西班牙 (Spain) 04 - wspnj
   - 🇪🇸 西班牙 (Spain) 05 - wspnj
-  - 🇪🇸 西班牙 (Spain) 06 - wspnj
 rules:
 - MATCH,PROXIES
