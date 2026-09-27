@@ -4,26 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wspnj",
-      "server": "36.224.141.124",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+      "type": "vless",
+      "tag": "🇲🇩 摩尔多瓦 (Moldova) 01 - wspnj",
+      "server": "143.246.219.51",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wspnj"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wspnj"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
