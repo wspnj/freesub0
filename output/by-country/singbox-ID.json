@@ -4,16 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 01 - wspnj",
-      "server": "norw-1.failspace.top",
+      "type": "trojan",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - wspnj",
+      "server": "104.18.32.87",
       "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
+      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
       "tls": {
         "enabled": true,
-        "server_name": "norw-1.failspace.top",
+        "server_name": "id1.nathaya.web.id",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/trojan#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+        "headers": {
+          "Host": "id1.nathaya.web.id"
+        }
       }
     },
     {
@@ -21,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01 - wspnj"
+        "🇮🇩 印尼 (Indonesia) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01 - wspnj"
+        "🇮🇩 印尼 (Indonesia) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

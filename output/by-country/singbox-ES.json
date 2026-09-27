@@ -14,10 +14,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 02 - wspnj",
-      "server": "108.181.121.226",
+      "server": "140.174.184.5",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
+      "password": "qItG8SueYQcP"
     },
     {
       "type": "vless",
@@ -30,7 +30,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -53,19 +53,8 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/linkvws",
-        "headers": {
-          "Host": "mygptagent.org"
-        }
+        "path": "/linkvws"
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - wspnj",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
     },
     {
       "type": "selector",
@@ -75,8 +64,7 @@
         "🇪🇸 西班牙 (Spain) 01 - wspnj",
         "🇪🇸 西班牙 (Spain) 02 - wspnj",
         "🇪🇸 西班牙 (Spain) 03 - wspnj",
-        "🇪🇸 西班牙 (Spain) 04 - wspnj",
-        "🇪🇸 西班牙 (Spain) 05 - wspnj"
+        "🇪🇸 西班牙 (Spain) 04 - wspnj"
       ]
     },
     {
@@ -86,8 +74,7 @@
         "🇪🇸 西班牙 (Spain) 01 - wspnj",
         "🇪🇸 西班牙 (Spain) 02 - wspnj",
         "🇪🇸 西班牙 (Spain) 03 - wspnj",
-        "🇪🇸 西班牙 (Spain) 04 - wspnj",
-        "🇪🇸 西班牙 (Spain) 05 - wspnj"
+        "🇪🇸 西班牙 (Spain) 04 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
