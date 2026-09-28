@@ -33,28 +33,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - wspnj",
-      "server": "176.108.246.110",
-      "server_port": 9830,
-      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
-      }
+      "server": "51.20.143.248",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - wspnj",
+      "server": "51.20.72.15",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "selector",
@@ -63,7 +55,8 @@
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - wspnj",
         "🇸🇪 瑞典 (Sweden) 02 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 03 - wspnj"
+        "🇸🇪 瑞典 (Sweden) 03 - wspnj",
+        "🇸🇪 瑞典 (Sweden) 04 - wspnj"
       ]
     },
     {
@@ -72,7 +65,8 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - wspnj",
         "🇸🇪 瑞典 (Sweden) 02 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 03 - wspnj"
+        "🇸🇪 瑞典 (Sweden) 03 - wspnj",
+        "🇸🇪 瑞典 (Sweden) 04 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

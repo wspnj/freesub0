@@ -4,56 +4,34 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - wspnj",
-      "server": "172.64.155.209",
-      "server_port": 8443,
-      "uuid": "4ff70740-8c80-48ae-985f-2afe4924e908",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - wspnj",
+      "server": "f902df58-tmeqo0-u4zl7f-1jk6u.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "45bc25b2-1a10-11ed-91c0-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "pubb.clnahanpnln.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "pubb.clnahanpnln.workers.dev"
-        }
+        "server_name": "f902df58-tmeqo0-u4zl7f-1jk6u.hk3.hyhuawei.com",
+        "insecure": true
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj",
-      "server": "36.224.178.15",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 03 (家宽) - wspnj",
-      "server": "116.204.164.5",
-      "server_port": 7443,
-      "uuid": "2416ff70-cb17-4cdc-834d-a89c00261e01",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
         "enabled": true,
-        "server_name": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev",
-        "insecure": false,
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
         }
       }
     },
@@ -62,18 +40,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj",
-        "🇯🇵 日本 (Japan) 03 (家宽) - wspnj"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - wspnj",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj",
-        "🇯🇵 日本 (Japan) 03 (家宽) - wspnj"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - wspnj",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
