@@ -6,43 +6,56 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (家宽) - wspnj",
-      "server": "104.18.46.234",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls ",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "server": "172.64.155.209",
+      "server_port": 8443,
+      "uuid": "4ff70740-8c80-48ae-985f-2afe4924e908",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "pubb.clnahanpnln.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sync",
+        "headers": {
+          "Host": "pubb.clnahanpnln.workers.dev"
         }
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj",
+      "server": "36.224.178.15",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - wspnj",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+      "tag": "🇯🇵 日本 (Japan) 03 (家宽) - wspnj",
+      "server": "116.204.164.5",
+      "server_port": 7443,
+      "uuid": "2416ff70-cb17-4cdc-834d-a89c00261e01",
+      "tls": {
+        "enabled": true,
+        "server_name": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev"
+        }
+      }
     },
     {
       "type": "selector",
@@ -51,7 +64,7 @@
         "auto",
         "🇺🇸 美国 (United States) 01 (家宽) - wspnj",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - wspnj"
+        "🇯🇵 日本 (Japan) 03 (家宽) - wspnj"
       ]
     },
     {
@@ -60,7 +73,7 @@
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (家宽) - wspnj",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - wspnj"
+        "🇯🇵 日本 (Japan) 03 (家宽) - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
