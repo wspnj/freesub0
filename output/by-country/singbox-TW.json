@@ -19,29 +19,20 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/oneclickvpnkeys",
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3",
         "insecure": true
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - wspnj",
-      "server": "45.207.158.76",
-      "server_port": 9443,
-      "uuid": "966990b5-5868-4af1-add6-011c72b4a443",
-      "flow": "xtls-rprx-vision",
+      "server": "vpn-tw-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4",
-          "short_id": "b390142456517acc"
-        }
+        "server_name": "off",
+        "insecure": true
       }
     },
     {
@@ -64,18 +55,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - wspnj",
-      "server": "vpn-tw-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -83,8 +62,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - wspnj",
         "🇹🇼 中国台湾 (Taiwan) 02 - wspnj",
         "🇹🇼 中国台湾 (Taiwan) 03 - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 04 - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 05 - wspnj"
+        "🇹🇼 中国台湾 (Taiwan) 04 - wspnj"
       ]
     },
     {
@@ -94,8 +72,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - wspnj",
         "🇹🇼 中国台湾 (Taiwan) 02 - wspnj",
         "🇹🇼 中国台湾 (Taiwan) 03 - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 04 - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 05 - wspnj"
+        "🇹🇼 中国台湾 (Taiwan) 04 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

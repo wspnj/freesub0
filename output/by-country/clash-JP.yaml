@@ -5,27 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - wspnj
-  server: 149.22.87.240
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 02 - wspnj
   server: 149.22.87.204
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 03 - wspnj
-  server: 149.22.87.241
+- name: 🇯🇵 日本 (Japan) 02 - wspnj
+  server: 137.220.221.179
   port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 04 - wspnj
+  type: vless
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- name: 🇯🇵 日本 (Japan) 03 - wspnj
   server: 45.32.57.118
   port: 4433
   udp: true
@@ -33,68 +25,28 @@ proxies:
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   alterId: 0
   cipher: auto
-- name: 🇯🇵 日本 (Japan) 05 - wspnj
-  server: 137.220.221.179
-  port: 443
-  udp: true
-  type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 🇯🇵 日本 (Japan) 06 - wspnj
-  server: vp3.yysyy.online
+- name: 🇯🇵 日本 (Japan) 04 - wspnj
+  server: open.w2m.ink
   port: 443
   udp: true
   type: hysteria2
-  password: 96ab5cd282733fd4c312a61f972f330a
-  sni: vp3.yysyy.online
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 07 - wspnj
-  server: 45.202.254.20
-  port: 9443
-  udp: true
-  type: vless
-  uuid: 966990b5-5868-4af1-add6-011c72b4a443
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 08 - wspnj
-  server: 3.114.220.22
-  port: 19645
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 09 - wspnj
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: www.bing.com
+  password: my_super_password_123
+  sni: open.w2m.ink
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 10 - wspnj
-  server: 43.133.11.187
-  port: 443
+- name: 🇯🇵 日本 (Japan) 05 - wspnj
+  server: 64.176.51.214
+  port: 23462
   udp: true
-  type: vless
-  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
-    short-id: 913e9b95fbc71278
-  servername: cloudflare.com
-  client-fingerprint: edge
-- name: 🇯🇵 日本 (Japan) 11 - wspnj
+  type: vmess
+  uuid: 95c5abc1-018d-4628-89a7-25ab9c62ab74
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /a15206
+    headers:
+      Host: 64.176.51.214
+- name: 🇯🇵 日本 (Japan) 06 - wspnj
   server: 3.114.220.22
   port: 18007
   udp: true
@@ -106,51 +58,40 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 12 - wspnj
-  server: 84.247.155.196
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 07 - wspnj
+  server: 168.138.43.75
   port: 80
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 13 - wspnj
-  server: 154.31.114.248
-  port: 50159
-  udp: true
-  type: vless
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 14 - wspnj
-  server: open.w2m.ink
-  port: 443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.w2m.ink
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 15 - wspnj
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 16 - wspnj
-  server: open.w2m.ink
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: 🇯🇵 日本 (Japan) 08 - wspnj
+  server: open.2ml.cc.cd
   port: 5443
   udp: true
   type: hysteria2
   password: my_super_password_123
-  sni: open.w2m.ink
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 17 - wspnj
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 09 - wspnj
+  server: 3.114.220.22
+  port: 10583
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 10 - wspnj
   server: 18.183.215.124
   port: 28573
   udp: true
@@ -163,30 +104,28 @@ proxies:
     short-id: 03653bc03be10c97
   servername: www.sony.com
   client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 18 - wspnj
-  server: open.2ml.bid
-  port: 443
+- name: 🇯🇵 日本 (Japan) 11 - wspnj
+  server: 154.31.114.248
+  port: 50159
+  udp: true
+  type: vless
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 12 - wspnj
+  server: open.w2m.ink
+  port: 5443
   udp: true
   type: hysteria2
   password: my_super_password_123
-  sni: open.2ml.bid
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 19 - wspnj
-  server: 172.67.156.147
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
+  sni: open.w2m.ink
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 20 - wspnj
+- name: 🇯🇵 日本 (Japan) 13 - wspnj
   server: 45.202.255.24
   port: 8890
   udp: true
@@ -200,9 +139,9 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇯🇵 日本 (Japan) 21 - wspnj
+- name: 🇯🇵 日本 (Japan) 14 - wspnj
   server: 3.114.220.22
-  port: 10583
+  port: 19645
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -212,16 +151,28 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 22 - wspnj
-  server: open.2ml.bid
-  port: 5443
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 15 - wspnj
+  server: 43.133.11.187
+  port: 443
   udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.2ml.bid
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 23 - wspnj
+  type: vless
+  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
+    short-id: 913e9b95fbc71278
+  servername: cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 16 - wspnj
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 17 - wspnj
   server: 13.230.30.102
   port: 38830
   udp: true
@@ -234,14 +185,91 @@ proxies:
     short-id: ac12ed79
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 24 - wspnj
-  server: open.2ml.cc.cd
+- name: 🇯🇵 日本 (Japan) 18 - wspnj
+  server: vpn-hk-004.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-hk-004.fastervpn.world
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 19 - wspnj
+  server: 104.18.153.10
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 20 - wspnj
+  server: 43.167.208.94
+  port: 443
+  udp: true
+  type: hysteria2
+  password: RQBXe4kpsRant_2u1PzdneBOPuCSwUSI
+  sni: 43.167.208.94#馃嚡馃嚨|jp|@wxgqlfx|97
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 21 - wspnj
+  server: open.2ml.bid
   port: 5443
   udp: true
   type: hysteria2
   password: my_super_password_123
-  sni: 127.0.0.1
+  sni: open.2ml.bid
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 22 - wspnj
+  server: cdn.sfacg.uk
+  port: 2083
+  udp: true
+  type: vmess
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: or3.sfacg.uk
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
+- name: 🇯🇵 日本 (Japan) 23 - wspnj
+  server: vp3.yysyy.online
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 96ab5cd282733fd4c312a61f972f330a
+  sni: vp3.yysyy.online
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 24 - wspnj
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: 138.3.208.26
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 25 - wspnj
+  server: aa.ccmusic.jp
+  port: 443
+  udp: true
+  type: trojan
+  password: tsuchiya
+  sni: aa.ccmusic.jp
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 26 - wspnj
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
 proxy-groups:
 - name: PROXIES
   type: select
@@ -271,6 +299,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 22 - wspnj
   - 🇯🇵 日本 (Japan) 23 - wspnj
   - 🇯🇵 日本 (Japan) 24 - wspnj
+  - 🇯🇵 日本 (Japan) 25 - wspnj
+  - 🇯🇵 日本 (Japan) 26 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -300,5 +330,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 22 - wspnj
   - 🇯🇵 日本 (Japan) 23 - wspnj
   - 🇯🇵 日本 (Japan) 24 - wspnj
+  - 🇯🇵 日本 (Japan) 25 - wspnj
+  - 🇯🇵 日本 (Japan) 26 - wspnj
 rules:
 - MATCH,PROXIES
