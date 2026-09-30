@@ -24,7 +24,7 @@
       "tls": {
         "enabled": true,
         "server_name": "grape-test-italy.dynuddns.net",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -42,6 +42,18 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 04 - wspnj",
+      "server": "185.156.44.99",
+      "server_port": 443,
+      "password": "gf1:gfhysteria2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - wspnj",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -56,30 +68,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - wspnj",
-      "server": "185.156.44.99",
-      "server_port": 443,
-      "password": "gf1:gfhysteria2024",
-      "tls": {
-        "enabled": true,
-        "server_name": "google.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - wspnj",
-      "server": "38.180.35.145",
-      "server_port": 443,
-      "password": "600421cf-11d7-429f-a65b-c30397f1bc03",
-      "tls": {
-        "enabled": true,
-        "server_name": "bu2.freeguard.org",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -88,8 +76,7 @@
         "🇷🇴 罗马尼亚 (Romania) 02 - wspnj",
         "🇷🇴 罗马尼亚 (Romania) 03 - wspnj",
         "🇷🇴 罗马尼亚 (Romania) 04 - wspnj",
-        "🇷🇴 罗马尼亚 (Romania) 05 - wspnj",
-        "🇷🇴 罗马尼亚 (Romania) 06 - wspnj"
+        "🇷🇴 罗马尼亚 (Romania) 05 - wspnj"
       ]
     },
     {
@@ -100,8 +87,7 @@
         "🇷🇴 罗马尼亚 (Romania) 02 - wspnj",
         "🇷🇴 罗马尼亚 (Romania) 03 - wspnj",
         "🇷🇴 罗马尼亚 (Romania) 04 - wspnj",
-        "🇷🇴 罗马尼亚 (Romania) 05 - wspnj",
-        "🇷🇴 罗马尼亚 (Romania) 06 - wspnj"
+        "🇷🇴 罗马尼亚 (Romania) 05 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
