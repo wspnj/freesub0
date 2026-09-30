@@ -5,28 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - wspnj
-  server: 162.159.48.32
-  port: 2082
+  server: 199.232.78.160
+  port: 443
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: trojan
+  password: mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    path: /---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/D-e1i@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN/---@GHOFLSHCAN---@GHOFLSHCAN
 - name: 🇷🇺 俄罗斯 (Russia) 02 - wspnj
-  server: 162.159.43.187
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 03 - wspnj
   server: 188.114.97.6
   port: 2095
   udp: true
@@ -37,9 +26,9 @@ proxies:
     path: /?ed=2560
     headers:
       Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 04 - wspnj
-  server: 172.64.42.85
-  port: 2052
+- name: 🇷🇺 俄罗斯 (Russia) 03 - wspnj
+  server: 104.18.47.113
+  port: 8880
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -48,45 +37,7 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 05 - wspnj
-  server: 172.64.145.202
-  port: 2083
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: newwk1.f1w.de5.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newwk1.f1w.de5.net
-- name: 🇷🇺 俄罗斯 (Russia) 06 - wspnj
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw=
-- name: 🇷🇺 俄罗斯 (Russia) 07 - wspnj
-  server: 138.124.254.232
-  port: 443
-  udp: true
-  type: hysteria2
-  password: fba73f98-777a-42a6-83c0-7d1f6f070e8d
-  sni: crt.dodopanel.biz
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 08 - wspnj
-  server: 91.240.86.70
-  port: 22443
-  udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 09 - wspnj
+- name: 🇷🇺 俄罗斯 (Russia) 04 - wspnj
   server: china.letsconnectpoint.com
   port: 443
   udp: true
@@ -99,21 +50,21 @@ proxies:
     short-id: 3b74d85e
   servername: china.letsconnectpoint.com
   client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 10 - wspnj
-  server: 217.19.122.200
-  port: 443
+- name: 🇷🇺 俄罗斯 (Russia) 05 - wspnj
+  server: 130.49.189.158
+  port: 43558
   udp: true
-  type: vless
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  tls: true
-  servername: fbsv6.guardora.pro
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw=
+- name: 🇷🇺 俄罗斯 (Russia) 06 - wspnj
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: hy.quattro-tech.ru
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
 proxy-groups:
 - name: PROXIES
   type: select
@@ -125,10 +76,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 05 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 06 - wspnj
-  - 🇷🇺 俄罗斯 (Russia) 07 - wspnj
-  - 🇷🇺 俄罗斯 (Russia) 08 - wspnj
-  - 🇷🇺 俄罗斯 (Russia) 09 - wspnj
-  - 🇷🇺 俄罗斯 (Russia) 10 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -140,9 +87,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 05 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 06 - wspnj
-  - 🇷🇺 俄罗斯 (Russia) 07 - wspnj
-  - 🇷🇺 俄罗斯 (Russia) 08 - wspnj
-  - 🇷🇺 俄罗斯 (Russia) 09 - wspnj
-  - 🇷🇺 俄罗斯 (Russia) 10 - wspnj
 rules:
 - MATCH,PROXIES
