@@ -14,7 +14,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -26,9 +26,9 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - wspnj",
-      "server": "5.253.42.164",
+      "server": "5.253.28.224",
       "server_port": 40443,
-      "uuid": "e99ba96d-dec8-42eb-be53-19e71eef7cab",
+      "uuid": "af5eac96-e478-488a-bc8c-45269d7e8847",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -56,7 +56,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -76,7 +76,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -92,9 +92,9 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 05 - wspnj",
-      "server": "india.letsconnectpoint.com",
+      "server": "5.253.42.159",
       "server_port": 443,
-      "uuid": "914f3806-07a1-4158-9624-e183de065a38",
+      "uuid": "a368752a-32fc-42f3-980a-6b049218b23f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
