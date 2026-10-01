@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - wspnj
-  server: 199.232.78.170
-  port: 443
-  udp: true
-  type: trojan
-  password: mitivpn
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇷🇺 俄罗斯 (Russia) 02 - wspnj
   server: 194.113.235.66
   port: 443
   udp: true
@@ -28,7 +17,7 @@ proxies:
     short-id: 9e4eced6e98ed4d4
   servername: github.com
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 03 - wspnj
+- name: 🇷🇺 俄罗斯 (Russia) 02 - wspnj
   server: els.mangshe.xyz
   port: 2060
   udp: true
@@ -36,7 +25,7 @@ proxies:
   password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   sni: els.mangshe.xyz
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - wspnj
+- name: 🇷🇺 俄罗斯 (Russia) 03 - wspnj
   server: 91.240.86.70
   port: 22443
   udp: true
@@ -44,30 +33,18 @@ proxies:
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: 91.240.86.70
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - wspnj
-  server: china.letsconnectpoint.com
+- name: 🇷🇺 俄罗斯 (Russia) 04 - wspnj
+  server: 139.28.168.201
   port: 443
   udp: true
   type: vless
-  uuid: 914f3806-07a1-4158-9624-e183de065a38
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
     short-id: 3b74d85e
   servername: china.letsconnectpoint.com
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 06 - wspnj
-  server: 45.12.75.242
-  port: 26424
-  udp: true
-  type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -78,8 +55,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 03 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 04 - wspnj
-  - 🇷🇺 俄罗斯 (Russia) 05 - wspnj
-  - 🇷🇺 俄罗斯 (Russia) 06 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,7 +64,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 03 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 04 - wspnj
-  - 🇷🇺 俄罗斯 (Russia) 05 - wspnj
-  - 🇷🇺 俄罗斯 (Russia) 06 - wspnj
 rules:
 - MATCH,PROXIES

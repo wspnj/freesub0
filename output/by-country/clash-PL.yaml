@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - wspnj
+  server: 149.86.227.16
+  port: 443
+  udp: true
+  type: vless
+  uuid: 733b2a78-9306-4bbc-a3a0-b8bfb55f430a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: JaP4bhvIMW-l7T0_RkLra59DeBYI6W9XemKa8MyRPSY
+    short-id: 6c6082a2223c1d03
+  servername: pmv.raketa-balance.com
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 02 - wspnj
   server: 95.85.253.202
   port: 443
   udp: true
@@ -16,19 +29,6 @@ proxies:
     public-key: z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU
   servername: pl0001.kubservice.icu
   client-fingerprint: qq
-- name: 🇵🇱 波兰 (Poland) 02 - wspnj
-  server: 95.81.75.9
-  port: 57160
-  udp: true
-  type: vless
-  uuid: 68ad9a6d-2463-4c31-92a7-31547b9d4783
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Tbu7sr_pvHngDWFIa0ApL5UL9vEGxlHESd9g53KQehw
-    short-id: 77b5
-  servername: funpay.com
-  client-fingerprint: ''
 - name: 🇵🇱 波兰 (Poland) 03 - wspnj
   server: 144.31.131.38
   port: 443
@@ -43,27 +43,14 @@ proxies:
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 04 - wspnj
-  server: 149.86.227.16
-  port: 443
-  udp: true
-  type: vless
-  uuid: 733b2a78-9306-4bbc-a3a0-b8bfb55f430a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JaP4bhvIMW-l7T0_RkLra59DeBYI6W9XemKa8MyRPSY
-    short-id: 6c6082a2223c1d03
-  servername: pmv.raketa-balance.com
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 05 - wspnj
   server: cheerful-swan.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 06 - wspnj
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 05 - wspnj
   server: admin.wwwinternetvideo.click
   port: 443
   udp: true
@@ -71,6 +58,18 @@ proxies:
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
   skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 06 - wspnj
+  server: bober.nightfall.best
+  port: 443
+  udp: true
+  type: vless
+  uuid: af2bf319-ba88-4fec-8317-2b6a8cee96d1
+  tls: true
+  servername: bober.nightfall.best
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: rdamrwhuacfl
 - name: 🇵🇱 波兰 (Poland) 07 - wspnj
   server: pl-waw.dontblockmepls.com
   port: 2063
@@ -84,13 +83,18 @@ proxies:
   servername: rusbid.de
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 08 - wspnj
-  server: scrap.halyvanedorogo.ru
-  port: 35076
+  server: 188.114.96.19
+  port: 80
   udp: true
-  type: hysteria2
-  password: b4c8ee9caa74b7ba0a61
-  sni: scrap.halyvanedorogo.ru
-  skip-cert-verify: true
+  type: vmess
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 09 - wspnj
   server: 83.168.95.145
   port: 443
@@ -105,18 +109,16 @@ proxies:
   servername: google.com
   client-fingerprint: ''
 - name: 🇵🇱 波兰 (Poland) 10 - wspnj
-  server: 188.114.96.19
-  port: 80
+  server: 144.31.2.33
+  port: 443
   udp: true
-  type: vmess
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl3.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
