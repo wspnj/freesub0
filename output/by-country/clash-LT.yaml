@@ -5,23 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - wspnj
-  server: 195.238.126.20
-  port: 9008
+  server: 195.238.126.84
+  port: 9039
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
+  password: qYEN5HX4JKeVCdEC
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - wspnj
+  server: 195.238.126.20
+  port: 9012
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: xaupMUvhptwxdDUg
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - wspnj
+  server: 195.238.126.20
+  port: 9068
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇹 立陶宛 (Lithuania) 01 - wspnj
+  - 🇱🇹 立陶宛 (Lithuania) 02 - wspnj
+  - 🇱🇹 立陶宛 (Lithuania) 03 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇹 立陶宛 (Lithuania) 01 - wspnj
+  - 🇱🇹 立陶宛 (Lithuania) 02 - wspnj
+  - 🇱🇹 立陶宛 (Lithuania) 03 - wspnj
 rules:
 - MATCH,PROXIES
