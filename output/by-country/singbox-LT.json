@@ -6,44 +6,24 @@
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - wspnj",
-      "server": "195.238.126.84",
-      "server_port": 9039,
-      "method": "aes-256-cfb",
-      "password": "qYEN5HX4JKeVCdEC"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - wspnj",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9001,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - wspnj",
-      "server": "195.238.126.20",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
+      "password": "UkXRsXvR6buDMG2Y"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 - wspnj",
-        "🇱🇹 立陶宛 (Lithuania) 02 - wspnj",
-        "🇱🇹 立陶宛 (Lithuania) 03 - wspnj"
+        "🇱🇹 立陶宛 (Lithuania) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 - wspnj",
-        "🇱🇹 立陶宛 (Lithuania) 02 - wspnj",
-        "🇱🇹 立陶宛 (Lithuania) 03 - wspnj"
+        "🇱🇹 立陶宛 (Lithuania) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

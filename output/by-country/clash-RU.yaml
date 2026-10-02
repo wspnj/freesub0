@@ -5,64 +5,74 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - wspnj
-  server: 104.21.19.76
-  port: 2096
+  server: 130.49.189.158
+  port: 43558
   udp: true
-  type: vless
-  uuid: fee1da7e-a258-4456-8e5e-8ecf6518ed12
-  tls: true
-  servername: ez-82c7e7.aBoBaBA.WorkeRS.dEv
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: ez-82c7e7.abobaba.workers.dev
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw=
 - name: 🇷🇺 俄罗斯 (Russia) 02 - wspnj
-  server: 162.159.43.187
-  port: 2052
+  server: 31.76.34.216
+  port: 443
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  uuid: 94def50e-5f3c-4e4c-9719-3325f42d2131
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00
+  servername: ru-c-1.minzt.su
+  client-fingerprint: safari
 - name: 🇷🇺 俄罗斯 (Russia) 03 - wspnj
-  server: 91.240.86.70
-  port: 22443
-  udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: 91.240.86.70
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - wspnj
   server: 139.28.168.201
   port: 443
   udp: true
   type: vless
-  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  uuid: 914f3806-07a1-4158-9624-e183de065a38
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
     short-id: 3b74d85e
   servername: china.letsconnectpoint.com
-  client-fingerprint: random
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 04 - wspnj
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: itsallproxy.quattro-tech.ru
+  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 05 - wspnj
-  server: 45.12.75.242
-  port: 26424
+  server: 217.19.122.200
+  port: 443
   udp: true
   type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  tls: true
+  servername: fbsv6.guardora.pro
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 06 - wspnj
+  server: 45.132.177.96
+  port: 9889
+  udp: true
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
   tls: true
   reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: chrome
+    public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
+  servername: dl.google.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,6 +83,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 04 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 05 - wspnj
+  - 🇷🇺 俄罗斯 (Russia) 06 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,5 +94,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 04 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 05 - wspnj
+  - 🇷🇺 俄罗斯 (Russia) 06 - wspnj
 rules:
 - MATCH,PROXIES

@@ -5,6 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - wspnj
+  server: 51.20.86.152
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 02 - wspnj
+  server: 13.48.177.148
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 03 - wspnj
+  server: 13.48.104.64
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 04 - wspnj
+  server: 51.20.96.231
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 05 - wspnj
   server: 5.157.10.148
   port: 443
   udp: true
@@ -23,11 +51,19 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - wspnj
+  - 🇸🇪 瑞典 (Sweden) 02 - wspnj
+  - 🇸🇪 瑞典 (Sweden) 03 - wspnj
+  - 🇸🇪 瑞典 (Sweden) 04 - wspnj
+  - 🇸🇪 瑞典 (Sweden) 05 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - wspnj
+  - 🇸🇪 瑞典 (Sweden) 02 - wspnj
+  - 🇸🇪 瑞典 (Sweden) 03 - wspnj
+  - 🇸🇪 瑞典 (Sweden) 04 - wspnj
+  - 🇸🇪 瑞典 (Sweden) 05 - wspnj
 rules:
 - MATCH,PROXIES
