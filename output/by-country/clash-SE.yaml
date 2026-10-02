@@ -5,34 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - wspnj
-  server: 51.20.86.152
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 02 - wspnj
   server: 13.48.177.148
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 02 - wspnj
+  server: 143.246.196.207
+  port: 443
+  udp: true
+  type: vless
+  uuid: ac0c2945-b758-11f1-8181-54db13ea7d40
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
+  servername: www.blocket.se
+  client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 03 - wspnj
-  server: 13.48.104.64
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 04 - wspnj
-  server: 51.20.96.231
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 05 - wspnj
   server: 5.157.10.148
   port: 443
   udp: true
@@ -53,8 +44,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - wspnj
   - 🇸🇪 瑞典 (Sweden) 02 - wspnj
   - 🇸🇪 瑞典 (Sweden) 03 - wspnj
-  - 🇸🇪 瑞典 (Sweden) 04 - wspnj
-  - 🇸🇪 瑞典 (Sweden) 05 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,7 +52,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - wspnj
   - 🇸🇪 瑞典 (Sweden) 02 - wspnj
   - 🇸🇪 瑞典 (Sweden) 03 - wspnj
-  - 🇸🇪 瑞典 (Sweden) 04 - wspnj
-  - 🇸🇪 瑞典 (Sweden) 05 - wspnj
 rules:
 - MATCH,PROXIES
