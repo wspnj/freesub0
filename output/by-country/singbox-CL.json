@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇨🇱 智利 (Chile) 01 - wspnj",
+      "server": "64.176.2.21",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "xBStBEVqvGwHPocc"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 02 - wspnj",
       "server": "platform102.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -19,58 +27,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 02 - wspnj",
-      "server": "platform107.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform107",
-        "headers": {
-          "Host": "platform107.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 03 - wspnj",
-      "server": "104.26.6.89",
-      "server_port": 443,
-      "uuid": "5ec3a039-ea63-4bf9-a848-a65c9bfa66f5",
-      "tls": {
-        "enabled": true,
-        "server_name": "gb-8981.shenzogmbh.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/v1",
-        "headers": {
-          "Host": "gb-8981.shenzogmbh.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 04 - wspnj",
-      "server": "platform109.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform109",
-        "headers": {
-          "Host": "platform109.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 05 - wspnj",
       "server": "platform106.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -84,7 +41,63 @@
     },
     {
       "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 04 - wspnj",
+      "server": "platform115.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform115",
+        "headers": {
+          "Host": "platform115.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 05 - wspnj",
+      "server": "platform109.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform109",
+        "headers": {
+          "Host": "platform109.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 06 - wspnj",
+      "server": "platform101.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform101",
+        "headers": {
+          "Host": "platform101.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 07 - wspnj",
+      "server": "platform118.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform118",
+        "headers": {
+          "Host": "platform118.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 08 - wspnj",
       "server": "platform103.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -98,25 +111,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 07 - wspnj",
-      "server": "platform101.golnamakcert.top",
+      "tag": "🇨🇱 智利 (Chile) 09 - wspnj",
+      "server": "platform107.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform101",
+        "path": "/platform107",
         "headers": {
-          "Host": "platform101.halalkhor.info"
+          "Host": "platform107.halalkhor.info"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇱 智利 (Chile) 08 - wspnj",
-      "server": "64.176.2.21",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "xBStBEVqvGwHPocc"
     },
     {
       "type": "selector",
@@ -130,7 +135,8 @@
         "🇨🇱 智利 (Chile) 05 - wspnj",
         "🇨🇱 智利 (Chile) 06 - wspnj",
         "🇨🇱 智利 (Chile) 07 - wspnj",
-        "🇨🇱 智利 (Chile) 08 - wspnj"
+        "🇨🇱 智利 (Chile) 08 - wspnj",
+        "🇨🇱 智利 (Chile) 09 - wspnj"
       ]
     },
     {
@@ -144,7 +150,8 @@
         "🇨🇱 智利 (Chile) 05 - wspnj",
         "🇨🇱 智利 (Chile) 06 - wspnj",
         "🇨🇱 智利 (Chile) 07 - wspnj",
-        "🇨🇱 智利 (Chile) 08 - wspnj"
+        "🇨🇱 智利 (Chile) 08 - wspnj",
+        "🇨🇱 智利 (Chile) 09 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

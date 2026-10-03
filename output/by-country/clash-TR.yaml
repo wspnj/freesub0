@@ -5,27 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - wspnj
-  server: 178.83.46.216
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇷 土耳其 (Turkey) 02 - wspnj
-  server: 155.103.70.53
-  port: 30303
-  udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇹🇷 土耳其 (Turkey) 03 - wspnj
   server: 176.96.131.251
   port: 1280
   udp: true
@@ -40,15 +19,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - wspnj
-  - 🇹🇷 土耳其 (Turkey) 02 - wspnj
-  - 🇹🇷 土耳其 (Turkey) 03 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - wspnj
-  - 🇹🇷 土耳其 (Turkey) 02 - wspnj
-  - 🇹🇷 土耳其 (Turkey) 03 - wspnj
 rules:
 - MATCH,PROXIES

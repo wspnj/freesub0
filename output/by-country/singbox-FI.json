@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "fi01.clgate.network",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -44,21 +44,23 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 04 - wspnj",
-      "server": "81.94.148.120",
-      "server_port": 7449,
-      "uuid": "2690c11f-7258-43fe-aeb9-d90f93a3c317",
-      "flow": "xtls-rprx-vision",
+      "server": "94.143.231.146",
+      "server_port": 443,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
       "tls": {
         "enabled": true,
-        "server_name": "passport.yandex.ru",
+        "server_name": "sub.merky.top",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "blW-TdkBvKRn4-lkM64Cn2QgfOqjCRYRQ9upE6RPt3c",
-          "short_id": "c0c41dc21cf7c18e"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/merky-connect/de6/",
+        "headers": {
+          "Host": "sub.merky.top"
         }
       }
     },

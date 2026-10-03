@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇭 菲律宾 (Philippines) 01 - wspnj
-  server: 149.104.109.252
-  port: 8882
+- name: 🇮🇪 爱尔兰 (Ireland) 01 - wspnj
+  server: 3.255.76.207
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
+  type: trojan
+  password: Trojan@82164024
+  sni: ie.tronsg.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇭 菲律宾 (Philippines) 01 - wspnj
+  - 🇮🇪 爱尔兰 (Ireland) 01 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇭 菲律宾 (Philippines) 01 - wspnj
+  - 🇮🇪 爱尔兰 (Ireland) 01 - wspnj
 rules:
 - MATCH,PROXIES
