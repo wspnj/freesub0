@@ -15,38 +15,47 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - wspnj",
-      "server": "222.167.245.240",
-      "server_port": 28015,
-      "password": "e19b5aa3-16c9-435a-8bc9-76f2f6ddff43",
-      "tls": {
-        "enabled": true,
-        "server_name": "api-test-udp-traffic.kaneki.cfd",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 03 - wspnj",
-      "server": "217.60.33.215",
+      "server": "31.77.59.163",
       "server_port": 443,
-      "password": "865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01",
+      "uuid": "ff35ca20-2304-4b3a-80e5-2c82953cf2ce",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "streambox.wwwinternetvideo.click",
-        "insecure": false
+        "server_name": "pl37.mech-pro.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jbiddtGRgeBvlkjbuA3aU-WPjKgEX87tOVh1mFfvOUI",
+          "short_id": "16e0f049"
+        }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 04 - wspnj",
+      "tag": "🇵🇱 波兰 (Poland) 03 - wspnj",
       "server": "202.78.163.237",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
         "server_name": "cheerful-swan.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 04 - wspnj",
+      "server": "222.167.245.240",
+      "server_port": 28015,
+      "password": "e19b5aa3-16c9-435a-8bc9-76f2f6ddff43",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-test-udp-traffic.kaneki.cfd",
         "insecure": false
       }
     },
@@ -80,54 +89,12 @@
       "tls": {
         "enabled": true,
         "server_name": "admin.wwwinternetvideo.click",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 07 - wspnj",
-      "server": "95.85.227.241",
-      "server_port": 443,
-      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "proxy3d.h1guro.ovh",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dlX12huNd8CRSGgKGCwi1GiCLFtmRxY9b7ywKCIyWXo",
-          "short_id": "25934afbedc65791"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 08 - wspnj",
-      "server": "83.168.95.145",
-      "server_port": 443,
-      "uuid": "82f37352-85e5-49bb-9edc-a80997065659",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg",
-          "short_id": "d345ad4657adeef9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 09 - wspnj",
       "server": "144.31.4.193",
       "server_port": 444,
       "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
@@ -159,9 +126,7 @@
         "🇵🇱 波兰 (Poland) 04 - wspnj",
         "🇵🇱 波兰 (Poland) 05 - wspnj",
         "🇵🇱 波兰 (Poland) 06 - wspnj",
-        "🇵🇱 波兰 (Poland) 07 - wspnj",
-        "🇵🇱 波兰 (Poland) 08 - wspnj",
-        "🇵🇱 波兰 (Poland) 09 - wspnj"
+        "🇵🇱 波兰 (Poland) 07 - wspnj"
       ]
     },
     {
@@ -174,9 +139,7 @@
         "🇵🇱 波兰 (Poland) 04 - wspnj",
         "🇵🇱 波兰 (Poland) 05 - wspnj",
         "🇵🇱 波兰 (Poland) 06 - wspnj",
-        "🇵🇱 波兰 (Poland) 07 - wspnj",
-        "🇵🇱 波兰 (Poland) 08 - wspnj",
-        "🇵🇱 波兰 (Poland) 09 - wspnj"
+        "🇵🇱 波兰 (Poland) 07 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -15,6 +15,14 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02 - wspnj
+  server: 45.192.12.93
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇦🇪 阿联酋 (UAE) 03 - wspnj
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -23,6 +31,20 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - wspnj
+  server: node-nl.shtormvpn.shop
+  port: 443
+  udp: true
+  type: vless
+  uuid: cc4d63e2-3a86-49b3-9598-328bbe93e56c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: yI6maXxTQ8zRHg39X8YMQtKW-IVfNIn0_OCUIQKmcXw
+  servername: google.com
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -30,6 +52,8 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - wspnj
   - 🇦🇪 阿联酋 (UAE) 02 - wspnj
+  - 🇦🇪 阿联酋 (UAE) 03 - wspnj
+  - 🇦🇪 阿联酋 (UAE) 04 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -37,5 +61,7 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - wspnj
   - 🇦🇪 阿联酋 (UAE) 02 - wspnj
+  - 🇦🇪 阿联酋 (UAE) 03 - wspnj
+  - 🇦🇪 阿联酋 (UAE) 04 - wspnj
 rules:
 - MATCH,PROXIES

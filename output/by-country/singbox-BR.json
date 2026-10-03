@@ -5,10 +5,10 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01 - wspnj",
-      "server": "35.197.168.118",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - wspnj",
+      "server": "35.247.243.231",
       "server_port": 443,
-      "uuid": "4f865f35-cf47-4e7f-a7e6-8882511a1b36",
+      "uuid": "5e517b94-e207-47ee-be3c-3020a57594e8",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
@@ -18,21 +18,26 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4",
-          "short_id": "8a7d5e0248cdb1b1"
+          "public_key": "pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs",
+          "short_id": "b62a4da6cd1c4dd6"
         }
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - wspnj",
-      "server": "au-1.tr202613.com",
+      "type": "vmess",
+      "tag": "🇧🇷 巴西 (Brazil) 02 - wspnj",
+      "server": "89.39.161.157",
       "server_port": 443,
-      "password": "2ni2H9zUKdDCjREL8Z",
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "au-1.tr202613.com",
-        "insecure": true
+        "server_name": "aksai.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws"
       }
     },
     {
@@ -40,16 +45,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - wspnj",
-        "🇦🇺 澳大利亚 (Australia) 02 - wspnj"
+        "🇧🇷 巴西 (Brazil) 01 - wspnj",
+        "🇧🇷 巴西 (Brazil) 02 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - wspnj",
-        "🇦🇺 澳大利亚 (Australia) 02 - wspnj"
+        "🇧🇷 巴西 (Brazil) 01 - wspnj",
+        "🇧🇷 巴西 (Brazil) 02 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,35 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - wspnj
-  server: 188.114.97.6
-  port: 2082
+  server: 104.21.13.77
+  port: 443
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 4b21fbc7-00c2-4665-9788-02153832f9e5
+  tls: true
+  servername: v2ray.aizgl.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /xray-ws
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 02 - wspnj
-  server: 188.114.97.6
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+      Host: v2ray.aizgl.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - wspnj
-  - 🌐 其他地区 (Other) 02 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - wspnj
-  - 🌐 其他地区 (Other) 02 - wspnj
 rules:
 - MATCH,PROXIES

@@ -12,13 +12,29 @@
       "tls": {
         "enabled": true,
         "server_name": "grape-test-italy.dynuddns.net",
-        "insecure": true
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - wspnj",
+      "server": "162.249.125.133",
+      "server_port": 443,
+      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-new.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "c1b4086fea89914496c7e10967a419216566"
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - wspnj",
-      "server": "109.104.106.15",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - wspnj",
+      "server": "109.104.106.149",
       "server_port": 443,
       "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
       "flow": "xtls-rprx-vision",
@@ -37,45 +53,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - wspnj",
-      "server": "109.104.106.149",
-      "server_port": 443,
-      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "d3-ro.cloud-cdn.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "a_v5l6R-rpVGlENLeONW4sz-GdRwIoDqISOWXGov8nw",
-          "short_id": "87709fed663228e5"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - wspnj",
-      "server": "162.249.125.133",
-      "server_port": 443,
-      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c1b4086fea89914496c7e10967a419216566"
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - wspnj",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - wspnj",
       "server": "bogging-eyeteeth-fly.freesocks.work",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -89,8 +68,7 @@
         "🇷🇴 罗马尼亚 (Romania) 01 - wspnj",
         "🇷🇴 罗马尼亚 (Romania) 02 - wspnj",
         "🇷🇴 罗马尼亚 (Romania) 03 - wspnj",
-        "🇷🇴 罗马尼亚 (Romania) 04 - wspnj",
-        "🇷🇴 罗马尼亚 (Romania) 05 - wspnj"
+        "🇷🇴 罗马尼亚 (Romania) 04 - wspnj"
       ]
     },
     {
@@ -100,8 +78,7 @@
         "🇷🇴 罗马尼亚 (Romania) 01 - wspnj",
         "🇷🇴 罗马尼亚 (Romania) 02 - wspnj",
         "🇷🇴 罗马尼亚 (Romania) 03 - wspnj",
-        "🇷🇴 罗马尼亚 (Romania) 04 - wspnj",
-        "🇷🇴 罗马尼亚 (Romania) 05 - wspnj"
+        "🇷🇴 罗马尼亚 (Romania) 04 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
