@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - wspnj
-  server: 31.59.150.11
-  port: 443
-  udp: true
-  type: vless
-  uuid: cc4d63e2-3a86-49b3-9598-328bbe93e56c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: yI6maXxTQ8zRHg39X8YMQtKW-IVfNIn0_OCUIQKmcXw
-  servername: google.com
-  client-fingerprint: random
-- name: 🇦🇪 阿联酋 (UAE) 02 - wspnj
   server: 130.49.161.70
   port: 443
   udp: true
@@ -26,16 +14,16 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - wspnj
+- name: 🇦🇪 阿联酋 (UAE) 02 - wspnj
   server: 144.31.49.47
   port: 443
   udp: true
   type: hysteria2
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 04 - wspnj
-  server: 84.235.244.108
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 03 - wspnj
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -53,7 +41,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - wspnj
   - 🇦🇪 阿联酋 (UAE) 02 - wspnj
   - 🇦🇪 阿联酋 (UAE) 03 - wspnj
-  - 🇦🇪 阿联酋 (UAE) 04 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,6 +49,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - wspnj
   - 🇦🇪 阿联酋 (UAE) 02 - wspnj
   - 🇦🇪 阿联酋 (UAE) 03 - wspnj
-  - 🇦🇪 阿联酋 (UAE) 04 - wspnj
 rules:
 - MATCH,PROXIES

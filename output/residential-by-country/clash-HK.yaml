@@ -5,34 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - wspnj
-  server: b08d347f-tmm5c0-tu0ezx-1m7l4.hk3.hyhuawei.com
+  server: bd8d18d7-tmm5c0-tny186-4lg6.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: bd515574-3b10-11ee-ac14-f23c9164ca5d
-  sni: b08d347f-tmm5c0-tu0ezx-1m7l4.hk3.hyhuawei.com
+  password: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
+  sni: bd8d18d7-tmm5c0-tny186-4lg6.hk3.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - wspnj
-  server: zfd-hkv1.kunlun01dns.com
-  port: 16115
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - wspnj
+  server: 6a3b19cf-tmm5c0-tpv2b9-1o8ak.nw4.hyhuawei.com
+  port: 443
   udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+  type: hysteria2
+  password: 8bb68d04-6973-11ee-b518-f23c9164ca5d
+  sni: 6a3b19cf-tmm5c0-tpv2b9-1o8ak.nw4.hyhuawei.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - wspnj
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - wspnj
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - wspnj
 rules:
 - MATCH,PROXIES
