@@ -6,6 +6,27 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - wspnj",
+      "server": "143.246.196.207",
+      "server_port": 443,
+      "uuid": "ac0c2945-b758-11f1-8181-54db13ea7d40",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.blocket.se",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - wspnj",
       "server": "132.243.231.4",
       "server_port": 443,
       "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
@@ -26,43 +47,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - wspnj",
-      "server": "172.234.97.206",
-      "server_port": 8443,
-      "uuid": "9cdcec15-2c73-40d5-b50f-d00381fddd26",
-      "tls": {
-        "enabled": true,
-        "server_name": "stsr.hospitaldt.ir",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - wspnj",
-      "server": "104.26.12.54",
-      "server_port": 443,
-      "uuid": "d0298536-d670-4045-bbb1-ddd5ea68683e",
-      "tls": {
-        "enabled": true,
-        "server_name": "a.azadnet002.ddns-ip.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - wspnj",
       "server": "94.143.231.146",
       "server_port": 443,
       "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
@@ -85,22 +70,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - wspnj",
-      "server": "swed4.o4ka-internet.com",
-      "server_port": 443,
-      "uuid": "8f6e49e6-7f03-4f10-9da9-1716158d80ed",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "swed4.o4ka-internet.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8",
-          "short_id": "5629431325884ff0"
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - wspnj",
+      "server": "psf-2.weedly.top",
+      "server_port": 80,
+      "uuid": "33016f3d-8509-493c-bd8b-d26447d48135",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "stigmata.ir"
         }
       }
     },
@@ -112,8 +89,7 @@
         "🇸🇪 瑞典 (Sweden) 01 - wspnj",
         "🇸🇪 瑞典 (Sweden) 02 - wspnj",
         "🇸🇪 瑞典 (Sweden) 03 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 04 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 05 - wspnj"
+        "🇸🇪 瑞典 (Sweden) 04 - wspnj"
       ]
     },
     {
@@ -123,8 +99,7 @@
         "🇸🇪 瑞典 (Sweden) 01 - wspnj",
         "🇸🇪 瑞典 (Sweden) 02 - wspnj",
         "🇸🇪 瑞典 (Sweden) 03 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 04 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 05 - wspnj"
+        "🇸🇪 瑞典 (Sweden) 04 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

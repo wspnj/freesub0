@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - wspnj
+  server: 143.246.196.207
+  port: 443
+  udp: true
+  type: vless
+  uuid: ac0c2945-b758-11f1-8181-54db13ea7d40
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
+  servername: www.blocket.se
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 02 - wspnj
   server: 132.243.231.4
   port: 443
   udp: true
@@ -17,32 +29,7 @@ proxies:
     short-id: 5efa80b939612291
   servername: d3-se1.cloud-cdn.xyz
   client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 02 - wspnj
-  server: 172.234.97.206
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 9cdcec15-2c73-40d5-b50f-d00381fddd26
-  tls: true
-  servername: stsr.hospitaldt.ir
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
 - name: 🇸🇪 瑞典 (Sweden) 03 - wspnj
-  server: 104.26.12.54
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0298536-d670-4045-bbb1-ddd5ea68683e
-  tls: true
-  servername: a.azadnet002.ddns-ip.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇪 瑞典 (Sweden) 04 - wspnj
   server: 94.143.231.146
   port: 443
   udp: true
@@ -57,19 +44,17 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇸🇪 瑞典 (Sweden) 05 - wspnj
-  server: swed4.o4ka-internet.com
-  port: 443
+- name: 🇸🇪 瑞典 (Sweden) 04 - wspnj
+  server: psf-2.weedly.top
+  port: 80
   udp: true
   type: vless
-  uuid: 8f6e49e6-7f03-4f10-9da9-1716158d80ed
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
-    short-id: 5629431325884ff0
-  servername: swed4.o4ka-internet.com
-  client-fingerprint: random
+  uuid: 33016f3d-8509-493c-bd8b-d26447d48135
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: stigmata.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,7 +64,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - wspnj
   - 🇸🇪 瑞典 (Sweden) 03 - wspnj
   - 🇸🇪 瑞典 (Sweden) 04 - wspnj
-  - 🇸🇪 瑞典 (Sweden) 05 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,6 +73,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - wspnj
   - 🇸🇪 瑞典 (Sweden) 03 - wspnj
   - 🇸🇪 瑞典 (Sweden) 04 - wspnj
-  - 🇸🇪 瑞典 (Sweden) 05 - wspnj
 rules:
 - MATCH,PROXIES
