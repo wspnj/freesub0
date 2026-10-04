@@ -27,6 +27,65 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - wspnj",
+      "server": "172.234.97.206",
+      "server_port": 8443,
+      "uuid": "9cdcec15-2c73-40d5-b50f-d00381fddd26",
+      "tls": {
+        "enabled": true,
+        "server_name": "stsr.hospitaldt.ir",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - wspnj",
+      "server": "104.26.12.54",
+      "server_port": 443,
+      "uuid": "d0298536-d670-4045-bbb1-ddd5ea68683e",
+      "tls": {
+        "enabled": true,
+        "server_name": "a.azadnet002.ddns-ip.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - wspnj",
+      "server": "94.143.231.146",
+      "server_port": 443,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "tls": {
+        "enabled": true,
+        "server_name": "sub.merky.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/merky-connect/de6/",
+        "headers": {
+          "Host": "sub.merky.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - wspnj",
       "server": "swed4.o4ka-internet.com",
       "server_port": 443,
       "uuid": "8f6e49e6-7f03-4f10-9da9-1716158d80ed",
@@ -51,7 +110,10 @@
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 02 - wspnj"
+        "🇸🇪 瑞典 (Sweden) 02 - wspnj",
+        "🇸🇪 瑞典 (Sweden) 03 - wspnj",
+        "🇸🇪 瑞典 (Sweden) 04 - wspnj",
+        "🇸🇪 瑞典 (Sweden) 05 - wspnj"
       ]
     },
     {
@@ -59,7 +121,10 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 02 - wspnj"
+        "🇸🇪 瑞典 (Sweden) 02 - wspnj",
+        "🇸🇪 瑞典 (Sweden) 03 - wspnj",
+        "🇸🇪 瑞典 (Sweden) 04 - wspnj",
+        "🇸🇪 瑞典 (Sweden) 05 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

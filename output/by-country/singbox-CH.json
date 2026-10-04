@@ -34,18 +34,6 @@
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 03 - wspnj",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
-      "tls": {
-        "enabled": true,
-        "server_name": "off",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - wspnj",
       "server": "82.38.64.237",
       "server_port": 8443,
       "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
@@ -62,8 +50,7 @@
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - wspnj",
         "🇨🇭 瑞士 (Switzerland) 02 - wspnj",
-        "🇨🇭 瑞士 (Switzerland) 03 - wspnj",
-        "🇨🇭 瑞士 (Switzerland) 04 - wspnj"
+        "🇨🇭 瑞士 (Switzerland) 03 - wspnj"
       ]
     },
     {
@@ -72,8 +59,7 @@
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - wspnj",
         "🇨🇭 瑞士 (Switzerland) 02 - wspnj",
-        "🇨🇭 瑞士 (Switzerland) 03 - wspnj",
-        "🇨🇭 瑞士 (Switzerland) 04 - wspnj"
+        "🇨🇭 瑞士 (Switzerland) 03 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
