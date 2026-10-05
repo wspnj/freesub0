@@ -15,68 +15,21 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇵🇱 波兰 (Poland) 02 - wspnj",
-      "server": "70.34.255.101",
-      "server_port": 80,
-      "uuid": "a889262f-5fe3-4c93-9aaa-3721318dd389",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - wspnj",
-      "server": "95.85.254.221",
+      "server": "admin.wwwinternetvideo.click",
       "server_port": 443,
-      "uuid": "3464a5bd-6a17-4ac3-8ca9-86a54c1aac7b",
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
         "enabled": true,
-        "server_name": "samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "tKAYeVSM4yLXiOdKLMFP751fhII6YyqfbMXy_MSuejI",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless-grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04 - wspnj",
-      "server": "138.124.104.2",
-      "server_port": 443,
-      "uuid": "3464a5bd-6a17-4ac3-8ca9-86a54c1aac7b",
-      "tls": {
-        "enabled": true,
-        "server_name": "samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "tKAYeVSM4yLXiOdKLMFP751fhII6YyqfbMXy_MSuejI",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless-grpc"
+        "server_name": "admin.wwwinternetvideo.click",
+        "insecure": true
       }
     },
     {
       "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 05 - wspnj",
-      "server": "cheerful-swan.rooster465.autos",
+      "tag": "🇵🇱 波兰 (Poland) 03 - wspnj",
+      "server": "202.78.163.237",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
@@ -86,128 +39,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 06 - wspnj",
-      "server": "admin.wwwinternetvideo.click",
-      "server_port": 443,
-      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
-      "tls": {
-        "enabled": true,
-        "server_name": "admin.wwwinternetvideo.click",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 07 - wspnj",
-      "server": "50.7.249.155",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "poland-good.failspace.top",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 08 - wspnj",
-      "server": "50.7.249.138",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "polkadotnewone.failspace.top",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 09 - wspnj",
-      "server": "50.7.249.98",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pol-pol-poland.failspace.top",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 10 - wspnj",
-      "server": "83.168.107.220",
-      "server_port": 443,
-      "uuid": "b1813cbd-831f-4cb3-baf8-5bc0cc8298bc",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "s0lbZ5BO3ctZjE8DzsXkNL0NvLl6FgLG6532NQzXigo",
-          "short_id": "c56d4f1c"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 11 - wspnj",
-      "server": "188.114.96.19",
-      "server_port": 80,
-      "uuid": "aed88e79-5762-4d2f-86fa-f438f32a7654",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 12 - wspnj",
-      "server": "144.31.49.47",
-      "server_port": 443,
-      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
-      "tls": {
-        "enabled": true,
-        "server_name": "admin.wwwinternetvideo.click",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 13 - wspnj",
+      "tag": "🇵🇱 波兰 (Poland) 04 - wspnj",
       "server": "62.152.58.90",
       "server_port": 443,
       "uuid": "1bb2af63-4472-44ed-9c70-8f316258b68b",
@@ -229,6 +62,60 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 05 - wspnj",
+      "server": "83.168.107.220",
+      "server_port": 443,
+      "uuid": "b1813cbd-831f-4cb3-baf8-5bc0cc8298bc",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "s0lbZ5BO3ctZjE8DzsXkNL0NvLl6FgLG6532NQzXigo",
+          "short_id": "c56d4f1c"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 06 - wspnj",
+      "server": "144.31.49.47",
+      "server_port": 443,
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
+      "tls": {
+        "enabled": true,
+        "server_name": "admin.wwwinternetvideo.click",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 07 - wspnj",
+      "server": "pl-waw.dontblockmepls.com",
+      "server_port": 2063,
+      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "rusbid.de",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -239,13 +126,7 @@
         "🇵🇱 波兰 (Poland) 04 - wspnj",
         "🇵🇱 波兰 (Poland) 05 - wspnj",
         "🇵🇱 波兰 (Poland) 06 - wspnj",
-        "🇵🇱 波兰 (Poland) 07 - wspnj",
-        "🇵🇱 波兰 (Poland) 08 - wspnj",
-        "🇵🇱 波兰 (Poland) 09 - wspnj",
-        "🇵🇱 波兰 (Poland) 10 - wspnj",
-        "🇵🇱 波兰 (Poland) 11 - wspnj",
-        "🇵🇱 波兰 (Poland) 12 - wspnj",
-        "🇵🇱 波兰 (Poland) 13 - wspnj"
+        "🇵🇱 波兰 (Poland) 07 - wspnj"
       ]
     },
     {
@@ -258,13 +139,7 @@
         "🇵🇱 波兰 (Poland) 04 - wspnj",
         "🇵🇱 波兰 (Poland) 05 - wspnj",
         "🇵🇱 波兰 (Poland) 06 - wspnj",
-        "🇵🇱 波兰 (Poland) 07 - wspnj",
-        "🇵🇱 波兰 (Poland) 08 - wspnj",
-        "🇵🇱 波兰 (Poland) 09 - wspnj",
-        "🇵🇱 波兰 (Poland) 10 - wspnj",
-        "🇵🇱 波兰 (Poland) 11 - wspnj",
-        "🇵🇱 波兰 (Poland) 12 - wspnj",
-        "🇵🇱 波兰 (Poland) 13 - wspnj"
+        "🇵🇱 波兰 (Poland) 07 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
