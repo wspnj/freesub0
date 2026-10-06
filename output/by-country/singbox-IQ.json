@@ -5,20 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇪 格鲁吉亚 (Georgia) 01 - wspnj",
-      "server": "104.21.50.89",
-      "server_port": 443,
-      "uuid": "76ac91c5-ea82-4046-8ee7-2ffbb563ac94",
+      "tag": "🇮🇶 IQ 01 - wspnj",
+      "server": "172.64.153.235",
+      "server_port": 8443,
+      "uuid": "656bb400-3b7a-47e3-94b0-0362f3865072",
       "tls": {
         "enabled": true,
-        "server_name": "geo.shkola112.site",
-        "insecure": false
+        "server_name": "socks5.revil-time3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/api-vless",
+        "path": "/socks5://128.140.46.169:13482",
         "headers": {
-          "Host": "geo.shkola112.site"
+          "Host": "socks5.revil-time3.workers.dev"
         }
       }
     },
@@ -27,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇪 格鲁吉亚 (Georgia) 01 - wspnj"
+        "🇮🇶 IQ 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇪 格鲁吉亚 (Georgia) 01 - wspnj"
+        "🇮🇶 IQ 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
