@@ -5,31 +5,14 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 01 (家宽) - wspnj",
-      "server": "31.77.227.6",
-      "server_port": 52006,
-      "uuid": "bc659d88-a1e0-076c-a49a-7b51b26a7a7f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "bigdick.gamegrow.ru",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wspnj",
       "server": "172.66.152.4",
       "server_port": 443,
       "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
       "tls": {
         "enabled": true,
         "server_name": "argo6.5671234.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -44,16 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01 (家宽) - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01 (家宽) - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wspnj"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
