@@ -6,7 +6,7 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - wspnj",
-      "server": "77.74.123.98",
+      "server": "77.74.123.101",
       "server_port": 8443,
       "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
       "tls": {
@@ -16,8 +16,29 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 02 - wspnj",
+      "server": "109.104.106.149",
+      "server_port": 443,
+      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "d3-ro.cloud-cdn.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "a_v5l6R-rpVGlENLeONW4sz-GdRwIoDqISOWXGov8nw",
+          "short_id": "87709fed663228e5"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - wspnj",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -32,25 +53,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - wspnj",
-      "server": "bl3fk52.sysopnova.art",
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - wspnj",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
       "server_port": 443,
-      "uuid": "441afe11-a180-4516-bb80-80a8a6b38705",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk",
-          "short_id": "5ee019e02e6ed99a"
-        }
-      }
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
     },
     {
       "type": "selector",
@@ -59,7 +67,8 @@
         "auto",
         "🇷🇴 罗马尼亚 (Romania) 01 - wspnj",
         "🇷🇴 罗马尼亚 (Romania) 02 - wspnj",
-        "🇷🇴 罗马尼亚 (Romania) 03 - wspnj"
+        "🇷🇴 罗马尼亚 (Romania) 03 - wspnj",
+        "🇷🇴 罗马尼亚 (Romania) 04 - wspnj"
       ]
     },
     {
@@ -68,7 +77,8 @@
       "outbounds": [
         "🇷🇴 罗马尼亚 (Romania) 01 - wspnj",
         "🇷🇴 罗马尼亚 (Romania) 02 - wspnj",
-        "🇷🇴 罗马尼亚 (Romania) 03 - wspnj"
+        "🇷🇴 罗马尼亚 (Romania) 03 - wspnj",
+        "🇷🇴 罗马尼亚 (Romania) 04 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
