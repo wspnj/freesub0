@@ -6,45 +6,31 @@
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 01 - wspnj",
-      "server": "64.176.7.121",
+      "server": "platform106.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform117"
+        "path": "/platform106",
+        "headers": {
+          "Host": "platform106.halalkhor.info"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 02 - wspnj",
-      "server": "platform101.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform101",
-        "headers": {
-          "Host": "platform101.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 03 - wspnj",
       "server": "platform107.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform107",
-        "headers": {
-          "Host": "platform107.halalkhor.info"
-        }
+        "path": "/platform107"
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 04 - wspnj",
+      "tag": "🇨🇱 智利 (Chile) 03 - wspnj",
       "server": "platform102.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -53,6 +39,20 @@
         "path": "/platform102",
         "headers": {
           "Host": "platform102.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 04 - wspnj",
+      "server": "platform117.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform117",
+        "headers": {
+          "Host": "platform117.halalkhor.info"
         }
       }
     },
@@ -73,6 +73,20 @@
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 06 - wspnj",
+      "server": "platform115.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform115",
+        "headers": {
+          "Host": "platform115.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 07 - wspnj",
       "server": "platform109.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -86,7 +100,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 07 - wspnj",
+      "tag": "🇨🇱 智利 (Chile) 08 - wspnj",
+      "server": "platform101.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform101",
+        "headers": {
+          "Host": "platform101.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 09 - wspnj",
       "server": "platform103.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -100,15 +128,15 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 08 - wspnj",
-      "server": "platform115.golnamakcert.top",
+      "tag": "🇨🇱 智利 (Chile) 10 - wspnj",
+      "server": "platform113.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform115",
+        "path": "/platform113",
         "headers": {
-          "Host": "platform115.halalkhor.info"
+          "Host": "platform113.halalkhor.info"
         }
       }
     },
@@ -124,7 +152,9 @@
         "🇨🇱 智利 (Chile) 05 - wspnj",
         "🇨🇱 智利 (Chile) 06 - wspnj",
         "🇨🇱 智利 (Chile) 07 - wspnj",
-        "🇨🇱 智利 (Chile) 08 - wspnj"
+        "🇨🇱 智利 (Chile) 08 - wspnj",
+        "🇨🇱 智利 (Chile) 09 - wspnj",
+        "🇨🇱 智利 (Chile) 10 - wspnj"
       ]
     },
     {
@@ -138,7 +168,9 @@
         "🇨🇱 智利 (Chile) 05 - wspnj",
         "🇨🇱 智利 (Chile) 06 - wspnj",
         "🇨🇱 智利 (Chile) 07 - wspnj",
-        "🇨🇱 智利 (Chile) 08 - wspnj"
+        "🇨🇱 智利 (Chile) 08 - wspnj",
+        "🇨🇱 智利 (Chile) 09 - wspnj",
+        "🇨🇱 智利 (Chile) 10 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
