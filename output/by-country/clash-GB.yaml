@@ -5,16 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - wspnj
-  server: 172.67.152.243
-  port: 443
+  server: 149.102.132.184
+  port: 80
   udp: true
-  type: trojan
-  password: Telegram_healer_config
-  sni: 3W2hk6ZJ92orjcjEdmI77hzC.Ny49nUZ6G33RYkoWAZquNl-b9GuN5T.WoRKERs.dEv
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/e2X4F8y1t8YGOWfIV2ImzqxmdmGEpf?ed=2560
+  type: ss
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
 - name: 🇬🇧 英国 (United Kingdom) 02 - wspnj
   server: 149.102.149.207
   port: 80
@@ -23,34 +19,54 @@ proxies:
   cipher: aes-256-gcm
   password: LXchLsIwtCeUAUgu
 - name: 🇬🇧 英国 (United Kingdom) 03 - wspnj
-  server: 141.98.101.181
+  server: 149.102.132.184
   port: 443
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
 - name: 🇬🇧 英国 (United Kingdom) 04 - wspnj
-  server: 149.102.132.184
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-- name: 🇬🇧 英国 (United Kingdom) 05 - wspnj
-  server: 149.102.132.184
+  server: 149.102.149.207
   port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-- name: 🇬🇧 英国 (United Kingdom) 06 - wspnj
+  password: LXchLsIwtCeUAUgu
+- name: 🇬🇧 英国 (United Kingdom) 05 - wspnj
   server: 51.77.225.200
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: zRZNBszYyWo5
+- name: 🇬🇧 英国 (United Kingdom) 06 - wspnj
+  server: 141.98.101.181
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇬🇧 英国 (United Kingdom) 07 - wspnj
+  server: 146.70.61.37
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 08 - wspnj
+  server: 23.81.34.204
+  port: 443
+  udp: true
+  type: vless
+  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
+    short-id: b19b017d6f453873
+  servername: speed.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 09 - wspnj
   server: 186.190.211.188
   port: 443
   udp: true
@@ -60,7 +76,7 @@ proxies:
   servername: 186.190.211.188
   skip-cert-verify: true
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 08 - wspnj
+- name: 🇬🇧 英国 (United Kingdom) 10 - wspnj
   server: 46.250.250.149
   port: 2053
   udp: true
@@ -72,34 +88,54 @@ proxies:
     short-id: 9922313fffed1c63
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 09 - wspnj
-  server: 146.70.23.32
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 10 - wspnj
-  server: 149.102.149.207
+- name: 🇬🇧 英国 (United Kingdom) 11 - wspnj
+  server: 103.241.65.169
   port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-- name: 🇬🇧 英国 (United Kingdom) 11 - wspnj
+  type: vless
+  uuid: 91344c03-b37f-42c5-90f1-cbb95c5cf256
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
+    short-id: d30f9d846a7c8cba
+  servername: gb.srv.dvzh.net
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 12 - wspnj
+  server: 51.38.71.147
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
+  tls: true
+  servername: node-uk.connectsuite.org
+  skip-cert-verify: true
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 13 - wspnj
+  server: 95.85.224.51
+  port: 443
+  udp: true
+  type: vless
+  uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: max.ru
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 14 - wspnj
   server: 57.129.132.223
   port: 80
   udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
   network: ws
   ws-opts:
-    path: /vmess/
+    path: /vless/
     headers:
       Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 12 - wspnj
+- name: 🇬🇧 英国 (United Kingdom) 15 - wspnj
   server: 46.250.240.80
   port: 2053
   udp: true
@@ -111,17 +147,7 @@ proxies:
     short-id: 4cc9dc65f7770115
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 13 - wspnj
-  server: node-uk.connectsuite.org
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
-  tls: true
-  servername: node-uk.connectsuite.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 14 - wspnj
+- name: 🇬🇧 英国 (United Kingdom) 16 - wspnj
   server: server.slavkiti.monster
   port: 443
   udp: true
@@ -153,6 +179,8 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 12 - wspnj
   - 🇬🇧 英国 (United Kingdom) 13 - wspnj
   - 🇬🇧 英国 (United Kingdom) 14 - wspnj
+  - 🇬🇧 英国 (United Kingdom) 15 - wspnj
+  - 🇬🇧 英国 (United Kingdom) 16 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -172,5 +200,7 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 12 - wspnj
   - 🇬🇧 英国 (United Kingdom) 13 - wspnj
   - 🇬🇧 英国 (United Kingdom) 14 - wspnj
+  - 🇬🇧 英国 (United Kingdom) 15 - wspnj
+  - 🇬🇧 英国 (United Kingdom) 16 - wspnj
 rules:
 - MATCH,PROXIES
