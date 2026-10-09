@@ -1,0 +1,204 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🌐 其他地区 (Other) 01 - wspnj
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: 33f13fd5-1553-4574-ac1a-432d2d762cbe
+  tls: true
+  servername: frc.navid.lat
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /webdl
+    headers:
+      Host: frc.navid.lat
+- name: 🌐 其他地区 (Other) 02 - wspnj
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: 49ccad64-c854-4f33-b334-793cf0d02b74
+  tls: true
+  servername: newcscf.jisucf.cloudns.ch
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: newcscf.jisucf.cloudns.ch
+- name: 🌐 其他地区 (Other) 03 - wspnj
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: 49ccad64-c854-4f33-b334-793cf0d02b74
+  tls: true
+  servername: newcscf.jisucf.cloudns.ch
+  skip-cert-verify: false
+  client-fingerprint: unsafe
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: newcscf.jisucf.cloudns.ch
+- name: 🌐 其他地区 (Other) 04 - wspnj
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  tls: true
+  servername: lucasjow.us.ci
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---TOOTFARANGI
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 05 - wspnj
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  tls: true
+  servername: lucasjow.us.ci
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 06 - wspnj
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  tls: true
+  servername: lucasjow.us.ci
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: '%'
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 07 - wspnj
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  tls: true
+  servername: lucasjow.us.ci
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?Telegram---DailyConfigs---DailyConfigs---DailyConfigs
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 08 - wspnj
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  tls: true
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560#
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 🌐 其他地区 (Other) 09 - wspnj
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  tls: true
+  servername: snip.edgeoneai.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: snip.edgeoneai.cc.cd
+- name: 🌐 其他地区 (Other) 10 - wspnj
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  tls: true
+  servername: a.cwvps.eu.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: a.cwvps.eu.org
+- name: 🌐 其他地区 (Other) 11 - wspnj
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  tls: true
+  servername: x.m-90.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🌐 其他地区 (Other) 01 - wspnj
+  - 🌐 其他地区 (Other) 02 - wspnj
+  - 🌐 其他地区 (Other) 03 - wspnj
+  - 🌐 其他地区 (Other) 04 - wspnj
+  - 🌐 其他地区 (Other) 05 - wspnj
+  - 🌐 其他地区 (Other) 06 - wspnj
+  - 🌐 其他地区 (Other) 07 - wspnj
+  - 🌐 其他地区 (Other) 08 - wspnj
+  - 🌐 其他地区 (Other) 09 - wspnj
+  - 🌐 其他地区 (Other) 10 - wspnj
+  - 🌐 其他地区 (Other) 11 - wspnj
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🌐 其他地区 (Other) 01 - wspnj
+  - 🌐 其他地区 (Other) 02 - wspnj
+  - 🌐 其他地区 (Other) 03 - wspnj
+  - 🌐 其他地区 (Other) 04 - wspnj
+  - 🌐 其他地区 (Other) 05 - wspnj
+  - 🌐 其他地区 (Other) 06 - wspnj
+  - 🌐 其他地区 (Other) 07 - wspnj
+  - 🌐 其他地区 (Other) 08 - wspnj
+  - 🌐 其他地区 (Other) 09 - wspnj
+  - 🌐 其他地区 (Other) 10 - wspnj
+  - 🌐 其他地区 (Other) 11 - wspnj
+rules:
+- MATCH,PROXIES

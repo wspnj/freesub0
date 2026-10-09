@@ -4,31 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - wspnj",
-      "server": "213.183.63.60",
-      "server_port": 9064,
-      "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - wspnj",
-      "server": "213.183.63.60",
-      "server_port": 9030,
-      "method": "aes-256-cfb",
-      "password": "GeregetR8cvQHzYr"
-    },
-    {
       "type": "trojan",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - wspnj",
-      "server": "ger2.fytpn.com",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - wspnj",
+      "server": "93.152.223.201",
       "server_port": 443,
       "password": "gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU",
       "tls": {
         "enabled": true,
         "server_name": "ger2.fytpn.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       }
     },
     {
@@ -36,18 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01 - wspnj",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - wspnj",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - wspnj"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01 - wspnj",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - wspnj",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - wspnj"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

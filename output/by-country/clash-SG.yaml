@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - wspnj
-  server: 149.88.23.207
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 02 - wspnj
-  server: 128.199.172.224
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 03 - wspnj
   server: 149.88.23.202
   port: 18000
   udp: true
@@ -27,91 +12,51 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 04 - wspnj
+- name: 🇸🇬 新加坡 (Singapore) 02 - wspnj
   server: 68.183.235.122
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 05 - wspnj
-  server: 68.183.227.236
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 06 - wspnj
+- name: 🇸🇬 新加坡 (Singapore) 03 - wspnj
   server: 68.183.227.4
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 07 - wspnj
-  server: glorious-glider.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: glorious-glider.rooster465.autos
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 08 - wspnj
+- name: 🇸🇬 新加坡 (Singapore) 04 - wspnj
   server: 68.183.227.45
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 09 - wspnj
-  server: moral-basilisk.rooster465.autos
+- name: 🇸🇬 新加坡 (Singapore) 05 - wspnj
+  server: 149.88.23.207
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 06 - wspnj
+  server: 43.156.36.253
   port: 443
   udp: true
   type: trojan
-  password: UX82473651
-  sni: moral-basilisk.rooster465.autos
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 10 - wspnj
-  server: 43.156.36.253
-  port: 8443
-  udp: true
-  type: hysteria2
   password: WvH8ooM9hom4KOOJHFJz1x5umE0aV4R0
   sni: tx-hy2
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 11 - wspnj
-  server: rested-seahorse.rooster465.autos
-  port: 443
+- name: 🇸🇬 新加坡 (Singapore) 07 - wspnj
+  server: 68.183.227.236
+  port: 8080
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: rested-seahorse.rooster465.autos
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 12 - wspnj
-  server: 138.2.73.238
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 138.2.73.238
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 13 - wspnj
-  server: vpn-sg-001.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 14 - wspnj
-  server: 139.180.146.200
-  port: 8886
-  udp: true
-  type: trojan
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  sni: 139.180.146.200
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 15 - wspnj
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 08 - wspnj
   server: cdn-dynmedia.shalana.shop
   port: 443
   udp: true
@@ -121,23 +66,46 @@ proxies:
   servername: cdn-dynmedia.shalana.shop
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 16 - wspnj
-  server: real-werewolf.rooster465.autos
+- name: 🇸🇬 新加坡 (Singapore) 09 - wspnj
+  server: 128.199.172.224
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 10 - wspnj
+  server: brave-tomcat.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: real-werewolf.rooster465.autos
+  sni: brave-tomcat.rooster465.autos
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 17 - wspnj
-  server: ace-liger.rooster465.autos
+- name: 🇸🇬 新加坡 (Singapore) 11 - wspnj
+  server: 138.2.73.238
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: f87376e17da040ed04c9665ce8972930
+  sni: 138.2.73.238
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 12 - wspnj
+  server: rested-seahorse.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: ace-liger.rooster465.autos
+  sni: rested-seahorse.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 13 - wspnj
+  server: fond-mammoth.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: fond-mammoth.rooster465.autos
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 18 - wspnj
+- name: 🇸🇬 新加坡 (Singapore) 14 - wspnj
   server: present-ram.rooster465.autos
   port: 443
   udp: true
@@ -145,40 +113,144 @@ proxies:
   password: UX82473651
   sni: present-ram.rooster465.autos
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 19 - wspnj
-  server: musical-mouse.rooster465.autos
+- name: 🇸🇬 新加坡 (Singapore) 15 - wspnj
+  server: ace-liger.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: musical-mouse.rooster465.autos
+  sni: ace-liger.rooster465.autos
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 16 - wspnj
+  server: pet-antelope.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: pet-antelope.rooster465.autos
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 20 - wspnj
-  server: 146.235.16.130
-  port: 19825
+- name: 🇸🇬 新加坡 (Singapore) 17 - wspnj
+  server: 154.64.251.118
+  port: 47592
   udp: true
   type: vless
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  servername: sg2-8sb.6121999.dpdns.org
-  client-fingerprint: chrome
+    public-key: WIQGJ43m8ym13-VZ57mAtWY5vOwHMHEpnLV8caw2-kA
+    short-id: f38326f99edf
+  servername: www.lamer.com.sg
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 18 - wspnj
+  server: inviting-ferret.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: inviting-ferret.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 19 - wspnj
+  server: glorious-glider.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: glorious-glider.rooster465.autos
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 20 - wspnj
+  server: 13.212.81.3
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: holy-lamb.rooster465.autos
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 21 - wspnj
-  server: 217.217.254.126
-  port: 2053
+  server: 3.0.111.82
+  port: 12972
   udp: true
   type: vless
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 22 - wspnj
+  server: moral-basilisk.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: moral-basilisk.rooster465.autos
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 23 - wspnj
+  server: 3.0.111.82
+  port: 17623
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 24 - wspnj
+  server: 139.180.146.200
+  port: 8886
+  udp: true
+  type: trojan
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  sni: 139.180.146.200
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 25 - wspnj
+  server: real-cardinal.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: real-cardinal.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 26 - wspnj
+  server: 18.143.92.167
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: glowing-marmoset.rooster465.autos
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 27 - wspnj
+  server: 3.0.111.82
+  port: 10574
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 28 - wspnj
+  server: 2610sgdodo.volkvpn.com
+  port: 33375
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: x1nqrSzJzU5Hq7fr36PEmtBfOf98A2XiFuRzIsdcz20
+    short-id: 5895914d
+  servername: www.lamer.com.sg
+  client-fingerprint: safari
+- name: 🇸🇬 新加坡 (Singapore) 29 - wspnj
   server: 139.162.28.80
   port: 8443
   udp: true
@@ -193,7 +265,33 @@ proxies:
     path: /
     headers:
       Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 23 - wspnj
+- name: 🇸🇬 新加坡 (Singapore) 30 - wspnj
+  server: 217.217.254.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  tls: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 31 - wspnj
+  server: 139.162.27.96
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  tls: true
+  servername: free-server.techsonic.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 32 - wspnj
   server: 139.162.28.80
   port: 443
   udp: true
@@ -208,35 +306,7 @@ proxies:
     path: /
     headers:
       Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 24 - wspnj
-  server: 52.221.220.227
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: pet-antelope.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 25 - wspnj
-  server: free.nadun.store
-  port: 443
-  udp: true
-  type: vless
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  tls: true
-  servername: free.nadun.store
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 (Singapore) 26 - wspnj
-  server: holy-lamb.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: holy-lamb.rooster465.autos
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 27 - wspnj
+- name: 🇸🇬 新加坡 (Singapore) 33 - wspnj
   server: 2610sgdodo.volkvpn.com
   port: 39179
   udp: true
@@ -249,16 +319,34 @@ proxies:
     short-id: 28f5c1f8f98a
   servername: www.lamer.com.sg
   client-fingerprint: safari
-- name: 🇸🇬 新加坡 (Singapore) 28 - wspnj
-  server: real-cardinal.rooster465.autos
+- name: 🇸🇬 新加坡 (Singapore) 34 - wspnj
+  server: 146.235.16.130
+  port: 19825
+  udp: true
+  type: vless
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  servername: sg2-8sb.6121999.dpdns.org
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 35 - wspnj
+  server: free.nadun.store
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: real-cardinal.rooster465.autos
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 29 - wspnj
-  server: 170.114.45.6
+  type: vless
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  tls: true
+  servername: free.nadun.store
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 36 - wspnj
+  server: 170.114.46.6
   port: 8443
   udp: true
   type: vless
@@ -266,92 +354,27 @@ proxies:
   tls: true
   servername: primelinelk.me
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /xprolk-primeline
     headers:
       Host: primelinelk.me
-- name: 🇸🇬 新加坡 (Singapore) 30 - wspnj
-  server: 18.143.92.167
-  port: 443
+- name: 🇸🇬 新加坡 (Singapore) 37 - wspnj
+  server: s3.huhiuh.space
+  port: 18642
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: glowing-marmoset.rooster465.autos
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: www.bing.com
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 31 - wspnj
-  server: 54.251.9.130
-  port: 24146
-  udp: true
-  type: vless
-  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
-    short-id: 7205d9079521832c
-  servername: www.intel.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 32 - wspnj
-  server: dghk2610.supertoolify.com
-  port: 47592
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WIQGJ43m8ym13-VZ57mAtWY5vOwHMHEpnLV8caw2-kA
-    short-id: f38326f99edf
-  servername: www.lamer.com.sg
-  client-fingerprint: ios
-- name: 🇸🇬 新加坡 (Singapore) 33 - wspnj
-  server: 3.0.111.82
-  port: 17623
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 34 - wspnj
-  server: 3.0.111.82
-  port: 12972
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 35 - wspnj
-  server: 3.0.111.82
-  port: 10574
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇸🇬 新加坡 (Singapore) 36 - wspnj
-  server: 56.10.9.77
+- name: 🇸🇬 新加坡 (Singapore) 38 - wspnj
+  server: musical-mouse.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: inviting-ferret.rooster465.autos
+  sni: musical-mouse.rooster465.autos
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -394,6 +417,8 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 34 - wspnj
   - 🇸🇬 新加坡 (Singapore) 35 - wspnj
   - 🇸🇬 新加坡 (Singapore) 36 - wspnj
+  - 🇸🇬 新加坡 (Singapore) 37 - wspnj
+  - 🇸🇬 新加坡 (Singapore) 38 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -435,5 +460,7 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 34 - wspnj
   - 🇸🇬 新加坡 (Singapore) 35 - wspnj
   - 🇸🇬 新加坡 (Singapore) 36 - wspnj
+  - 🇸🇬 新加坡 (Singapore) 37 - wspnj
+  - 🇸🇬 新加坡 (Singapore) 38 - wspnj
 rules:
 - MATCH,PROXIES

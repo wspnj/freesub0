@@ -21,22 +21,6 @@ proxies:
   sni: master-possum.rooster465.autos
   skip-cert-verify: true
 - name: 🇮🇪 爱尔兰 (Ireland) 03 - wspnj
-  server: loved-shark.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: loved-shark.rooster465.autos
-  skip-cert-verify: true
-- name: 🇮🇪 爱尔兰 (Ireland) 04 - wspnj
-  server: sacred-anemone.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: sacred-anemone.rooster465.autos
-  skip-cert-verify: false
-- name: 🇮🇪 爱尔兰 (Ireland) 05 - wspnj
   server: 3.255.76.207
   port: 443
   udp: true
@@ -52,8 +36,6 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01 - wspnj
   - 🇮🇪 爱尔兰 (Ireland) 02 - wspnj
   - 🇮🇪 爱尔兰 (Ireland) 03 - wspnj
-  - 🇮🇪 爱尔兰 (Ireland) 04 - wspnj
-  - 🇮🇪 爱尔兰 (Ireland) 05 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,7 +44,5 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01 - wspnj
   - 🇮🇪 爱尔兰 (Ireland) 02 - wspnj
   - 🇮🇪 爱尔兰 (Ireland) 03 - wspnj
-  - 🇮🇪 爱尔兰 (Ireland) 04 - wspnj
-  - 🇮🇪 爱尔兰 (Ireland) 05 - wspnj
 rules:
 - MATCH,PROXIES

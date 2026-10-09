@@ -17,7 +17,7 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇮🇩 印尼 (Indonesia) 02 - wspnj
-  server: dghk2610.supertoolify.com
+  server: 154.64.251.118
   port: 46984
   udp: true
   type: vless
@@ -28,9 +28,9 @@ proxies:
     public-key: XBntt77MdH3EMkPXibOAO_NSBrL_aqwiLItU98rqlHE
     short-id: 9c3c0f8ec8b4af12
   servername: www.lamer.com.sg
-  client-fingerprint: ios
+  client-fingerprint: firefox
 - name: 🇮🇩 印尼 (Indonesia) 03 - wspnj
-  server: 188.114.97.6
+  server: 104.18.32.87
   port: 443
   udp: true
   type: trojan
