@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇺 澳大利亚 (Australia) 01 - wspnj
-  server: 208.103.161.5
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - wspnj
+  server: 104.24.30.89
   port: 443
   udp: true
   type: vless
-  uuid: d042a74a-c305-4eec-a89f-39a348022c92
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   tls: true
-  servername: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+      Host: rayan-007.nastaran.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇺 澳大利亚 (Australia) 01 - wspnj
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇺 澳大利亚 (Australia) 01 - wspnj
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - wspnj
 rules:
 - MATCH,PROXIES
