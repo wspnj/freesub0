@@ -4,8 +4,65 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 01 - wspnj",
+      "server": "172.64.155.209",
+      "server_port": 443,
+      "uuid": "11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf",
+      "tls": {
+        "enabled": true,
+        "server_name": "ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
+        "headers": {
+          "Host": "ancient-heart-60c5.dpccgizieb.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 02 - wspnj",
+      "server": "104.21.16.109",
+      "server_port": 443,
+      "uuid": "cc08d2d0-8a7a-4469-81d2-c43704451271",
+      "tls": {
+        "enabled": true,
+        "server_name": "9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/6871nrbnl9WsdAiOUInt",
+        "headers": {
+          "Host": "9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 03 - wspnj",
+      "server": "141.98.101.181",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 04 - wspnj",
       "server": "149.102.132.184",
       "server_port": 80,
       "method": "aes-256-gcm",
@@ -13,7 +70,23 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 02 - wspnj",
+      "tag": "🇬🇧 英国 (United Kingdom) 05 - wspnj",
+      "server": "149.102.132.184",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "g5h5jleTRSyO3Rk4"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 06 - wspnj",
+      "server": "78.129.252.65",
+      "server_port": 17096,
+      "method": "aes-128-gcm",
+      "password": "7c55c080c3949e03f1a6a559a9851c68"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 07 - wspnj",
       "server": "51.77.225.200",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -21,15 +94,30 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 03 - wspnj",
+      "tag": "🇬🇧 英国 (United Kingdom) 08 - wspnj",
       "server": "149.102.149.207",
-      "server_port": 443,
+      "server_port": 80,
       "method": "aes-256-gcm",
       "password": "LXchLsIwtCeUAUgu"
     },
     {
+      "type": "vmess",
+      "tag": "🇬🇧 英国 (United Kingdom) 09 - wspnj",
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "google.com"
+        }
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 04 - wspnj",
+      "tag": "🇬🇧 英国 (United Kingdom) 10 - wspnj",
       "server": "23.81.34.204",
       "server_port": 443,
       "uuid": "99955907-9070-46f0-a200-9c7a0b9d74fe",
@@ -39,7 +127,7 @@
         "server_name": "speed.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -50,59 +138,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 05 - wspnj",
-      "server": "146.70.61.18",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 06 - wspnj",
-      "server": "51.38.71.147",
-      "server_port": 8443,
-      "uuid": "c08f0056-7a6d-4931-813b-aaa3cdd00aed",
-      "tls": {
-        "enabled": true,
-        "server_name": "node-uk.connectsuite.org",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇬🇧 英国 (United Kingdom) 07 - wspnj",
-      "server": "18.168.148.212",
+      "tag": "🇬🇧 英国 (United Kingdom) 11 - wspnj",
+      "server": "149.102.149.207",
       "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "gb.tronsg.com",
-        "insecure": false
-      }
+      "method": "aes-256-gcm",
+      "password": "LXchLsIwtCeUAUgu"
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 08 - wspnj",
-      "server": "46.250.250.149",
-      "server_port": 2053,
-      "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M",
-          "short_id": "9922313fffed1c63"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 09 - wspnj",
+      "tag": "🇬🇧 英国 (United Kingdom) 12 - wspnj",
       "server": "13.143.137.206",
       "server_port": 8443,
       "uuid": "9ebf4fda-7395-4800-b42f-b2dda649880a",
@@ -123,7 +167,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 10 - wspnj",
+      "tag": "🇬🇧 英国 (United Kingdom) 13 - wspnj",
       "server": "46.250.240.80",
       "server_port": 2053,
       "uuid": "948df76f-505d-4608-9c76-a933ee3ccc76",
@@ -143,7 +187,39 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 11 - wspnj",
+      "tag": "🇬🇧 英国 (United Kingdom) 14 - wspnj",
+      "server": "46.250.250.149",
+      "server_port": 2053,
+      "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M",
+          "short_id": "9922313fffed1c63"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇬🇧 英国 (United Kingdom) 15 - wspnj",
+      "server": "18.168.148.212",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "gb.tronsg.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 16 - wspnj",
       "server": "107.181.151.39",
       "server_port": 443,
       "uuid": "fad0b9a6-187d-4fcc-96fc-498bc5b3135a",
@@ -177,7 +253,12 @@
         "🇬🇧 英国 (United Kingdom) 08 - wspnj",
         "🇬🇧 英国 (United Kingdom) 09 - wspnj",
         "🇬🇧 英国 (United Kingdom) 10 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 11 - wspnj"
+        "🇬🇧 英国 (United Kingdom) 11 - wspnj",
+        "🇬🇧 英国 (United Kingdom) 12 - wspnj",
+        "🇬🇧 英国 (United Kingdom) 13 - wspnj",
+        "🇬🇧 英国 (United Kingdom) 14 - wspnj",
+        "🇬🇧 英国 (United Kingdom) 15 - wspnj",
+        "🇬🇧 英国 (United Kingdom) 16 - wspnj"
       ]
     },
     {
@@ -194,7 +275,12 @@
         "🇬🇧 英国 (United Kingdom) 08 - wspnj",
         "🇬🇧 英国 (United Kingdom) 09 - wspnj",
         "🇬🇧 英国 (United Kingdom) 10 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 11 - wspnj"
+        "🇬🇧 英国 (United Kingdom) 11 - wspnj",
+        "🇬🇧 英国 (United Kingdom) 12 - wspnj",
+        "🇬🇧 英国 (United Kingdom) 13 - wspnj",
+        "🇬🇧 英国 (United Kingdom) 14 - wspnj",
+        "🇬🇧 英国 (United Kingdom) 15 - wspnj",
+        "🇬🇧 英国 (United Kingdom) 16 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
