@@ -6,43 +6,31 @@
     {
       "type": "trojan",
       "tag": "🇮🇪 爱尔兰 (Ireland) 01 - wspnj",
-      "server": "adapting-basilisk.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "adapting-basilisk.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 02 - wspnj",
       "server": "master-possum.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
         "server_name": "master-possum.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 02 - wspnj",
+      "server": "3.255.76.207",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "ie.tronsg.com",
         "insecure": false
       }
     },
     {
       "type": "trojan",
       "tag": "🇮🇪 爱尔兰 (Ireland) 03 - wspnj",
-      "server": "loved-shark.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "loved-shark.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 04 - wspnj",
-      "server": "sacred-anemone.rooster465.autos",
+      "server": "34.242.77.118",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
@@ -58,8 +46,7 @@
         "auto",
         "🇮🇪 爱尔兰 (Ireland) 01 - wspnj",
         "🇮🇪 爱尔兰 (Ireland) 02 - wspnj",
-        "🇮🇪 爱尔兰 (Ireland) 03 - wspnj",
-        "🇮🇪 爱尔兰 (Ireland) 04 - wspnj"
+        "🇮🇪 爱尔兰 (Ireland) 03 - wspnj"
       ]
     },
     {
@@ -68,8 +55,7 @@
       "outbounds": [
         "🇮🇪 爱尔兰 (Ireland) 01 - wspnj",
         "🇮🇪 爱尔兰 (Ireland) 02 - wspnj",
-        "🇮🇪 爱尔兰 (Ireland) 03 - wspnj",
-        "🇮🇪 爱尔兰 (Ireland) 04 - wspnj"
+        "🇮🇪 爱尔兰 (Ireland) 03 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
