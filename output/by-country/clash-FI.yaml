@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - wspnj
-  server: 185.103.110.68
-  port: 18283
+  server: 185.103.110.66
+  port: 18280
   udp: true
   type: ss
   cipher: aes-128-gcm
@@ -18,7 +18,7 @@ proxies:
   type: hysteria2
   password: cf83b611-6cba-4535-adcb-8da06c6a9146
   sni: vps155-edge.kermemehori.ru
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 03 - wspnj
   server: 65.108.3.59
   port: 443
@@ -32,6 +32,32 @@ proxies:
     short-id: 90ec9bba2019
   servername: web.eitaa.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - wspnj
+  server: 87.242.94.135
+  port: 8443
+  udp: true
+  type: vless
+  uuid: f23bc4f1-cc71-4003-ae6c-d6abe21d8191
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: y168bU8zcZWat8CcRYRnjCz_L_-OnGvTa4ZZsapmVTQ
+    short-id: 55e5751182be6e90
+  servername: passport.yandex.ru
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 05 - wspnj
+  server: 170.168.4.59
+  port: 17170
+  udp: true
+  type: vless
+  uuid: 3eec23c1-2a0d-4d53-afa5-62745a1f5ffe
+  tls: true
+  servername: northerntrail.gazette.help
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trail-grpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,6 +66,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - wspnj
   - 🇫🇮 芬兰 (Finland) 02 - wspnj
   - 🇫🇮 芬兰 (Finland) 03 - wspnj
+  - 🇫🇮 芬兰 (Finland) 04 - wspnj
+  - 🇫🇮 芬兰 (Finland) 05 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,5 +76,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - wspnj
   - 🇫🇮 芬兰 (Finland) 02 - wspnj
   - 🇫🇮 芬兰 (Finland) 03 - wspnj
+  - 🇫🇮 芬兰 (Finland) 04 - wspnj
+  - 🇫🇮 芬兰 (Finland) 05 - wspnj
 rules:
 - MATCH,PROXIES

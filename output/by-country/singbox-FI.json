@@ -6,8 +6,8 @@
     {
       "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 01 - wspnj",
-      "server": "185.103.110.68",
-      "server_port": 18283,
+      "server": "185.103.110.66",
+      "server_port": 18280,
       "method": "aes-128-gcm",
       "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
     },
@@ -20,7 +20,7 @@
       "tls": {
         "enabled": true,
         "server_name": "vps155-edge.kermemehori.ru",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -45,13 +45,59 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - wspnj",
+      "server": "87.242.94.135",
+      "server_port": 8443,
+      "uuid": "f23bc4f1-cc71-4003-ae6c-d6abe21d8191",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "passport.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "y168bU8zcZWat8CcRYRnjCz_L_-OnGvTa4ZZsapmVTQ",
+          "short_id": "55e5751182be6e90"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - wspnj",
+      "server": "170.168.4.59",
+      "server_port": 17170,
+      "uuid": "3eec23c1-2a0d-4d53-afa5-62745a1f5ffe",
+      "tls": {
+        "enabled": true,
+        "server_name": "northerntrail.gazette.help",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "trail-grpc"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - wspnj",
         "🇫🇮 芬兰 (Finland) 02 - wspnj",
-        "🇫🇮 芬兰 (Finland) 03 - wspnj"
+        "🇫🇮 芬兰 (Finland) 03 - wspnj",
+        "🇫🇮 芬兰 (Finland) 04 - wspnj",
+        "🇫🇮 芬兰 (Finland) 05 - wspnj"
       ]
     },
     {
@@ -60,7 +106,9 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - wspnj",
         "🇫🇮 芬兰 (Finland) 02 - wspnj",
-        "🇫🇮 芬兰 (Finland) 03 - wspnj"
+        "🇫🇮 芬兰 (Finland) 03 - wspnj",
+        "🇫🇮 芬兰 (Finland) 04 - wspnj",
+        "🇫🇮 芬兰 (Finland) 05 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
