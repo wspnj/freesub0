@@ -26,7 +26,7 @@ proxies:
   servername: www.kaidee.com
   client-fingerprint: firefox
 - name: 🇹🇭 泰国 (Thailand) 03 - wspnj
-  server: 188.114.97.6
+  server: 104.16.10.2
   port: 443
   udp: true
   type: vless
@@ -34,7 +34,6 @@ proxies:
   tls: true
   servername: v2ray.simspeedup.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
