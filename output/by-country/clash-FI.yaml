@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - wspnj
+  server: 185.103.110.68
+  port: 18283
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+- name: 🇫🇮 芬兰 (Finland) 02 - wspnj
+  server: 185.103.110.66
+  port: 18280
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+- name: 🇫🇮 芬兰 (Finland) 03 - wspnj
   server: 144.31.212.253
   port: 443
   udp: true
@@ -12,19 +26,22 @@ proxies:
   password: cf83b611-6cba-4535-adcb-8da06c6a9146
   sni: vps155-edge.kermemehori.ru
   skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 02 - wspnj
-  server: 95.216.27.15
-  port: 2053
+- name: 🇫🇮 芬兰 (Finland) 04 - wspnj
+  server: 65.109.188.155
+  port: 443
   udp: true
   type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  uuid: a95c18d0-1b39-4bc7-8521-b62b5ab3f3f7
   tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
+  servername: marz.zovip2.ir
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - wspnj
+  network: ws
+  ws-opts:
+    path: /gropcdn
+    headers:
+      Host: marz.zovip2.ir
+- name: 🇫🇮 芬兰 (Finland) 05 - wspnj
   server: 87.228.92.114
   port: 25481
   udp: true
@@ -47,6 +64,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - wspnj
   - 🇫🇮 芬兰 (Finland) 02 - wspnj
   - 🇫🇮 芬兰 (Finland) 03 - wspnj
+  - 🇫🇮 芬兰 (Finland) 04 - wspnj
+  - 🇫🇮 芬兰 (Finland) 05 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,5 +74,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - wspnj
   - 🇫🇮 芬兰 (Finland) 02 - wspnj
   - 🇫🇮 芬兰 (Finland) 03 - wspnj
+  - 🇫🇮 芬兰 (Finland) 04 - wspnj
+  - 🇫🇮 芬兰 (Finland) 05 - wspnj
 rules:
 - MATCH,PROXIES

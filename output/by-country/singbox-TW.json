@@ -11,7 +11,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
+        "server_name": "160.187.100.109",
         "insecure": true
       }
     },
@@ -23,8 +23,20 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "103.115.109.49",
+        "server_name": "https",
         "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - wspnj",
+      "server": "43.160.245.154",
+      "server_port": 20004,
+      "password": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw.australiacaregroup.site",
+        "insecure": false
       }
     },
     {
@@ -33,7 +45,8 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 02 - wspnj"
+        "🇹🇼 中国台湾 (Taiwan) 02 - wspnj",
+        "🇹🇼 中国台湾 (Taiwan) 03 - wspnj"
       ]
     },
     {
@@ -41,7 +54,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 02 - wspnj"
+        "🇹🇼 中国台湾 (Taiwan) 02 - wspnj",
+        "🇹🇼 中国台湾 (Taiwan) 03 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
