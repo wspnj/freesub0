@@ -4,21 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - wspnj",
-      "server": "z5n1.vpnpolar.online",
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 01 - wspnj",
+      "server": "8.47.69.0",
       "server_port": 443,
-      "uuid": "49e4b91a-bd15-4e54-9b51-41a3380afb51",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "z5n1.vpnpolar.online",
-        "insecure": false
+        "server_name": "www.pleadcourt.org",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/beeline",
+        "path": "/assignment",
         "headers": {
-          "Host": "z5n1.vpnpolar.online"
+          "Host": "www.pleadcourt.org"
         }
       }
     },
@@ -27,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01 - wspnj"
+        "🌐 其他地区 (Other) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01 - wspnj"
+        "🌐 其他地区 (Other) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
