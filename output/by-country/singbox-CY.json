@@ -24,27 +24,6 @@
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - wspnj",
       "server": "5.253.28.240",
-      "server_port": 40443,
-      "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
-          "short_id": "88b6"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - wspnj",
-      "server": "5.253.28.240",
       "server_port": 2443,
       "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
       "tls": {
@@ -52,7 +31,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -71,8 +50,7 @@
       "outbounds": [
         "auto",
         "🇨🇾 塞浦路斯 (Cyprus) 01 - wspnj",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - wspnj",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - wspnj"
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - wspnj"
       ]
     },
     {
@@ -80,8 +58,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇾 塞浦路斯 (Cyprus) 01 - wspnj",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - wspnj",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - wspnj"
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
