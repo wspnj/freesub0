@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - wspnj",
-      "server": "213.183.63.60",
-      "server_port": 9066,
-      "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
+      "tag": "🇦🇹 奥地利 (Austria) 01 - wspnj",
+      "server": "82.110.60.9",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01 - wspnj"
+        "🇦🇹 奥地利 (Austria) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01 - wspnj"
+        "🇦🇹 奥地利 (Austria) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
