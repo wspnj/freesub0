@@ -14,7 +14,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -28,74 +28,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
-      "server": "193.233.74.6",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "server": "hy9.shamanfun.ru",
+      "server_port": 1443,
+      "password": "c635b5f6-b5ea-4e57-927f-75860b0cb984",
       "tls": {
         "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
-      "server": "153.80.241.206",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - wspnj",
-      "server": "188.225.38.216",
-      "server_port": 443,
-      "uuid": "30292475-4666-4c26-bcb2-338a0919958b",
-      "tls": {
-        "enabled": true,
-        "server_name": "lalibobi.online",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "lalibobi.orbit.v3.Connect"
+        "server_name": "hy9.shamanfun.ru",
+        "insecure": false
       }
     },
     {
@@ -104,9 +45,7 @@
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 04 - wspnj"
+        "🇷🇺 俄罗斯 (Russia) 02 - wspnj"
       ]
     },
     {
@@ -114,9 +53,7 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 04 - wspnj"
+        "🇷🇺 俄罗斯 (Russia) 02 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
