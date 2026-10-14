@@ -41,12 +41,19 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇬🇧 英国 (United Kingdom) 04 - wspnj",
-      "server": "146.70.61.18",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "viber.com"
+        }
+      }
     },
     {
       "type": "shadowsocks",
@@ -57,25 +64,12 @@
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 06 - wspnj",
-      "server": "146.70.104.235",
-      "server_port": 443,
-      "uuid": "698922a2-1ca5-4bfb-92fb-0aa7e779ce21",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FcvI0ncjwII1n6tnWQ6nLWuwRpk8hdYoYzYCi1sbhjY",
-          "short_id": "1c3ce7aa488b3e50"
-        }
-      }
+      "server": "146.70.61.18",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "vless",
@@ -100,21 +94,20 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 08 - wspnj",
-      "server": "95.85.224.51",
-      "server_port": 443,
-      "uuid": "342ab7e4-5a89-0001-8809-304120d4aa83",
-      "flow": "xtls-rprx-vision",
+      "server": "51.89.194.151",
+      "server_port": 2053,
+      "uuid": "8e790f25-1d71-4601-9fb0-d503931dcfca",
       "tls": {
         "enabled": true,
-        "server_name": "max.ru",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
-          "short_id": "a696de84963656de"
+          "public_key": "xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0",
+          "short_id": "d051f678212f9d54"
         }
       }
     },
@@ -129,7 +122,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -139,37 +132,8 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 10 - wspnj",
-      "server": "94.156.250.148",
-      "server_port": 7001,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 11 - wspnj",
-      "server": "webdisk.jaggyslawa.org",
-      "server_port": 443,
-      "uuid": "8cc7d0fc-1b83-4ee3-b51d-8a03a9b19435",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
-          "short_id": "87174b37ce3b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 12 - wspnj",
       "server": "server.slavkiti.monster",
       "server_port": 443,
       "uuid": "fad0b9a6-187d-4fcc-96fc-498bc5b3135a",
@@ -190,22 +154,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 13 - wspnj",
-      "server": "109.248.169.195",
-      "server_port": 43000,
-      "uuid": "caed9423-a900-4704-9045-d207a8d4697b",
+      "tag": "🇬🇧 英国 (United Kingdom) 11 - wspnj",
+      "server": "83.147.18.3",
+      "server_port": 443,
+      "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "109.248.169.195",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "0cVL3RpP9S7OYgQDyZMoV6n3LtrbDJ7DjjUk_0ZizWc",
-          "short_id": "445b41ed"
+          "public_key": "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA",
+          "short_id": "fd8cf7e1173f0edb"
         }
       }
     },
@@ -224,9 +188,7 @@
         "🇬🇧 英国 (United Kingdom) 08 - wspnj",
         "🇬🇧 英国 (United Kingdom) 09 - wspnj",
         "🇬🇧 英国 (United Kingdom) 10 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 11 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 12 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 13 - wspnj"
+        "🇬🇧 英国 (United Kingdom) 11 - wspnj"
       ]
     },
     {
@@ -243,9 +205,7 @@
         "🇬🇧 英国 (United Kingdom) 08 - wspnj",
         "🇬🇧 英国 (United Kingdom) 09 - wspnj",
         "🇬🇧 英国 (United Kingdom) 10 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 11 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 12 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 13 - wspnj"
+        "🇬🇧 英国 (United Kingdom) 11 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
