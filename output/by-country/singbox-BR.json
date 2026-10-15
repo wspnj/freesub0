@@ -5,26 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - wspnj",
-      "server": "hydra.yokkastars.com",
-      "server_port": 2443,
-      "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - wspnj",
+      "server": "35.199.90.53",
+      "server_port": 443,
+      "uuid": "5e517b94-e207-47ee-be3c-3020a57594e8",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg",
-          "short_id": "92c32de179e5d908"
+          "public_key": "pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs",
+          "short_id": "b62a4da6cd1c4dd6"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "rex-eb0bf76b710ce763"
       }
     },
     {
@@ -32,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - wspnj"
+        "🇧🇷 巴西 (Brazil) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - wspnj"
+        "🇧🇷 巴西 (Brazil) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

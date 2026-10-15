@@ -18,6 +18,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - wspnj
+  server: 185.135.86.175
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - wspnj
   server: 138.124.180.137
   port: 443
   udp: true
@@ -30,7 +37,7 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - wspnj
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - wspnj
   server: 195.123.208.32
   port: 443
   udp: true
@@ -43,13 +50,6 @@ proxies:
     short-id: 757b9e1ef18e60f0
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - wspnj
-  server: 185.135.86.175
-  port: 9082
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 45xgMgm386pjWjTx
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - wspnj
+  server: 70.34.212.124
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+- name: 🇸🇪 瑞典 (Sweden) 02 - wspnj
   server: se1.h1cloud.net
   port: 26128
   udp: true
@@ -19,33 +26,18 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: df50147201bf
-- name: 🇸🇪 瑞典 (Sweden) 02 - wspnj
-  server: 62.60.159.81
-  port: 2053
-  udp: true
-  type: vless
-  uuid: fc00adfb-232a-46ce-8b93-0c70e516aa8a
-  tls: true
-  reality-opts:
-    public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
-    short-id: d0ea1847066af5a6
-  servername: www.samsung.com
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpce5bb9e71
 - name: 🇸🇪 瑞典 (Sweden) 03 - wspnj
-  server: swe.wizard.select
+  server: 193.163.203.170
   port: 443
   udp: true
   type: vless
-  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
-    short-id: 3b20e438da99
-  servername: swe.wizard.select
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  servername: yandex.ru
   client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 04 - wspnj
   server: se1.h1cloud.net
@@ -60,18 +52,30 @@ proxies:
   servername: www.icloud.com
   client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 05 - wspnj
-  server: se3.h1cloud.net
-  port: 25119
+  server: 88.216.223.66
+  port: 443
   udp: true
   type: vless
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: tcpswed1.figurapn.ru
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 06 - wspnj
+  server: swe.wizard.select
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
-    short-id: 10f517
-  servername: www.samsung.com
-  client-fingerprint: chrome
+    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
+    short-id: 3b20e438da99
+  servername: swe.wizard.select
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,6 +86,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - wspnj
   - 🇸🇪 瑞典 (Sweden) 04 - wspnj
   - 🇸🇪 瑞典 (Sweden) 05 - wspnj
+  - 🇸🇪 瑞典 (Sweden) 06 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,5 +97,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - wspnj
   - 🇸🇪 瑞典 (Sweden) 04 - wspnj
   - 🇸🇪 瑞典 (Sweden) 05 - wspnj
+  - 🇸🇪 瑞典 (Sweden) 06 - wspnj
 rules:
 - MATCH,PROXIES

@@ -5,106 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - wspnj
-  server: 172.67.181.232
+  server: ccs2g.pai50288.uk
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  tls: true
+  servername: ccs2g.pai50288.uk
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /pai50288
+- name: 🌐 其他地区 (Other) 02 - wspnj
+  server: undef.network
   port: 2052
   udp: true
   type: vless
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
   network: ws
   ws-opts:
     path: /@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.blueknightnet.qzz.io
-- name: 🌐 其他地区 (Other) 02 - wspnj
-  server: 104.17.147.22
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🌐 其他地区 (Other) 03 - wspnj
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  tls: true
-  servername: a.cwvps.eu.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 04 - wspnj
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  tls: true
-  servername: free.nadun.store
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: free.nadun.store
-- name: 🌐 其他地区 (Other) 05 - wspnj
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  tls: true
-  servername: lucasjow.us.ci
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 06 - wspnj
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  tls: true
-  servername: lucasjow.us.ci
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 07 - wspnj
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  tls: true
-  servername: lucasjow.us.ci
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 08 - wspnj
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
 proxy-groups:
 - name: PROXIES
   type: select
@@ -112,12 +34,6 @@ proxy-groups:
   - AUTO
   - 🌐 其他地区 (Other) 01 - wspnj
   - 🌐 其他地区 (Other) 02 - wspnj
-  - 🌐 其他地区 (Other) 03 - wspnj
-  - 🌐 其他地区 (Other) 04 - wspnj
-  - 🌐 其他地区 (Other) 05 - wspnj
-  - 🌐 其他地区 (Other) 06 - wspnj
-  - 🌐 其他地区 (Other) 07 - wspnj
-  - 🌐 其他地区 (Other) 08 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -125,11 +41,5 @@ proxy-groups:
   proxies:
   - 🌐 其他地区 (Other) 01 - wspnj
   - 🌐 其他地区 (Other) 02 - wspnj
-  - 🌐 其他地区 (Other) 03 - wspnj
-  - 🌐 其他地区 (Other) 04 - wspnj
-  - 🌐 其他地区 (Other) 05 - wspnj
-  - 🌐 其他地区 (Other) 06 - wspnj
-  - 🌐 其他地区 (Other) 07 - wspnj
-  - 🌐 其他地区 (Other) 08 - wspnj
 rules:
 - MATCH,PROXIES
