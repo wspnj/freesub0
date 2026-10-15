@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - wspnj
-  server: 157.228.155.238
-  port: 443
-  udp: true
-  type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
-    short-id: 6f76ad09
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 02 - wspnj
   server: 157.228.155.185
   port: 443
   udp: true
@@ -30,33 +17,82 @@ proxies:
     short-id: 5ea112e8
   servername: addons.mozilla.org
   client-fingerprint: randomized
+- name: 🇦🇪 阿联酋 (UAE) 02 - wspnj
+  server: 157.228.155.238
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
+    short-id: 6f76ad09
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 03 - wspnj
-  server: 185.253.116.33
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 04 - wspnj
+  server: 157.228.128.59
+  port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
+    short-id: 06e00e7c
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 05 - wspnj
+  server: 31.59.210.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
+  tls: true
+  reality-opts:
+    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
+    short-id: 6dbf4931096f9890
+  servername: www.yandex.ru
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
+- name: 🇦🇪 阿联酋 (UAE) 06 - wspnj
+  server: 95.174.68.188
   port: 14430
   udp: true
   type: vless
-  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
   network: ws
   ws-opts:
     path: /vless
     headers:
-      Host: 185.253.116.33
-- name: 🇦🇪 阿联酋 (UAE) 04 - wspnj
-  server: 37.120.222.70
-  port: 8082
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 07 - wspnj
+  server: 146.70.102.82
+  port: 443
   udp: true
   type: vless
-  uuid: 59c3c1c7-62d0-4707-9d67-5ff9c008591c
+  uuid: 31fd2fde-ca69-450e-8c03-eaad819b06b9
+  flow: xtls-rprx-vision
   tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 05 - wspnj
+  reality-opts:
+    public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
+    short-id: 002fb4ec7b3088cc
+  servername: www.datadoghq.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 08 - wspnj
   server: 31.59.210.32
   port: 443
   udp: true
@@ -71,55 +107,18 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 06 - wspnj
-  server: 31.59.210.26
-  port: 2088
-  udp: true
-  type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  tls: true
-  reality-opts:
-    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
-    short-id: b1ad165f903c62fe
-  servername: www.yandex.ru
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 07 - wspnj
-  server: 37.9.4.112
-  port: 17701
-  udp: true
-  type: hysteria2
-  password: 56ff50da-a238-4646-95ab-dd159634bd87
-  sni: ru03.arpanet-cdn.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 588c76723192f87cfe6d6786816177cd2bd9773acdc545928d7d1d5e8338d4ce
-- name: 🇦🇪 阿联酋 (UAE) 08 - wspnj
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 09 - wspnj
-  server: 146.70.102.82
+  server: 45.59.120.217
   port: 443
   udp: true
   type: vless
-  uuid: 31fd2fde-ca69-450e-8c03-eaad819b06b9
-  flow: xtls-rprx-vision
+  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
   tls: true
   reality-opts:
-    public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
-    short-id: 002fb4ec7b3088cc
-  servername: www.datadoghq.com
-  client-fingerprint: firefox
+    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
+    short-id: 29c2dd1e3ef7c4d4
+  servername: strm.yandex.net
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 10 - wspnj
   server: 84.235.244.108
   port: 22573

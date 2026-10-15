@@ -4,36 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - wspnj",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - wspnj",
-      "server": "208.69.78.217",
-      "server_port": 2053,
-      "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0",
-          "short_id": "ad86e2d52ff40ebd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - wspnj",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -54,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - wspnj",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - wspnj",
       "server": "138.124.63.224",
       "server_port": 8444,
       "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
@@ -78,7 +50,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - wspnj",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - wspnj",
       "server": "45.133.151.186",
       "server_port": 25393,
       "uuid": "d54a7512-dda3-4218-8ae7-c591d300fd7c",
@@ -97,27 +69,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06 - wspnj",
-      "server": "177.3.208.65",
-      "server_port": 443,
-      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
-      "tls": {
-        "enabled": true,
-        "server_name": "tgmansion.site",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vless-il",
-        "headers": {
-          "Host": "tgmansion.site"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - wspnj",
+      "server": "132.243.175.144",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
       "type": "selector",
@@ -127,9 +84,7 @@
         "🇨🇭 瑞士 (Switzerland) 01 - wspnj",
         "🇨🇭 瑞士 (Switzerland) 02 - wspnj",
         "🇨🇭 瑞士 (Switzerland) 03 - wspnj",
-        "🇨🇭 瑞士 (Switzerland) 04 - wspnj",
-        "🇨🇭 瑞士 (Switzerland) 05 - wspnj",
-        "🇨🇭 瑞士 (Switzerland) 06 - wspnj"
+        "🇨🇭 瑞士 (Switzerland) 04 - wspnj"
       ]
     },
     {
@@ -139,9 +94,7 @@
         "🇨🇭 瑞士 (Switzerland) 01 - wspnj",
         "🇨🇭 瑞士 (Switzerland) 02 - wspnj",
         "🇨🇭 瑞士 (Switzerland) 03 - wspnj",
-        "🇨🇭 瑞士 (Switzerland) 04 - wspnj",
-        "🇨🇭 瑞士 (Switzerland) 05 - wspnj",
-        "🇨🇭 瑞士 (Switzerland) 06 - wspnj"
+        "🇨🇭 瑞士 (Switzerland) 04 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
