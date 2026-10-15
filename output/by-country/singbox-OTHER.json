@@ -6,46 +6,14 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - wspnj",
-      "server": "172.67.217.240",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        }
-      },
+      "server": "freesocks.work",
+      "server_port": 2052,
+      "uuid": "26769ac3-b34c-430a-87f8-e1de14619d25",
       "transport": {
         "type": "ws",
-        "path": "/tyxyws",
+        "path": "/@BlueKnight_net--@BlueKnight_net",
         "headers": {
-          "Host": "jp3.yohototo.top"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 02 - wspnj",
-      "server": "162.159.254.3",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
+          "Host": "uwu.blueknightnet.qzz.io"
         }
       }
     },
@@ -54,16 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - wspnj",
-        "🌐 其他地区 (Other) 02 - wspnj"
+        "🌐 其他地区 (Other) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - wspnj",
-        "🌐 其他地区 (Other) 02 - wspnj"
+        "🌐 其他地区 (Other) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
