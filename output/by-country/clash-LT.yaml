@@ -12,13 +12,6 @@ proxies:
   cipher: aes-256-cfb
   password: b8KkNDjEd5QqFyRm
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - wspnj
-  server: 195.238.126.20
-  port: 9045
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - wspnj
   server: 84.32.109.20
   port: 443
   udp: true
@@ -38,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇱🇹 立陶宛 (Lithuania) 01 - wspnj
   - 🇱🇹 立陶宛 (Lithuania) 02 - wspnj
-  - 🇱🇹 立陶宛 (Lithuania) 03 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇱🇹 立陶宛 (Lithuania) 01 - wspnj
   - 🇱🇹 立陶宛 (Lithuania) 02 - wspnj
-  - 🇱🇹 立陶宛 (Lithuania) 03 - wspnj
 rules:
 - MATCH,PROXIES

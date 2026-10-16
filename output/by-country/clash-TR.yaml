@@ -5,34 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - wspnj
-  server: 78.135.73.47
-  port: 443
+  server: 62.60.233.157
+  port: 8444
   udp: true
   type: vless
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  flow: xtls-rprx-vision
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
   tls: true
   reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 - wspnj
-  server: tr2.h1cloud.net
-  port: 25375
-  udp: true
-  type: vless
-  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
-  tls: true
-  reality-opts:
-    public-key: PdiXtqIEtNpVRKgB1WCKnmIOC7yJ-VR4uUe1uYjcqXM
-    short-id: 8e2a0cd6de5dc50a
-  servername: www.bing.com
-  client-fingerprint: random
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: 05195f917c82
-- name: 🇹🇷 土耳其 (Turkey) 03 - wspnj
+    grpc-service-name: GunService
+- name: 🇹🇷 土耳其 (Turkey) 02 - wspnj
   server: 104.21.48.18
   port: 2053
   udp: true
@@ -50,7 +36,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - wspnj
   - 🇹🇷 土耳其 (Turkey) 02 - wspnj
-  - 🇹🇷 土耳其 (Turkey) 03 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,6 +43,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - wspnj
   - 🇹🇷 土耳其 (Turkey) 02 - wspnj
-  - 🇹🇷 土耳其 (Turkey) 03 - wspnj
 rules:
 - MATCH,PROXIES
