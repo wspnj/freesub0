@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - wspnj
-  server: 152.233.71.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  servername: brointelengence.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 02 - wspnj
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -29,23 +16,12 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - wspnj
+- name: 🇫🇮 芬兰 (Finland) 02 - wspnj
   server: edge10.cyrionflare.com
   port: 2052
   udp: true
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 (Finland) 04 - wspnj
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,8 +29,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - wspnj
   - 🇫🇮 芬兰 (Finland) 02 - wspnj
-  - 🇫🇮 芬兰 (Finland) 03 - wspnj
-  - 🇫🇮 芬兰 (Finland) 04 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,7 +36,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - wspnj
   - 🇫🇮 芬兰 (Finland) 02 - wspnj
-  - 🇫🇮 芬兰 (Finland) 03 - wspnj
-  - 🇫🇮 芬兰 (Finland) 04 - wspnj
 rules:
 - MATCH,PROXIES

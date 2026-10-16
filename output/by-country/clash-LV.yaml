@@ -5,17 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - wspnj
-  server: 195.123.213.28
+  server: 185.220.223.24
   port: 443
   udp: true
   type: vless
-  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
-    short-id: 5c256336e3b673fa
-  servername: www.cloudflare.com
+    public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
+    short-id: 3c6afdc4124d0560
+  servername: lv.aiage.work
   client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - wspnj
   server: 138.124.180.137
@@ -30,6 +30,19 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - wspnj
+  server: 195.123.213.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +50,7 @@ proxy-groups:
   - AUTO
   - 🇱🇻 拉脱维亚 (Latvia) 01 - wspnj
   - 🇱🇻 拉脱维亚 (Latvia) 02 - wspnj
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +58,6 @@ proxy-groups:
   proxies:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - wspnj
   - 🇱🇻 拉脱维亚 (Latvia) 02 - wspnj
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - wspnj
 rules:
 - MATCH,PROXIES
