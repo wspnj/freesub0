@@ -4,138 +4,31 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - wspnj",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.volumeroot.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "freesocks.work",
+      "server_port": 2052,
+      "uuid": "e3fb01b6-69b4-41d7-babf-696d992de194",
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/@BlueKnight_net--@BlueKnight_net",
         "headers": {
-          "Host": "www.volumeroot.com"
+          "Host": "uwu.blueknightnet.qzz.io"
         }
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 02 - wspnj",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.volumeroot.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 03 - wspnj",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 04 - wspnj",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "188.114.97.6",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 05 - wspnj",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "freesocks.work",
+      "server_port": 2052,
+      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
       "transport": {
         "type": "ws",
-        "path": "/assignment?ed#Telegram---pirozi_ArGaP---",
+        "path": "/@BlueKnight_net--@BlueKnight_net",
         "headers": {
-          "Host": "www.pleadcourt.org"
+          "Host": "uwu.blueknightnet.qzz.io"
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 06 - wspnj",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 07 - wspnj",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
       }
     },
     {
@@ -144,12 +37,7 @@
       "outbounds": [
         "auto",
         "🌐 其他地区 (Other) 01 - wspnj",
-        "🌐 其他地区 (Other) 02 - wspnj",
-        "🌐 其他地区 (Other) 03 - wspnj",
-        "🌐 其他地区 (Other) 04 - wspnj",
-        "🌐 其他地区 (Other) 05 - wspnj",
-        "🌐 其他地区 (Other) 06 - wspnj",
-        "🌐 其他地区 (Other) 07 - wspnj"
+        "🌐 其他地区 (Other) 02 - wspnj"
       ]
     },
     {
@@ -157,12 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🌐 其他地区 (Other) 01 - wspnj",
-        "🌐 其他地区 (Other) 02 - wspnj",
-        "🌐 其他地区 (Other) 03 - wspnj",
-        "🌐 其他地区 (Other) 04 - wspnj",
-        "🌐 其他地区 (Other) 05 - wspnj",
-        "🌐 其他地区 (Other) 06 - wspnj",
-        "🌐 其他地区 (Other) 07 - wspnj"
+        "🌐 其他地区 (Other) 02 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
