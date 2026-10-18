@@ -6,10 +6,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 01 - wspnj",
-      "server": "191.223.221.53",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "JuD6MNgtX3nVpCzFzXYVYjDTZ7nsmaTv"
+      "server": "149.22.87.204",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
     },
     {
       "type": "shadowsocks",
@@ -22,41 +22,33 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 03 - wspnj",
-      "server": "149.22.87.204",
+      "server": "149.22.87.241",
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇯🇵 日本 (Japan) 04 - wspnj",
-      "server": "154.31.114.248",
-      "server_port": 50159,
-      "uuid": "d56624b2-35bb-468c-9b2a-e0b0df7230c1",
-      "flow": "xtls-rprx-vision",
+      "server": "108.61.186.37",
+      "server_port": 443,
+      "password": "Trojan@82164024",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA",
-          "short_id": "091e1c5db8451757"
-        }
+        "server_name": "108.61.186.37",
+        "insecure": true
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇯🇵 日本 (Japan) 05 - wspnj",
-      "server": "130.94.65.201",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform115"
+      "server": "45.32.52.173",
+      "server_port": 8886,
+      "password": "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437",
+      "tls": {
+        "enabled": true,
+        "server_name": "45.32.52.173",
+        "insecure": true
       }
     },
     {
@@ -68,57 +60,88 @@
       "tls": {
         "enabled": true,
         "server_name": "vp3.yysyy.online",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 07 - wspnj",
-      "server": "45.32.52.173",
-      "server_port": 8886,
-      "password": "e26a229d-e8f2-4ff9-8c7d-58a9d83ee437",
-      "tls": {
-        "enabled": true,
-        "server_name": "45.32.52.173",
-        "insecure": true
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 08 - wspnj",
-      "server": "43.167.232.174",
-      "server_port": 443,
-      "uuid": "0fd46529-707f-4d33-899b-598f5f4acffa",
+      "tag": "🇯🇵 日本 (Japan) 07 - wspnj",
+      "server": "funagfrdfs.alixxplay.com",
+      "server_port": 35544,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
+        "server_name": "iosapps.itunes.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
-          "public_key": "hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI",
-          "short_id": "b51e057820d3e14c"
+          "public_key": "HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc",
+          "short_id": "25c79e5856c7"
         }
       }
     },
     {
-      "type": "trojan",
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 08 - wspnj",
+      "server": "191.223.221.53",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "JuD6MNgtX3nVpCzFzXYVYjDTZ7nsmaTv"
+    },
+    {
+      "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 09 - wspnj",
-      "server": "108.61.186.37",
-      "server_port": 443,
-      "password": "Trojan@82164024",
+      "server": "154.31.114.248",
+      "server_port": 50159,
+      "uuid": "d56624b2-35bb-468c-9b2a-e0b0df7230c1",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "108.61.186.37",
-        "insecure": true
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA",
+          "short_id": "091e1c5db8451757"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 10 - wspnj",
-      "server": "156.246.88.125",
+      "server": "platform113.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform113"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 11 - wspnj",
+      "server": "130.94.67.180",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform117",
+        "headers": {
+          "Host": "platform117.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 12 - wspnj",
+      "server": "jp.wxgqlfx.top",
       "server_port": 26518,
       "uuid": "e01fcb68-3112-49da-b85d-dffb799cfc9b",
       "flow": "xtls-rprx-vision",
@@ -135,28 +158,6 @@
           "short_id": "6caead99"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 11 - wspnj",
-      "server": "platform118.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform118",
-        "headers": {
-          "Host": "platform118.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 12 - wspnj",
-      "server": "84.247.155.196",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
     },
     {
       "type": "shadowsocks",
@@ -188,10 +189,22 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇯🇵 日本 (Japan) 15 - wspnj",
+      "server": "138.3.208.26",
+      "server_port": 50160,
+      "password": "184cdec28da5a09450803c8debcd2cc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 16 - wspnj",
       "server": "3.114.220.22",
-      "server_port": 19645,
+      "server_port": 18007,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -199,7 +212,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -210,7 +223,62 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 16 - wspnj",
+      "tag": "🇯🇵 日本 (Japan) 17 - wspnj",
+      "server": "43.167.232.174",
+      "server_port": 443,
+      "uuid": "0fd46529-707f-4d33-899b-598f5f4acffa",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI",
+          "short_id": "b51e057820d3e14c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 18 - wspnj",
+      "server": "platform103.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform103",
+        "headers": {
+          "Host": "platform103.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 19 - wspnj",
+      "server": "t5.qifei.app",
+      "server_port": 443,
+      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "s3.ap-east-1.amazonaws.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
+          "short_id": "1a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 20 - wspnj",
       "server": "3.114.220.22",
       "server_port": 10583,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -230,8 +298,22 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 21 - wspnj",
+      "server": "130.94.67.40",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform118",
+        "headers": {
+          "Host": "platform118.halalkhor.info"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 17 - wspnj",
+      "tag": "🇯🇵 日本 (Japan) 22 - wspnj",
       "server": "38.175.202.26",
       "server_port": 443,
       "password": "wvA0PtDIuFbSqooIC2goKzFr",
@@ -243,18 +325,33 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 18 - wspnj",
-      "server": "platform113.golnamakcert.top",
+      "tag": "🇯🇵 日本 (Japan) 23 - wspnj",
+      "server": "130.94.65.201",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform113"
+        "path": "/platform115",
+        "headers": {
+          "Host": "platform115.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 24 - wspnj",
+      "server": "8.211.175.236",
+      "server_port": 8443,
+      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
+      "tls": {
+        "enabled": true,
+        "server_name": "8.211.175.236",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 19 - wspnj",
+      "tag": "🇯🇵 日本 (Japan) 25 - wspnj",
       "server": "188.114.98.0",
       "server_port": 443,
       "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
@@ -273,9 +370,9 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 20 - wspnj",
+      "tag": "🇯🇵 日本 (Japan) 26 - wspnj",
       "server": "3.114.220.22",
-      "server_port": 18007,
+      "server_port": 19645,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -283,7 +380,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -293,57 +390,68 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 21 - wspnj",
-      "server": "138.3.208.26",
-      "server_port": 50160,
-      "password": "184cdec28da5a09450803c8debcd2cc9",
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 27 - wspnj",
+      "server": "39.109.110.80",
+      "server_port": 27916,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
+        "server_name": "cdn-dynmedia-1.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ztQ8VYq_dVDc3x-QM8LXjup2161CirYrIBE1F7loVzQ",
+          "short_id": "6772eb2b7a"
+        }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 22 - wspnj",
-      "server": "209.248.32.116",
-      "server_port": 28106,
-      "password": "HOrViv",
+      "tag": "🇯🇵 日本 (Japan) 28 - wspnj",
+      "server": "4c2d5151.266nets.com",
+      "server_port": 12019,
+      "password": "bad06c3525a6eaee1757b34776b83892",
       "tls": {
         "enabled": true,
-        "server_name": "download.windowsupdate.com",
+        "server_name": "ixigua.com",
         "insecure": true
       }
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 23 - wspnj",
-      "server": "platform117.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 29 - wspnj",
+      "server": "jp5.998998.best",
+      "server_port": 443,
+      "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "server11.9966338.xyz",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/platform117",
+        "path": "/ieusrdgfhteuirgfiuws",
         "headers": {
-          "Host": "platform117.halalkhor.info"
+          "Host": "server11.9966338.xyz"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 24 - wspnj",
-      "server": "104.24.31.89",
+      "tag": "🇯🇵 日本 (Japan) 30 - wspnj",
+      "server": "104.18.42.98",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
         "server_name": "jp3.yohototo.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -354,34 +462,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 25 - wspnj",
-      "server": "8.211.175.236",
-      "server_port": 8443,
-      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
-      "tls": {
-        "enabled": true,
-        "server_name": "8.211.175.236",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 26 - wspnj",
-      "server": "platform103.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform103",
-        "headers": {
-          "Host": "platform103.halalkhor.info"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 27 - wspnj",
+      "tag": "🇯🇵 日本 (Japan) 31 - wspnj",
       "server": "168.138.43.75",
       "server_port": 80,
       "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
@@ -390,7 +472,7 @@
         "type": "ws",
         "path": "/cctv13.m3u8",
         "headers": {
-          "Host": "jp01.a0a.xyz"
+          "Host": "none"
         }
       }
     },
@@ -425,7 +507,11 @@
         "🇯🇵 日本 (Japan) 24 - wspnj",
         "🇯🇵 日本 (Japan) 25 - wspnj",
         "🇯🇵 日本 (Japan) 26 - wspnj",
-        "🇯🇵 日本 (Japan) 27 - wspnj"
+        "🇯🇵 日本 (Japan) 27 - wspnj",
+        "🇯🇵 日本 (Japan) 28 - wspnj",
+        "🇯🇵 日本 (Japan) 29 - wspnj",
+        "🇯🇵 日本 (Japan) 30 - wspnj",
+        "🇯🇵 日本 (Japan) 31 - wspnj"
       ]
     },
     {
@@ -458,7 +544,11 @@
         "🇯🇵 日本 (Japan) 24 - wspnj",
         "🇯🇵 日本 (Japan) 25 - wspnj",
         "🇯🇵 日本 (Japan) 26 - wspnj",
-        "🇯🇵 日本 (Japan) 27 - wspnj"
+        "🇯🇵 日本 (Japan) 27 - wspnj",
+        "🇯🇵 日本 (Japan) 28 - wspnj",
+        "🇯🇵 日本 (Japan) 29 - wspnj",
+        "🇯🇵 日本 (Japan) 30 - wspnj",
+        "🇯🇵 日本 (Japan) 31 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
