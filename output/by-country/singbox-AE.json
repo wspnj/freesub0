@@ -6,30 +6,6 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - wspnj",
-      "server": "31.59.210.26",
-      "server_port": 2088,
-      "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg",
-          "short_id": "b1ad165f903c62fe"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "astracat"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - wspnj",
       "server": "157.228.155.184",
       "server_port": 443,
       "uuid": "c39f95b5-64b5-4f7a-a93d-fa9e9cf24de8",
@@ -39,7 +15,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "randomized"
         },
         "reality": {
           "enabled": true,
@@ -49,32 +25,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - wspnj",
-      "server": "31.59.210.37",
-      "server_port": 443,
-      "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4",
-          "short_id": "6dbf4931096f9890"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "astracat"
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - wspnj",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - wspnj",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -90,7 +42,78 @@
     },
     {
       "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - wspnj",
+      "server": "157.228.128.59",
+      "server_port": 443,
+      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws",
+          "short_id": "06e00e7c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - wspnj",
+      "server": "31.59.210.32",
+      "server_port": 443,
+      "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA",
+          "short_id": "7ec4374ffc6308fd"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "astracat"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 05 - wspnj",
+      "server": "uae.unixzone.us",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - wspnj",
+      "server": "200.181.82.91",
+      "server_port": 28740,
+      "password": "0dad9116-eb88-47b6-98dd-67c9ed43afa6",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.baidu.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - wspnj",
       "server": "45.59.120.217",
       "server_port": 443,
       "uuid": "8732f92b-ba85-48f7-92e4-ad029f1cd4e7",
@@ -109,14 +132,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - wspnj",
-      "server": "uae.unixzone.us",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-      "transport": {
-        "type": "ws"
-      }
+      "type": "shadowsocks",
+      "tag": "🇦🇪 阿联酋 (UAE) 08 - wspnj",
+      "server": "200.181.82.91",
+      "server_port": 21737,
+      "method": "aes-256-gcm",
+      "password": "0dad9116-eb88-47b6-98dd-67c9ed43afa6"
     },
     {
       "type": "selector",
@@ -128,7 +149,9 @@
         "🇦🇪 阿联酋 (UAE) 03 - wspnj",
         "🇦🇪 阿联酋 (UAE) 04 - wspnj",
         "🇦🇪 阿联酋 (UAE) 05 - wspnj",
-        "🇦🇪 阿联酋 (UAE) 06 - wspnj"
+        "🇦🇪 阿联酋 (UAE) 06 - wspnj",
+        "🇦🇪 阿联酋 (UAE) 07 - wspnj",
+        "🇦🇪 阿联酋 (UAE) 08 - wspnj"
       ]
     },
     {
@@ -140,7 +163,9 @@
         "🇦🇪 阿联酋 (UAE) 03 - wspnj",
         "🇦🇪 阿联酋 (UAE) 04 - wspnj",
         "🇦🇪 阿联酋 (UAE) 05 - wspnj",
-        "🇦🇪 阿联酋 (UAE) 06 - wspnj"
+        "🇦🇪 阿联酋 (UAE) 06 - wspnj",
+        "🇦🇪 阿联酋 (UAE) 07 - wspnj",
+        "🇦🇪 阿联酋 (UAE) 08 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
