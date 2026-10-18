@@ -5,20 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - wspnj
-  server: 3.11.104.202
-  port: 22222
+  server: 13.135.33.165
+  port: 22223
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - wspnj
-  server: 3.11.104.202
-  port: 22224
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 03 - wspnj
-  server: 3.11.104.202
-  port: 22223
+  server: 13.135.33.165
+  port: 22222
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
@@ -29,7 +23,6 @@ proxy-groups:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01 - wspnj
   - 🇮🇪 爱尔兰 (Ireland) 02 - wspnj
-  - 🇮🇪 爱尔兰 (Ireland) 03 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -37,6 +30,5 @@ proxy-groups:
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01 - wspnj
   - 🇮🇪 爱尔兰 (Ireland) 02 - wspnj
-  - 🇮🇪 爱尔兰 (Ireland) 03 - wspnj
 rules:
 - MATCH,PROXIES
