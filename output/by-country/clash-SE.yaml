@@ -15,21 +15,48 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
+- name: 🇸🇪 瑞典 (Sweden) 02 - wspnj
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 03 - wspnj
+  server: 45.12.63.219
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  tls: true
+  servername: edge-lab-b.10media.top
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: swedenfeed
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - wspnj
+  - 🇸🇪 瑞典 (Sweden) 02 - wspnj
+  - 🇸🇪 瑞典 (Sweden) 03 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - wspnj
+  - 🇸🇪 瑞典 (Sweden) 02 - wspnj
+  - 🇸🇪 瑞典 (Sweden) 03 - wspnj
 rules:
 - MATCH,PROXIES

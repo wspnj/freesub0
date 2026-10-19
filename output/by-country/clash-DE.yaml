@@ -12,19 +12,26 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 1hhrqrokj3ag
 - name: 🇩🇪 德国 (Germany) 02 - wspnj
-  server: 31.76.11.83
-  port: 15731
+  server: 45.135.194.193
+  port: 80
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=
+  type: vless
+  uuid: 28b983d7-f532-4eb7-b3e7-75aa60290c76
 - name: 🇩🇪 德国 (Germany) 03 - wspnj
-  server: 185.226.172.8
-  port: 8008
+  server: 178.17.57.33
+  port: 8444
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  servername: github.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
 - name: 🇩🇪 德国 (Germany) 04 - wspnj
   server: 146.70.20.147
   port: 8080
@@ -33,6 +40,34 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇩🇪 德国 (Germany) 05 - wspnj
+  server: 31.76.11.83
+  port: 15731
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=
+- name: 🇩🇪 德国 (Germany) 06 - wspnj
+  server: 185.226.172.8
+  port: 8008
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 07 - wspnj
+  server: 213.202.208.199
+  port: 5000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇩🇪 德国 (Germany) 08 - wspnj
+  server: 8.209.74.72
+  port: 20001
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+- name: 🇩🇪 德国 (Germany) 09 - wspnj
   server: 163.245.42.48
   port: 443
   udp: true
@@ -44,30 +79,27 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: mother-earth.fyi
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 06 - wspnj
-  server: de9.dedushka.top
+- name: 🇩🇪 德国 (Germany) 10 - wspnj
+  server: 31.76.11.83
+  port: 22366
+  udp: true
+  type: vmess
+  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 (Germany) 11 - wspnj
+  server: edge.bookmai.com
   port: 443
   udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de9.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 07 - wspnj
-  server: 169.150.210.233
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 08 - wspnj
-  server: 188.241.241.49
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de6.dedushka.top
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 09 - wspnj
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 12 - wspnj
   server: 130.17.25.67
   port: 443
   udp: true
@@ -80,128 +112,52 @@ proxies:
     short-id: 9e4eced6e98ed4d4
   servername: github.com
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 10 - wspnj
-  server: edge.bookmai.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 11 - wspnj
-  server: 2.27.35.55
-  port: 443
-  udp: true
-  type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 12 - wspnj
-  server: 213.202.208.199
-  port: 5000
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
 - name: 🇩🇪 德国 (Germany) 13 - wspnj
-  server: de-bots4.h1cloud.net
-  port: 25267
-  udp: true
-  type: trojan
-  password: happybirthdaydaniel
-  sni: t.me/fuckthewall
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 14 - wspnj
-  server: 8.209.74.72
-  port: 20001
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-- name: 🇩🇪 德国 (Germany) 15 - wspnj
-  server: 188.241.241.200
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de7.dedushka.top
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 16 - wspnj
-  server: 31.76.11.83
-  port: 22366
-  udp: true
-  type: vmess
-  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 (Germany) 17 - wspnj
   server: test.wecantos.site
   port: 20000
   udp: true
   type: vless
   uuid: ca59a503-db23-44af-9879-49747d8da98f
-- name: 🇩🇪 德国 (Germany) 18 - wspnj
-  server: 189.24.82.195
-  port: 443
+- name: 🇩🇪 德国 (Germany) 14 - wspnj
+  server: 57.129.41.216
+  port: 80
   udp: true
   type: vless
-  uuid: bf7ca7a3-a028-488e-b9f1-34e467d6d897
-  tls: true
-  reality-opts:
-    public-key: oXHb-GX9ExLRs-CcFwllm6zp99jpx7yAdxrvAV1sZ18
-    short-id: 3eaacc9b
-  servername: itunes.apple.com
-  client-fingerprint: chrome
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   network: ws
   ws-opts:
-    path: /ws
+    path: /vless/
     headers:
-      Host: itunes.apple.com
-- name: 🇩🇪 德国 (Germany) 19 - wspnj
-  server: 31.70.111.146
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 15 - wspnj
+  server: andikurdi07.global.ssl.fastly.net
   port: 443
   udp: true
   type: vless
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
-  flow: xtls-rprx-vision
+  uuid: 75df10cc-f745-4aae-aa74-400082f02682
   tls: true
-  reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 20 - wspnj
-  server: 91.107.247.173
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  tls: true
-  servername: sino.bestsellers1.site
+  servername: wtqrycyqafndeba.global.ssl.fastly.net
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 21 - wspnj
-  server: vpn-de-002.fastervpn.world
-  port: 443
+      Host: wtqrycyqafndeba.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 16 - wspnj
+  server: 66.151.40.60
+  port: 8444
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-de-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 22 - wspnj
+  type: vless
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇩🇪 德国 (Germany) 17 - wspnj
   server: 2.27.69.117
   port: 443
   udp: true
@@ -214,13 +170,109 @@ proxies:
     short-id: 123c2bff
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 23 - wspnj
+- name: 🇩🇪 德国 (Germany) 18 - wspnj
+  server: 188.241.241.236
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: de10.dedushka.top
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 19 - wspnj
   server: connect.wecantos.site
   port: 10000
   udp: true
   type: vless
   uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+- name: 🇩🇪 德国 (Germany) 20 - wspnj
+  server: 46.28.69.123
+  port: 443
+  udp: true
+  type: vless
+  uuid: b945f9aa-1b45-4912-aa7e-248509472bad
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7KnJYp2-sE3o35mnbSZzX3fNg-ns9n8xyNfkRSHCD3E
+    short-id: 238e23c5150f02e4
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 21 - wspnj
+  server: de8.dedushka.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: de8.dedushka.top
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 22 - wspnj
+  server: sino.bestsellers1.site
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  tls: true
+  servername: sino.bestsellers1.site
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 23 - wspnj
+  server: 2.27.69.128
+  port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
+    short-id: e696e744
+  servername: addons.mozilla.org
+  client-fingerprint: random
 - name: 🇩🇪 德国 (Germany) 24 - wspnj
+  server: 31.70.111.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 25 - wspnj
+  server: 188.241.241.49
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: de6.dedushka.top
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 26 - wspnj
+  server: 82.118.19.153
+  port: 443
+  udp: true
+  type: vless
+  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
+    short-id: 670ed9f350bd8ee0
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 27 - wspnj
+  server: 188.241.241.122
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: de2.dedushka.top
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 28 - wspnj
   server: 46.225.46.136
   port: 2087
   udp: true
@@ -234,43 +286,14 @@ proxies:
     path: /hokm
     headers:
       Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 25 - wspnj
-  server: 188.241.241.122
+- name: 🇩🇪 德国 (Germany) 29 - wspnj
+  server: 188.241.241.102
   port: 443
   udp: true
   type: trojan
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de2.dedushka.top
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 26 - wspnj
-  server: de3.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de3.dedushka.top
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 27 - wspnj
-  server: de-d21e56c13c.shamanapp.online
-  port: 33744
-  udp: true
-  type: vmess
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /ShamanVMESS2026
-    headers:
-      Host: de-d21e56c13c.shamanapp.online:33744
-- name: 🇩🇪 德国 (Germany) 28 - wspnj
-  server: 188.241.241.236
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: de10.dedushka.top
-  skip-cert-verify: false
+  sni: de4.dedushka.top
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -304,6 +327,7 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 26 - wspnj
   - 🇩🇪 德国 (Germany) 27 - wspnj
   - 🇩🇪 德国 (Germany) 28 - wspnj
+  - 🇩🇪 德国 (Germany) 29 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -337,5 +361,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 26 - wspnj
   - 🇩🇪 德国 (Germany) 27 - wspnj
   - 🇩🇪 德国 (Germany) 28 - wspnj
+  - 🇩🇪 德国 (Germany) 29 - wspnj
 rules:
 - MATCH,PROXIES
