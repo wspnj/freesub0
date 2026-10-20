@@ -11,13 +11,20 @@ proxies:
   type: vless
   uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
 - name: 🇮🇹 意大利 (Italy) 02 - wspnj
+  server: 185.164.175.81
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 03 - wspnj
   server: 57.131.48.45
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: itzvpn@321
-- name: 🇮🇹 意大利 (Italy) 03 - wspnj
+- name: 🇮🇹 意大利 (Italy) 04 - wspnj
   server: 31.59.180.155
   port: 443
   udp: true
@@ -29,8 +36,8 @@ proxies:
     public-key: _0bRaAOYHd4ccDCmnlIq9I13WLRuT4LzlXfV_GGHKE0
     short-id: 5aab0b0401044801
   servername: italynew.nztvpn.com
-  client-fingerprint: random
-- name: 🇮🇹 意大利 (Italy) 04 - wspnj
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 05 - wspnj
   server: 82.118.16.187
   port: 443
   udp: true
@@ -43,7 +50,7 @@ proxies:
     short-id: cd6065902eea7a02
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 05 - wspnj
+- name: 🇮🇹 意大利 (Italy) 06 - wspnj
   server: 57.131.38.163
   port: 2053
   udp: true
@@ -54,7 +61,7 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
     short-id: 5b8a942318178e7b
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,6 +72,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 03 - wspnj
   - 🇮🇹 意大利 (Italy) 04 - wspnj
   - 🇮🇹 意大利 (Italy) 05 - wspnj
+  - 🇮🇹 意大利 (Italy) 06 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,5 +83,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 03 - wspnj
   - 🇮🇹 意大利 (Italy) 04 - wspnj
   - 🇮🇹 意大利 (Italy) 05 - wspnj
+  - 🇮🇹 意大利 (Italy) 06 - wspnj
 rules:
 - MATCH,PROXIES
