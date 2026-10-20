@@ -4,26 +4,88 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇨🇿 捷克 (Czech) 01 - wspnj",
+      "server": "153.76.190.31",
+      "server_port": 8443,
+      "password": "d65fb384-5029-4edf-bdc7-0f5960600e3d",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtestmark.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇿 捷克 (Czech) 02 - wspnj",
       "server": "67.159.18.34",
       "server_port": 17001,
       "method": "aes-256-gcm",
       "password": "I6o9NnialYLMEjVt28RF4dpjmr9wMvNL"
     },
     {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - wspnj",
+      "server": "153.76.190.31",
+      "server_port": 2083,
+      "uuid": "d65fb384-5029-4edf-bdc7-0f5960600e3d",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtestmark.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless-ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 04 - wspnj",
+      "server": "server.slavkiti.monster",
+      "server_port": 443,
+      "uuid": "4d017db2-7655-4276-9557-e2ec25b04ee7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "ee1716767f9b"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - wspnj"
+        "🇨🇿 捷克 (Czech) 01 - wspnj",
+        "🇨🇿 捷克 (Czech) 02 - wspnj",
+        "🇨🇿 捷克 (Czech) 03 - wspnj",
+        "🇨🇿 捷克 (Czech) 04 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - wspnj"
+        "🇨🇿 捷克 (Czech) 01 - wspnj",
+        "🇨🇿 捷克 (Czech) 02 - wspnj",
+        "🇨🇿 捷克 (Czech) 03 - wspnj",
+        "🇨🇿 捷克 (Czech) 04 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
