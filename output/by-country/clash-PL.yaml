@@ -5,13 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - wspnj
-  server: pl2.dedushka.top
+  server: 45.194.66.202
   port: 443
   udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl2.dedushka.top
-  skip-cert-verify: true
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg
+    short-id: f8b695e5c59d028c
+  servername: pl.golangwikito.cfd
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 02 - wspnj
   server: pl1.dedushka.top
   port: 443
@@ -19,8 +24,16 @@ proxies:
   type: trojan
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   sni: pl1.dedushka.top
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 03 - wspnj
+  server: pl2.dedushka.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: pl2.dedushka.top
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 04 - wspnj
   server: 144.31.101.196
   port: 33891
   udp: true
@@ -32,13 +45,7 @@ proxies:
     public-key: HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw
     short-id: 5bd7b68ca4c04443
   servername: browser.yandex.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 04 - wspnj
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  client-fingerprint: random
 - name: 🇵🇱 波兰 (Poland) 05 - wspnj
   server: 54.37.131.126
   port: 80
@@ -61,6 +68,14 @@ proxies:
   tls: true
   servername: pl.flen-vpn.xyz
   skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 07 - wspnj
+  server: 92.118.150.146
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: pl.tronsg.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,6 +87,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - wspnj
   - 🇵🇱 波兰 (Poland) 05 - wspnj
   - 🇵🇱 波兰 (Poland) 06 - wspnj
+  - 🇵🇱 波兰 (Poland) 07 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,5 +99,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - wspnj
   - 🇵🇱 波兰 (Poland) 05 - wspnj
   - 🇵🇱 波兰 (Poland) 06 - wspnj
+  - 🇵🇱 波兰 (Poland) 07 - wspnj
 rules:
 - MATCH,PROXIES
