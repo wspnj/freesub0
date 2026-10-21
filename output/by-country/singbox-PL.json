@@ -16,37 +16,9 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 02 - wspnj",
-      "server": "site.teslamotor.site",
-      "server_port": 20001,
-      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - wspnj",
-      "server": "144.31.0.140",
-      "server_port": 443,
-      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.sakhalin.fyi",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ",
-          "short_id": "7271129440ade8fa"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 04 - wspnj",
-      "server": "pl1.dedushka.top",
+      "tag": "🇵🇱 波兰 (Poland) 02 - wspnj",
+      "server": "31.133.0.182",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
@@ -56,18 +28,31 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03 - wspnj",
+      "server": "edge10.cyrionflare.com",
+      "server_port": 2052,
+      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 04 - wspnj",
+      "server": "site.teslamotor.site",
+      "server_port": 20001,
+      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
+    },
+    {
+      "type": "vmess",
       "tag": "🇵🇱 波兰 (Poland) 05 - wspnj",
-      "server": "92.118.150.146",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.tronsg.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+      "server": "54.37.131.126",
+      "server_port": 80,
+      "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
         }
       }
     },
@@ -84,6 +69,22 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 07 - wspnj",
+      "server": "92.118.150.146",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.tronsg.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -93,7 +94,8 @@
         "🇵🇱 波兰 (Poland) 03 - wspnj",
         "🇵🇱 波兰 (Poland) 04 - wspnj",
         "🇵🇱 波兰 (Poland) 05 - wspnj",
-        "🇵🇱 波兰 (Poland) 06 - wspnj"
+        "🇵🇱 波兰 (Poland) 06 - wspnj",
+        "🇵🇱 波兰 (Poland) 07 - wspnj"
       ]
     },
     {
@@ -105,7 +107,8 @@
         "🇵🇱 波兰 (Poland) 03 - wspnj",
         "🇵🇱 波兰 (Poland) 04 - wspnj",
         "🇵🇱 波兰 (Poland) 05 - wspnj",
-        "🇵🇱 波兰 (Poland) 06 - wspnj"
+        "🇵🇱 波兰 (Poland) 06 - wspnj",
+        "🇵🇱 波兰 (Poland) 07 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
