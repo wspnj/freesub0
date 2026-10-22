@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 马来西亚 (Malaysia) 01 - wspnj
-  server: my2.frnhk.xyz
-  port: 443
+- name: 🇹🇭 泰国 (Thailand) 01 - wspnj
+  server: funagfrdfs.alixxplay.com
+  port: 56415
   udp: true
   type: vless
-  uuid: 6006c9a2-c0a2-4cda-80f2-405b0d790fc8
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SPtkbd9O6y-rdGoR2CLzW1IFr6WMlqt2lM9wU-VURig
-    short-id: 6b7a8c9d
-  servername: www.waseda.jp
+    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
+    short-id: cbd39bea0805e2
+  servername: www.kaidee.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 马来西亚 (Malaysia) 01 - wspnj
+  - 🇹🇭 泰国 (Thailand) 01 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 马来西亚 (Malaysia) 01 - wspnj
+  - 🇹🇭 泰国 (Thailand) 01 - wspnj
 rules:
 - MATCH,PROXIES
