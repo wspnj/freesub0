@@ -6,6 +6,26 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - wspnj",
+      "server": "46.250.240.80",
+      "server_port": 2053,
+      "uuid": "948df76f-505d-4608-9c76-a933ee3ccc76",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E",
+          "short_id": "4cc9dc65f7770115"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - wspnj",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -29,14 +49,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - wspnj"
+        "🇦🇺 澳大利亚 (Australia) 01 - wspnj",
+        "🇦🇺 澳大利亚 (Australia) 02 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - wspnj"
+        "🇦🇺 澳大利亚 (Australia) 01 - wspnj",
+        "🇦🇺 澳大利亚 (Australia) 02 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
