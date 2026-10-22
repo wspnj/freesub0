@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - wspnj",
+      "server": "195.58.49.34",
+      "server_port": 18443,
+      "method": "aes-256-gcm",
+      "password": "Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
       "server": "45.128.78.178",
       "server_port": 443,
       "uuid": "261160d5-0343-4b85-8c28-3d40dd681559",
@@ -25,18 +33,30 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo="
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - wspnj"
+        "🇷🇺 俄罗斯 (Russia) 01 - wspnj",
+        "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
+        "🇷🇺 俄罗斯 (Russia) 03 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - wspnj"
+        "🇷🇺 俄罗斯 (Russia) 01 - wspnj",
+        "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
+        "🇷🇺 俄罗斯 (Russia) 03 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
