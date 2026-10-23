@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - wspnj
-  server: 195.58.49.34
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
-- name: 🇷🇺 俄罗斯 (Russia) 02 - wspnj
   server: 45.128.78.178
   port: 443
   udp: true
@@ -23,7 +16,7 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: ozon.ru
   client-fingerprint: ''
-- name: 🇷🇺 俄罗斯 (Russia) 03 - wspnj
+- name: 🇷🇺 俄罗斯 (Russia) 02 - wspnj
   server: 130.49.189.158
   port: 43558
   udp: true
@@ -37,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 02 - wspnj
-  - 🇷🇺 俄罗斯 (Russia) 03 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -45,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 02 - wspnj
-  - 🇷🇺 俄罗斯 (Russia) 03 - wspnj
 rules:
 - MATCH,PROXIES
