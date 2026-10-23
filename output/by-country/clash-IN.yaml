@@ -5,24 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - wspnj
-  server: 5.253.29.254
-  port: 10443
-  udp: true
-  type: vless
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-- name: 🇮🇳 印度 (India) 02 - wspnj
-  server: in.smrtai.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
-  tls: true
-  reality-opts:
-    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
-    short-id: 6bdc8320
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 03 - wspnj
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -33,20 +15,8 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 04 - wspnj
-  server: 165.99.222.161
-  port: 443
-  udp: true
-  type: vless
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
-  servername: in1.vkusnews.com
-  client-fingerprint: qq
-- name: 🇮🇳 印度 (India) 05 - wspnj
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 02 - wspnj
   server: 13.140.56.100
   port: 14430
   udp: true
@@ -55,6 +25,29 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+- name: 🇮🇳 印度 (India) 03 - wspnj
+  server: in.smrtai.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
+  tls: true
+  reality-opts:
+    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
+    short-id: 6bdc8320
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 04 - wspnj
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,7 +57,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - wspnj
   - 🇮🇳 印度 (India) 03 - wspnj
   - 🇮🇳 印度 (India) 04 - wspnj
-  - 🇮🇳 印度 (India) 05 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,6 +66,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - wspnj
   - 🇮🇳 印度 (India) 03 - wspnj
   - 🇮🇳 印度 (India) 04 - wspnj
-  - 🇮🇳 印度 (India) 05 - wspnj
 rules:
 - MATCH,PROXIES
