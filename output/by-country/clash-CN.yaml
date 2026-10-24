@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - wspnj
-  server: free.sahanwickramasinghe.me
-  port: 80
+- name: 🇨🇳 CN 01 - wspnj
+  server: 120.48.133.162
+  port: 10086
   udp: true
-  type: vless
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  type: vmess
+  uuid: a01e5d56-464f-45b9-b600-164db4700162
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - wspnj
+  - 🇨🇳 CN 01 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - wspnj
+  - 🇨🇳 CN 01 - wspnj
 rules:
 - MATCH,PROXIES
