@@ -4,23 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) R50 - wspnj
-  server: 23.160.56.99
-  port: 2087
+- name: 🇻🇳 越南 (Vietnam) 01 - wspnj
+  server: 150.95.109.109
+  port: 2086
   udp: true
   type: vless
-  uuid: f1e7eafa-0d6f-441e-8565-29f34171aef2
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) R50 - wspnj
+  - 🇻🇳 越南 (Vietnam) 01 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) R50 - wspnj
+  - 🇻🇳 越南 (Vietnam) 01 - wspnj
 rules:
 - MATCH,PROXIES
