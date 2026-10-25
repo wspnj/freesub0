@@ -6,10 +6,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 01 - wspnj",
-      "server": "141.164.45.187",
-      "server_port": 9090,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
+      "server": "211.178.105.134",
+      "server_port": 6123,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     },
     {
       "type": "hysteria2",
@@ -24,12 +24,16 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 03 - wspnj",
-      "server": "141.164.45.187",
-      "server_port": 5498,
-      "method": "aes-256-gcm",
-      "password": "lGqs95QkFHo2NV"
+      "server": "152.67.200.82",
+      "server_port": 50160,
+      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
+      "tls": {
+        "enabled": true,
+        "server_name": "css.rbxcdn.com",
+        "insecure": true
+      }
     },
     {
       "type": "hysteria2",
@@ -39,7 +43,7 @@
       "password": "maintell",
       "tls": {
         "enabled": true,
-        "server_name": "152.70.237.123",
+        "server_name": "bing.com",
         "insecure": true
       }
     },
@@ -67,6 +71,26 @@
     {
       "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 06 - wspnj",
+      "server": "151.245.106.49",
+      "server_port": 2053,
+      "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
+          "short_id": "429499c03d4cc8a0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 07 - wspnj",
       "server": "3.39.4.109",
       "server_port": 18967,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -76,7 +100,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -84,14 +108,6 @@
           "short_id": "48050fab"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 07 - wspnj",
-      "server": "211.178.105.134",
-      "server_port": 6123,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
     },
     {
       "type": "trojan",
@@ -108,50 +124,18 @@
     {
       "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 09 - wspnj",
-      "server": "152.67.200.82",
-      "server_port": 50160,
-      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
-      "tls": {
-        "enabled": true,
-        "server_name": "vk.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 10 - wspnj",
-      "server": "151.245.106.49",
-      "server_port": 2053,
-      "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
-          "short_id": "429499c03d4cc8a0"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 11 - wspnj",
       "server": "150-230-252-217.liao.kdns.fr",
       "server_port": 50160,
       "password": "9cfc9458e48c028ec03ff86ebc71c744",
       "tls": {
         "enabled": true,
         "server_name": "150-230-252-217.liao.kdns.fr",
-        "insecure": true
+        "insecure": false
       }
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 12 - wspnj",
+      "tag": "🇰🇷 韩国 (South Korea) 10 - wspnj",
       "server": "tjhg.m2k699.com",
       "server_port": 24999,
       "password": "29086912-33e4-4e06-ba2b-60f1a195864f",
@@ -159,21 +143,6 @@
         "enabled": true,
         "server_name": "www.itunes.com",
         "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 13 - wspnj",
-      "server": "132.145.80.230",
-      "server_port": 80,
-      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8",
-        "headers": {
-          "Host": "132.145.80.230"
-        }
       }
     },
     {
@@ -190,10 +159,7 @@
         "🇰🇷 韩国 (South Korea) 07 - wspnj",
         "🇰🇷 韩国 (South Korea) 08 - wspnj",
         "🇰🇷 韩国 (South Korea) 09 - wspnj",
-        "🇰🇷 韩国 (South Korea) 10 - wspnj",
-        "🇰🇷 韩国 (South Korea) 11 - wspnj",
-        "🇰🇷 韩国 (South Korea) 12 - wspnj",
-        "🇰🇷 韩国 (South Korea) 13 - wspnj"
+        "🇰🇷 韩国 (South Korea) 10 - wspnj"
       ]
     },
     {
@@ -209,10 +175,7 @@
         "🇰🇷 韩国 (South Korea) 07 - wspnj",
         "🇰🇷 韩国 (South Korea) 08 - wspnj",
         "🇰🇷 韩国 (South Korea) 09 - wspnj",
-        "🇰🇷 韩国 (South Korea) 10 - wspnj",
-        "🇰🇷 韩国 (South Korea) 11 - wspnj",
-        "🇰🇷 韩国 (South Korea) 12 - wspnj",
-        "🇰🇷 韩国 (South Korea) 13 - wspnj"
+        "🇰🇷 韩国 (South Korea) 10 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
