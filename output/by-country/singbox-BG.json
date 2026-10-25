@@ -5,23 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - wspnj",
-      "server": "forwarded.frnhk.xyz",
-      "server_port": 53002,
-      "uuid": "5ce8f582-1494-4e3f-9a2d-7164491cc6fa",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - wspnj",
+      "server": "195.123.227.162",
+      "server_port": 443,
+      "uuid": "7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc",
       "tls": {
         "enabled": true,
-        "server_name": "www.ens.psl.eu",
+        "server_name": "zbfkmgdg8.hat.onl",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3lswNoHV1RqK6yO--0ZWoYh1WqHkfhKQph3onxE_1So",
-          "short_id": "fc04"
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "hls-vod.ohql91f.segment-26-v1-a1.ts"
       }
     },
     {
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - wspnj"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - wspnj"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
