@@ -4,7 +4,15 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) R50 - wspnj
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (移动家宽) - wspnj
+  server: gu232.izzzzzi.com
+  port: 20052
+  udp: true
+  type: trojan
+  password: e56e752c86a640cd
+  sni: gu232.izzzzzi.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 02 (家宽) R50 - wspnj
   server: 23.160.56.99
   port: 2087
   udp: true
@@ -15,12 +23,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) R50 - wspnj
+  - 🇹🇼 中国台湾 (Taiwan) 01 (移动家宽) - wspnj
+  - 🇺🇸 美国 (United States) 02 (家宽) R50 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) R50 - wspnj
+  - 🇹🇼 中国台湾 (Taiwan) 01 (移动家宽) - wspnj
+  - 🇺🇸 美国 (United States) 02 (家宽) R50 - wspnj
 rules:
 - MATCH,PROXIES

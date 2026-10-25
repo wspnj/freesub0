@@ -6,27 +6,6 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 01 - wspnj",
-      "server": "77.91.69.169",
-      "server_port": 19226,
-      "uuid": "f0b144bd-4c44-440d-b630-d79ec82cad3a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PQjgf7GxBd2tDXf0zl9Z5rTZo7LdsWj0hGZLH-lJ-Uk",
-          "short_id": "7c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 02 - wspnj",
       "server": "185.95.231.156",
       "server_port": 443,
       "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
@@ -42,6 +21,27 @@
           "enabled": true,
           "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
           "short_id": "a3a578ab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 02 - wspnj",
+      "server": "77.91.69.169",
+      "server_port": 19226,
+      "uuid": "f0b144bd-4c44-440d-b630-d79ec82cad3a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PQjgf7GxBd2tDXf0zl9Z5rTZo7LdsWj0hGZLH-lJ-Uk",
+          "short_id": "7c"
         }
       }
     },
@@ -69,22 +69,13 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇱 以色列 (Israel) 04 - wspnj",
-      "server": "31.57.185.124",
-      "server_port": 41957,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "aJzB4p6wYQF+OEbPk2VmV3JvdFo/K4YVuBqjBEmkf+o=:fzmWR6oEtp740EsWBupO/siQ7E/XBZ5ZWJYweJgm420="
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇱 以色列 (Israel) 01 - wspnj",
         "🇮🇱 以色列 (Israel) 02 - wspnj",
-        "🇮🇱 以色列 (Israel) 03 - wspnj",
-        "🇮🇱 以色列 (Israel) 04 - wspnj"
+        "🇮🇱 以色列 (Israel) 03 - wspnj"
       ]
     },
     {
@@ -93,8 +84,7 @@
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 - wspnj",
         "🇮🇱 以色列 (Israel) 02 - wspnj",
-        "🇮🇱 以色列 (Israel) 03 - wspnj",
-        "🇮🇱 以色列 (Israel) 04 - wspnj"
+        "🇮🇱 以色列 (Israel) 03 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

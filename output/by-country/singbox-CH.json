@@ -24,12 +24,36 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - wspnj",
+      "server": "37.120.222.70",
+      "server_port": 8082,
+      "uuid": "59c3c1c7-62d0-4707-9d67-5ff9c008591c",
+      "tls": {
+        "enabled": true,
+        "server_name": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - wspnj",
-        "🇨🇭 瑞士 (Switzerland) 02 - wspnj"
+        "🇨🇭 瑞士 (Switzerland) 02 - wspnj",
+        "🇨🇭 瑞士 (Switzerland) 03 - wspnj"
       ]
     },
     {
@@ -37,7 +61,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - wspnj",
-        "🇨🇭 瑞士 (Switzerland) 02 - wspnj"
+        "🇨🇭 瑞士 (Switzerland) 02 - wspnj",
+        "🇨🇭 瑞士 (Switzerland) 03 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
