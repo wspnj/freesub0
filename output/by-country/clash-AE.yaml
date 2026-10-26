@@ -5,6 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - wspnj
+  server: 185.253.116.33
+  port: 14430
+  udp: true
+  type: vless
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇦🇪 阿联酋 (UAE) 02 - wspnj
+  server: 116.204.164.30
+  port: 7443
+  udp: true
+  type: vless
+  uuid: d5f29a64-da5d-4f99-b3c4-ae92cc39ad5f
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 03 - wspnj
   server: 130.49.161.70
   port: 443
   udp: true
@@ -14,8 +38,8 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 02 - wspnj
-  server: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - wspnj
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -25,7 +49,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 03 - wspnj
+- name: 🇦🇪 阿联酋 (UAE) 05 - wspnj
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -34,15 +58,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 04 - wspnj
-  server: 185.253.116.33
-  port: 14430
-  udp: true
-  type: vless
-  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
-  network: ws
-  ws-opts:
-    path: /vless
+    headers:
+      Host: 95.174.68.188
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +69,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - wspnj
   - 🇦🇪 阿联酋 (UAE) 03 - wspnj
   - 🇦🇪 阿联酋 (UAE) 04 - wspnj
+  - 🇦🇪 阿联酋 (UAE) 05 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +79,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - wspnj
   - 🇦🇪 阿联酋 (UAE) 03 - wspnj
   - 🇦🇪 阿联酋 (UAE) 04 - wspnj
+  - 🇦🇪 阿联酋 (UAE) 05 - wspnj
 rules:
 - MATCH,PROXIES

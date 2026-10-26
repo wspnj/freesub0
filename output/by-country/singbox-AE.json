@@ -4,8 +4,42 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - wspnj",
+      "server": "185.253.116.33",
+      "server_port": 14430,
+      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - wspnj",
+      "server": "116.204.164.30",
+      "server_port": 7443,
+      "uuid": "d5f29a64-da5d-4f99-b3c4-ae92cc39ad5f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - wspnj",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -21,8 +55,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - wspnj",
-      "server": "uae.unixzone.us",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - wspnj",
+      "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
@@ -35,24 +69,16 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - wspnj",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - wspnj",
       "server": "95.174.68.188",
       "server_port": 14430,
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
       "transport": {
         "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - wspnj",
-      "server": "185.253.116.33",
-      "server_port": 14430,
-      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
+        "path": "/vless",
+        "headers": {
+          "Host": "95.174.68.188"
+        }
       }
     },
     {
@@ -63,7 +89,8 @@
         "🇦🇪 阿联酋 (UAE) 01 - wspnj",
         "🇦🇪 阿联酋 (UAE) 02 - wspnj",
         "🇦🇪 阿联酋 (UAE) 03 - wspnj",
-        "🇦🇪 阿联酋 (UAE) 04 - wspnj"
+        "🇦🇪 阿联酋 (UAE) 04 - wspnj",
+        "🇦🇪 阿联酋 (UAE) 05 - wspnj"
       ]
     },
     {
@@ -73,7 +100,8 @@
         "🇦🇪 阿联酋 (UAE) 01 - wspnj",
         "🇦🇪 阿联酋 (UAE) 02 - wspnj",
         "🇦🇪 阿联酋 (UAE) 03 - wspnj",
-        "🇦🇪 阿联酋 (UAE) 04 - wspnj"
+        "🇦🇪 阿联酋 (UAE) 04 - wspnj",
+        "🇦🇪 阿联酋 (UAE) 05 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
