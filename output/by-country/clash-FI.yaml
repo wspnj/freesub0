@@ -17,6 +17,17 @@ proxies:
   grpc-opts:
     grpc-service-name: kobedin-server1-vless
 - name: 🇫🇮 芬兰 (Finland) 02 - wspnj
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 03 - wspnj
   server: 45.149.147.213
   port: 4444
   udp: true
@@ -27,7 +38,21 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: kobedin-server1-trojan
-- name: 🇫🇮 芬兰 (Finland) 03 - wspnj
+- name: 🇫🇮 芬兰 (Finland) 04 - wspnj
+  server: hw3.divarkhaghazi.com
+  port: 465
+  udp: true
+  type: vless
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  tls: true
+  servername: hw3.divarkhaghazi.com.
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 05 - wspnj
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -39,60 +64,6 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - wspnj
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 05 - wspnj
-  server: 2.27.13.152
-  port: 2096
-  udp: true
-  type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  tls: true
-  servername: st4834a.rumedia-cdn.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st4834a.rumedia-cdn.com
-- name: 🇫🇮 芬兰 (Finland) 06 - wspnj
-  server: 65.109.212.193
-  port: 465
-  udp: true
-  type: vless
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  tls: true
-  servername: hw3.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 07 - wspnj
-  server: 6.bmi.ir.asopardaz.ir
-  port: 8443
-  udp: true
-  type: vless
-  uuid: b223d6cf-6f94-4889-8bcf-263c15881006
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: timeline.www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -103,8 +74,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - wspnj
   - 🇫🇮 芬兰 (Finland) 04 - wspnj
   - 🇫🇮 芬兰 (Finland) 05 - wspnj
-  - 🇫🇮 芬兰 (Finland) 06 - wspnj
-  - 🇫🇮 芬兰 (Finland) 07 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -115,7 +84,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - wspnj
   - 🇫🇮 芬兰 (Finland) 04 - wspnj
   - 🇫🇮 芬兰 (Finland) 05 - wspnj
-  - 🇫🇮 芬兰 (Finland) 06 - wspnj
-  - 🇫🇮 芬兰 (Finland) 07 - wspnj
 rules:
 - MATCH,PROXIES

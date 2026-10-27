@@ -23,7 +23,7 @@
         "server_name": "twitch.tv",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -48,8 +48,20 @@
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - wspnj",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
+      "tls": {
+        "enabled": true,
+        "server_name": "140.238.213.114",
+        "insecure": true
       }
     },
     {
@@ -59,7 +71,8 @@
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - wspnj",
         "🇨🇭 瑞士 (Switzerland) 02 - wspnj",
-        "🇨🇭 瑞士 (Switzerland) 03 - wspnj"
+        "🇨🇭 瑞士 (Switzerland) 03 - wspnj",
+        "🇨🇭 瑞士 (Switzerland) 04 - wspnj"
       ]
     },
     {
@@ -68,7 +81,8 @@
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - wspnj",
         "🇨🇭 瑞士 (Switzerland) 02 - wspnj",
-        "🇨🇭 瑞士 (Switzerland) 03 - wspnj"
+        "🇨🇭 瑞士 (Switzerland) 03 - wspnj",
+        "🇨🇭 瑞士 (Switzerland) 04 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

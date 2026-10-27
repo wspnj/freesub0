@@ -30,13 +30,13 @@
     {
       "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - wspnj",
-      "server": "swe2.obxodvpn.us",
-      "server_port": 4443,
-      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
+      "server": "promo.betust.net",
+      "server_port": 443,
+      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
       "tls": {
         "enabled": true,
-        "server_name": "nl1.obxodvpn.us",
-        "insecure": false
+        "server_name": "promo.betust.net",
+        "insecure": true
       }
     },
     {
@@ -63,28 +63,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - wspnj",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - wspnj",
         "🇸🇪 瑞典 (Sweden) 02 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 03 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 04 - wspnj"
+        "🇸🇪 瑞典 (Sweden) 03 - wspnj"
       ]
     },
     {
@@ -93,8 +78,7 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - wspnj",
         "🇸🇪 瑞典 (Sweden) 02 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 03 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 04 - wspnj"
+        "🇸🇪 瑞典 (Sweden) 03 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
