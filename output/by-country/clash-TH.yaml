@@ -5,6 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - wspnj
+  server: th001.zestapp778.com
+  port: 22222
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: th001.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇹🇭 泰国 (Thailand) 02 - wspnj
   server: v2ray.simspeedup.com
   port: 80
   udp: true
@@ -15,15 +25,6 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 02 - wspnj
-  server: 38.60.254.50
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: th001.zestapp778.com
-  skip-cert-verify: false
 - name: 🇹🇭 泰国 (Thailand) 03 - wspnj
   server: 45.154.26.63
   port: 443
