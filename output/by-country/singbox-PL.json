@@ -4,35 +4,31 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - wspnj",
-      "server": "45.144.48.32",
-      "server_port": 57072,
-      "uuid": "d8f45bbb-e84d-4ad5-aa63-970f1345b164",
-      "security": "auto"
+      "server": "site.teslamotor.site",
+      "server_port": 20001,
+      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - wspnj",
-      "server": "201.58.180.143",
-      "server_port": 4443,
-      "password": "c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3",
+      "server": "77.232.135.141",
+      "server_port": 8445,
+      "uuid": "36cf792c-f07d-4500-97ea-a395e5178deb",
       "tls": {
         "enabled": true,
-        "server_name": "pl2.shvpn.ru",
+        "server_name": "ru1.radiolumens.uk",
         "insecure": false
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "beru-pl"
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 03 - wspnj",
-      "server": "edge10.cyrionflare.com",
-      "server_port": 2052,
-      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04 - wspnj",
       "server": "2.26.6.1",
       "server_port": 2087,
       "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
@@ -47,35 +43,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 05 - wspnj",
-      "server": "site.teslamotor.site",
-      "server_port": 20001,
-      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 06 - wspnj",
-      "server": "77.232.135.141",
-      "server_port": 8445,
-      "uuid": "36cf792c-f07d-4500-97ea-a395e5178deb",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru1.radiolumens.uk",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "beru-pl"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 07 - wspnj",
+      "tag": "🇵🇱 波兰 (Poland) 04 - wspnj",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
@@ -96,10 +65,7 @@
         "🇵🇱 波兰 (Poland) 01 - wspnj",
         "🇵🇱 波兰 (Poland) 02 - wspnj",
         "🇵🇱 波兰 (Poland) 03 - wspnj",
-        "🇵🇱 波兰 (Poland) 04 - wspnj",
-        "🇵🇱 波兰 (Poland) 05 - wspnj",
-        "🇵🇱 波兰 (Poland) 06 - wspnj",
-        "🇵🇱 波兰 (Poland) 07 - wspnj"
+        "🇵🇱 波兰 (Poland) 04 - wspnj"
       ]
     },
     {
@@ -109,10 +75,7 @@
         "🇵🇱 波兰 (Poland) 01 - wspnj",
         "🇵🇱 波兰 (Poland) 02 - wspnj",
         "🇵🇱 波兰 (Poland) 03 - wspnj",
-        "🇵🇱 波兰 (Poland) 04 - wspnj",
-        "🇵🇱 波兰 (Poland) 05 - wspnj",
-        "🇵🇱 波兰 (Poland) 06 - wspnj",
-        "🇵🇱 波兰 (Poland) 07 - wspnj"
+        "🇵🇱 波兰 (Poland) 04 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

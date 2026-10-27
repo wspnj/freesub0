@@ -5,28 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - wspnj
-  server: 45.144.48.32
-  port: 57072
-  udp: true
-  type: vmess
-  uuid: d8f45bbb-e84d-4ad5-aa63-970f1345b164
-  alterId: 0
-  cipher: auto
-- name: 🇵🇱 波兰 (Poland) 02 - wspnj
-  server: 201.58.180.143
-  port: 4443
-  udp: true
-  type: hysteria2
-  password: c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3
-  sni: pl2.shvpn.ru
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - wspnj
-  server: edge10.cyrionflare.com
-  port: 2052
+  server: site.teslamotor.site
+  port: 20001
   udp: true
   type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇵🇱 波兰 (Poland) 04 - wspnj
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+- name: 🇵🇱 波兰 (Poland) 02 - wspnj
+  server: 77.232.135.141
+  port: 8445
+  udp: true
+  type: vless
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  tls: true
+  servername: ru1.radiolumens.uk
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: beru-pl
+- name: 🇵🇱 波兰 (Poland) 03 - wspnj
   server: 2.26.6.1
   port: 2087
   udp: true
@@ -36,26 +32,7 @@ proxies:
   servername: 2.26.6.1
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 05 - wspnj
-  server: site.teslamotor.site
-  port: 20001
-  udp: true
-  type: vless
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 06 - wspnj
-  server: 77.232.135.141
-  port: 8445
-  udp: true
-  type: vless
-  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
-  tls: true
-  servername: ru1.radiolumens.uk
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: beru-pl
-- name: 🇵🇱 波兰 (Poland) 07 - wspnj
+- name: 🇵🇱 波兰 (Poland) 04 - wspnj
   server: 54.37.131.126
   port: 80
   udp: true
@@ -77,9 +54,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - wspnj
   - 🇵🇱 波兰 (Poland) 03 - wspnj
   - 🇵🇱 波兰 (Poland) 04 - wspnj
-  - 🇵🇱 波兰 (Poland) 05 - wspnj
-  - 🇵🇱 波兰 (Poland) 06 - wspnj
-  - 🇵🇱 波兰 (Poland) 07 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,8 +63,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - wspnj
   - 🇵🇱 波兰 (Poland) 03 - wspnj
   - 🇵🇱 波兰 (Poland) 04 - wspnj
-  - 🇵🇱 波兰 (Poland) 05 - wspnj
-  - 🇵🇱 波兰 (Poland) 06 - wspnj
-  - 🇵🇱 波兰 (Poland) 07 - wspnj
 rules:
 - MATCH,PROXIES

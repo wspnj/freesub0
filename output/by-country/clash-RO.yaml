@@ -28,7 +28,13 @@ proxies:
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - wspnj
-  server: 154.46.31.106
+  server: edge10.cyrionflare.com
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - wspnj
+  server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
   type: ss
@@ -42,6 +48,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 01 - wspnj
   - 🇷🇴 罗马尼亚 (Romania) 02 - wspnj
   - 🇷🇴 罗马尼亚 (Romania) 03 - wspnj
+  - 🇷🇴 罗马尼亚 (Romania) 04 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,5 +57,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 01 - wspnj
   - 🇷🇴 罗马尼亚 (Romania) 02 - wspnj
   - 🇷🇴 罗马尼亚 (Romania) 03 - wspnj
+  - 🇷🇴 罗马尼亚 (Romania) 04 - wspnj
 rules:
 - MATCH,PROXIES
