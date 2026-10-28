@@ -5,96 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - wspnj
-  server: 104.21.77.142
-  port: 2096
-  udp: true
-  type: vless
-  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
-  tls: true
-  servername: courses.mftplus.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: courses.mftplus.qzz.io
-- name: 🇩🇪 德国 (Germany) 02 - wspnj
-  server: 168.222.43.53
-  port: 10000
-  udp: true
-  type: vless
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-- name: 🇩🇪 德国 (Germany) 03 - wspnj
-  server: 185.226.172.8
-  port: 8008
+  server: 213.202.208.199
+  port: 7001
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: 🇩🇪 德国 (Germany) 04 - wspnj
+  password: RexnBgU7EV5ADxG
+- name: 🇩🇪 德国 (Germany) 02 - wspnj
   server: 5.175.205.190
   port: 27774
   udp: true
   type: vless
   uuid: 653137c6-474e-4a3d-9a20-5a5afb3d4a4f
-- name: 🇩🇪 德国 (Germany) 05 - wspnj
-  server: 37.114.34.108
-  port: 443
+- name: 🇩🇪 德国 (Germany) 03 - wspnj
+  server: 155.117.5.208
+  port: 10000
   udp: true
   type: vless
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sQ5tfuCzFSQ9RRoong5dDlHRupZRNjqPoNJU9-ytpDk
-    short-id: bb413f2d089a9654
-  servername: fi1-cl3.core-mirvante.top
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 06 - wspnj
-  server: 146.70.20.147
-  port: 8080
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+- name: 🇩🇪 德国 (Germany) 04 - wspnj
+  server: 185.176.204.18
+  port: 19999
   udp: true
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 07 - wspnj
-  server: 163.245.42.48
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 08 - wspnj
-  server: 163.245.42.48
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 09 - wspnj
-  server: 163.245.42.48
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 10 - wspnj
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 (Germany) 05 - wspnj
   server: 9.247.23.209
   port: 443
   udp: true
@@ -106,26 +42,26 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: mother-earth.fyi
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 11 - wspnj
-  server: 57.129.41.216
-  port: 80
+- name: 🇩🇪 德国 (Germany) 06 - wspnj
+  server: 146.70.20.147
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇩🇪 德国 (Germany) 07 - wspnj
+  server: edge.bookmai.com
+  port: 443
   udp: true
   type: vless
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 12 - wspnj
-  server: 88.99.213.222
-  port: 14444
-  udp: true
-  type: hysteria2
-  password: mhsl
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 13 - wspnj
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 08 - wspnj
   server: 144.31.215.196
   port: 443
   udp: true
@@ -138,32 +74,12 @@ proxies:
     short-id: 8c9ab0f7b293f9ef
   servername: c2.qwyak.ru
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 14 - wspnj
-  server: edge.bookmai.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 15 - wspnj
-  server: 5.45.100.100
-  port: 51511
-  udp: true
-  type: hysteria2
-  password: miaoge110
-  sni: 5.45.100.100
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 16 - wspnj
-  server: 213.152.165.200
+- name: 🇩🇪 德国 (Germany) 09 - wspnj
+  server: 213.152.165.201
   port: 2094
   udp: true
   type: vless
-  uuid: c439a2b1-cef0-4560-b337-eff829991f74
+  uuid: 2ddcb519-ac96-48fe-8f91-4af4254c7d90
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -171,22 +87,23 @@ proxies:
     short-id: 55986a94e2228791
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 17 - wspnj
-  server: 45.65.112.23
-  port: 2087
+- name: 🇩🇪 德国 (Germany) 10 - wspnj
+  server: 88.99.213.222
+  port: 14444
   udp: true
-  type: vless
-  uuid: 16571fd5-5c8a-44ae-99fa-a354565e500b
-  tls: true
-  servername: b5.dl-netprime.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /ws-tls
-    headers:
-      Host: b5.dl-netprime.com
-- name: 🇩🇪 德国 (Germany) 18 - wspnj
+  type: hysteria2
+  password: mhsl
+  sni: 88.99.213.222
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 11 - wspnj
+  server: 5.45.100.100
+  port: 51511
+  udp: true
+  type: hysteria2
+  password: miaoge110
+  sni: 5.45.100.100
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 12 - wspnj
   server: 82.118.19.153
   port: 443
   udp: true
@@ -199,44 +116,19 @@ proxies:
     short-id: 670ed9f350bd8ee0
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 19 - wspnj
-  server: 3.76.203.180
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 3.76.203.180
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 20 - wspnj
-  server: 3.64.194.247
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-de-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 21 - wspnj
-  server: 18.193.79.104
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 18.193.79.104
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 22 - wspnj
-  server: 91.107.188.129
+- name: 🇩🇪 德国 (Germany) 13 - wspnj
+  server: 91.107.247.173
   port: 2083
   udp: true
   type: vless
-  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   tls: true
-  servername: site.check-looks.space
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  servername: sino.bestsellers1.site
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
-- name: 🇩🇪 德国 (Germany) 23 - wspnj
+- name: 🇩🇪 德国 (Germany) 14 - wspnj
   server: 82.39.171.12
   port: 443
   udp: true
@@ -249,57 +141,82 @@ proxies:
     short-id: c39cc7310a
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 24 - wspnj
-  server: 185.176.204.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇩🇪 德国 (Germany) 25 - wspnj
-  server: 3.76.221.4
-  port: 443
+- name: 🇩🇪 德国 (Germany) 15 - wspnj
+  server: derfderf.ru
+  port: 12824
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 3.76.221.4
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 26 - wspnj
-  server: 91.107.247.173
+  password: d62s7ghfehm742us
+  sni: derfderf.ru
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 16 - wspnj
+  server: 91.107.188.129
   port: 2083
   udp: true
   type: vless
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
   tls: true
-  servername: sino.bestsellers1.site
+  servername: site.check-looks.space
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 27 - wspnj
-  server: 213.202.208.199
-  port: 7001
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇩🇪 德国 (Germany) 28 - wspnj
-  server: 18.153.65.67
+- name: 🇩🇪 德国 (Germany) 17 - wspnj
+  server: 3.76.221.4
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 127.0.0.1
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 29 - wspnj
-  server: 31.77.148.89
-  port: 45021
+- name: 🇩🇪 德国 (Germany) 18 - wspnj
+  server: 18.193.79.104
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 18.193.79.104
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 19 - wspnj
+  server: 3.76.203.180
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-de-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 20 - wspnj
+  server: 185.226.172.8
+  port: 8008
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 21 - wspnj
+  server: 95.38.235.49
+  port: 8443
   udp: true
   type: vless
-  uuid: ad263f1c-199e-4aaf-bf22-c3ad0407d377
+  uuid: 162b16b2-e032-475d-8460-a400e3d5fa6f
+  tls: true
+  servername: me.anten2.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: gr.anten2.com
+- name: 🇩🇪 德国 (Germany) 22 - wspnj
+  server: de001.zestapp778.com
+  port: 33770
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: de001.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -327,13 +244,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 20 - wspnj
   - 🇩🇪 德国 (Germany) 21 - wspnj
   - 🇩🇪 德国 (Germany) 22 - wspnj
-  - 🇩🇪 德国 (Germany) 23 - wspnj
-  - 🇩🇪 德国 (Germany) 24 - wspnj
-  - 🇩🇪 德国 (Germany) 25 - wspnj
-  - 🇩🇪 德国 (Germany) 26 - wspnj
-  - 🇩🇪 德国 (Germany) 27 - wspnj
-  - 🇩🇪 德国 (Germany) 28 - wspnj
-  - 🇩🇪 德国 (Germany) 29 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -361,12 +271,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 20 - wspnj
   - 🇩🇪 德国 (Germany) 21 - wspnj
   - 🇩🇪 德国 (Germany) 22 - wspnj
-  - 🇩🇪 德国 (Germany) 23 - wspnj
-  - 🇩🇪 德国 (Germany) 24 - wspnj
-  - 🇩🇪 德国 (Germany) 25 - wspnj
-  - 🇩🇪 德国 (Germany) 26 - wspnj
-  - 🇩🇪 德国 (Germany) 27 - wspnj
-  - 🇩🇪 德国 (Germany) 28 - wspnj
-  - 🇩🇪 德国 (Germany) 29 - wspnj
 rules:
 - MATCH,PROXIES
