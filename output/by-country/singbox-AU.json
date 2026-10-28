@@ -12,12 +12,49 @@
       "tls": {
         "enabled": true,
         "server_name": "connectwithemployerstohireyouridealteam.com",
-        "insecure": false
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - wspnj",
+      "server": "51.161.204.244",
+      "server_port": 443,
+      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
+          "short_id": "0ad08b47f498efd2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - wspnj",
+      "server": "au001.zestapp778.com",
+      "server_port": 35652,
+      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "tls": {
+        "enabled": true,
+        "server_name": "au001.zestapp778.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - wspnj",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - wspnj",
       "server": "au.tronsg.com",
       "server_port": 443,
       "password": "Trojan@82164024",
@@ -33,7 +70,9 @@
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - wspnj",
-        "🇦🇺 澳大利亚 (Australia) 02 - wspnj"
+        "🇦🇺 澳大利亚 (Australia) 02 - wspnj",
+        "🇦🇺 澳大利亚 (Australia) 03 - wspnj",
+        "🇦🇺 澳大利亚 (Australia) 04 - wspnj"
       ]
     },
     {
@@ -41,7 +80,9 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - wspnj",
-        "🇦🇺 澳大利亚 (Australia) 02 - wspnj"
+        "🇦🇺 澳大利亚 (Australia) 02 - wspnj",
+        "🇦🇺 澳大利亚 (Australia) 03 - wspnj",
+        "🇦🇺 澳大利亚 (Australia) 04 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
