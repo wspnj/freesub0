@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇩 印尼 (Indonesia) 01 - wspnj",
-      "server": "130.94.95.198",
-      "server_port": 57353,
-      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "type": "trojan",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - wspnj",
+      "server": "176.114.95.242",
+      "server_port": 443,
+      "password": "UAKWGor-h0woFsxKSWK92HptcM0g2k2h",
       "tls": {
         "enabled": true,
-        "server_name": "in001.zestapp778.com",
+        "server_name": "lt-1.1984.love",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -24,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 - wspnj"
+        "🇱🇹 立陶宛 (Lithuania) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 - wspnj"
+        "🇱🇹 立陶宛 (Lithuania) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

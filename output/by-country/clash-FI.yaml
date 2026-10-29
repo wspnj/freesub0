@@ -27,6 +27,21 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 03 - wspnj
+  server: hw3.divarkhaghazi.com
+  port: 465
+  udp: true
+  type: vless
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  tls: true
+  servername: hw3.divarkhaghazi.com.
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +49,7 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - wspnj
   - 🇫🇮 芬兰 (Finland) 02 - wspnj
+  - 🇫🇮 芬兰 (Finland) 03 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +57,6 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - wspnj
   - 🇫🇮 芬兰 (Finland) 02 - wspnj
+  - 🇫🇮 芬兰 (Finland) 03 - wspnj
 rules:
 - MATCH,PROXIES
