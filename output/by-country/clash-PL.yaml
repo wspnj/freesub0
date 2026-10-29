@@ -25,7 +25,7 @@ proxies:
   sni: scrap.halyvanedorogo.ru
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 04 - wspnj
-  server: ru1.radiolumens.uk
+  server: 77.232.135.141
   port: 8445
   udp: true
   type: vless

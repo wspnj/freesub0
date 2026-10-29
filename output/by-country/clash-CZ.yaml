@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - wspnj
-  server: 104.18.35.86
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1c7f675f-5923-463f-83fb-af4c898cecea
-  tls: true
-  servername: 0Ee6wOQz4W8W0cDqiTgq6XZ-q0o9r6o9.merTEssWAgGEr08.WoRKErs.dEv
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZWhuWFFGNWRISXBjSmRGWSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: 0Ee6wOQz4W8W0cDqiTgq6XZ-q0o9r6o9.merTEssWAgGEr08.WoRKErs.dEv
-- name: 🇨🇿 捷克 (Czech) 02 - wspnj
   server: 31.77.13.22
   port: 2063
   udp: true
@@ -36,13 +22,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - wspnj
-  - 🇨🇿 捷克 (Czech) 02 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - wspnj
-  - 🇨🇿 捷克 (Czech) 02 - wspnj
 rules:
 - MATCH,PROXIES

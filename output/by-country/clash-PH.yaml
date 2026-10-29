@@ -6,6 +6,14 @@ log-level: info
 proxies:
 - name: 🇵🇭 菲律宾 (Philippines) 01 - wspnj
   server: ph001.zestapp778.com
+  port: 46293
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: ph001.zestapp778.com
+  skip-cert-verify: true
+- name: 🇵🇭 菲律宾 (Philippines) 02 - wspnj
+  server: 130.94.53.13
   port: 15656
   udp: true
   type: vless
@@ -14,14 +22,6 @@ proxies:
   servername: ph001.zestapp778.com
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇵🇭 菲律宾 (Philippines) 02 - wspnj
-  server: ph001.zestapp778.com
-  port: 46293
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: ph001.zestapp778.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
