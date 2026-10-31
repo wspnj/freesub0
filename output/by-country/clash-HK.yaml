@@ -5,14 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - wspnj
+  server: 31.57.248.176
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: b0917015b656b3dd2286b5633af0c5c1
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8\u0001f1e8\u0001f1f3
+  sni: 202.146.222.89
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
+  server: 152.175.6.229
+  port: 31884
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: hk010.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
   server: 202.146.222.174
   port: 443
   udp: true
@@ -20,7 +38,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/wangcai2
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
   server: 165.154.63.139
   port: 443
   udp: true
@@ -33,35 +51,14 @@ proxies:
     short-id: ca4aedd4
   servername: www.amazon.com
   client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2рҹү
+  sni: https%253a%252f%252ft.me%252fwangcai2%25d1%2580%25d2%25b9%25d2%25af%25d1%2591%25d1%2580%25d2%25b9%25d2%25af%25d1%2596
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
-  server: 195.58.144.56
-  port: 11907
-  udp: true
-  type: vless
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
-  tls: true
-  servername: 195.58.144.56
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
-  server: 47.244.120.197
-  port: 44867
-  udp: true
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki
 proxy-groups:
 - name: PROXIES
   type: select
