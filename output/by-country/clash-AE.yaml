@@ -30,28 +30,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 04 - wspnj
-  server: app-mi-26.spbstudentlife.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07680ffb-0666-4836-b6ad-ec0de62bc38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cYtAkO6yUCuRTxHvF8EH76bybk1yfS005KLls-at2yc
-    short-id: a7856800c2deb7b2
-  servername: assets-mi-26.spbstudentlife.com
-  client-fingerprint: randomized
-- name: 🇦🇪 阿联酋 (UAE) 05 - wspnj
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,8 +38,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - wspnj
   - 🇦🇪 阿联酋 (UAE) 02 - wspnj
   - 🇦🇪 阿联酋 (UAE) 03 - wspnj
-  - 🇦🇪 阿联酋 (UAE) 04 - wspnj
-  - 🇦🇪 阿联酋 (UAE) 05 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,7 +46,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - wspnj
   - 🇦🇪 阿联酋 (UAE) 02 - wspnj
   - 🇦🇪 阿联酋 (UAE) 03 - wspnj
-  - 🇦🇪 阿联酋 (UAE) 04 - wspnj
-  - 🇦🇪 阿联酋 (UAE) 05 - wspnj
 rules:
 - MATCH,PROXIES

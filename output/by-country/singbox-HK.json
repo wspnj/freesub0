@@ -11,19 +11,19 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vk.com",
+        "server_name": "https://t.me/clashv8\\u0001f1e8\\u0001f1f3",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 - wspnj",
-      "server": "202.146.222.29",
+      "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2%ef%a3%bf%c3%bc%c3%a1",
+        "server_name": "https://t.me/wangcai2",
         "insecure": true
       }
     },
@@ -51,12 +51,12 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 04 - wspnj",
-      "server": "202.146.222.174",
+      "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "off",
+        "server_name": "https://t.me/wangcai2рҹү",
         "insecure": true
       }
     },
@@ -81,6 +81,18 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - wspnj",
+      "server": "47.244.120.197",
+      "server_port": 44867,
+      "uuid": "845e6b08-2919-4290-ade0-5dc7dcea59ca",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/arki"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -89,7 +101,8 @@
         "🇭🇰 中国香港 (Hong Kong) 02 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 03 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 04 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 05 - wspnj"
+        "🇭🇰 中国香港 (Hong Kong) 05 - wspnj",
+        "🇭🇰 中国香港 (Hong Kong) 06 - wspnj"
       ]
     },
     {
@@ -100,7 +113,8 @@
         "🇭🇰 中国香港 (Hong Kong) 02 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 03 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 04 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 05 - wspnj"
+        "🇭🇰 中国香港 (Hong Kong) 05 - wspnj",
+        "🇭🇰 中国香港 (Hong Kong) 06 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
