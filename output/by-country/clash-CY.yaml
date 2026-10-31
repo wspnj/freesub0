@@ -5,24 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - wspnj
-  server: 5.253.28.224
+  server: 5.253.30.99
   port: 40443
   udp: true
   type: vless
-  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - wspnj
-  server: 5.253.28.240
-  port: 40443
-  udp: true
-  type: vless
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -30,7 +17,7 @@ proxies:
     short-id: 88b6
   servername: deepl.com
   client-fingerprint: random
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - wspnj
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - wspnj
   server: hydra.yokkastars.com
   port: 2443
   udp: true
@@ -52,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - wspnj
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - wspnj
-  - 🇨🇾 塞浦路斯 (Cyprus) 03 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - wspnj
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - wspnj
-  - 🇨🇾 塞浦路斯 (Cyprus) 03 - wspnj
 rules:
 - MATCH,PROXIES

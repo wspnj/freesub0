@@ -11,18 +11,56 @@
       "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
     },
     {
+      "type": "trojan",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - wspnj",
+      "server": "188.226.181.61",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - wspnj",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 罗马尼亚 (Romania) 01 - wspnj"
+        "🇷🇴 罗马尼亚 (Romania) 01 - wspnj",
+        "🇷🇴 罗马尼亚 (Romania) 02 - wspnj",
+        "🇷🇴 罗马尼亚 (Romania) 03 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 罗马尼亚 (Romania) 01 - wspnj"
+        "🇷🇴 罗马尼亚 (Romania) 01 - wspnj",
+        "🇷🇴 罗马尼亚 (Romania) 02 - wspnj",
+        "🇷🇴 罗马尼亚 (Romania) 03 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
