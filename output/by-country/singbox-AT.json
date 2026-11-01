@@ -12,18 +12,32 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
+      "type": "trojan",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - wspnj",
+      "server": "ench-snet-app.w-ctrip.cn",
+      "server_port": 38963,
+      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "cm.g.doubleclick.net",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01 - wspnj"
+        "🇦🇹 奥地利 (Austria) 01 - wspnj",
+        "🇦🇹 奥地利 (Austria) 02 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01 - wspnj"
+        "🇦🇹 奥地利 (Austria) 01 - wspnj",
+        "🇦🇹 奥地利 (Austria) 02 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
