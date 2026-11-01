@@ -6,7 +6,7 @@
     {
       "type": "trojan",
       "tag": "🇲🇽 墨西哥 (Mexico) 01 - wspnj",
-      "server": "149.104.87.33",
+      "server": "mx001.zestapp778.com",
       "server_port": 15083,
       "password": "5t6i121em5lkmsmk",
       "tls": {
@@ -24,11 +24,7 @@
       "tls": {
         "enabled": true,
         "server_name": "connectwithtopemployersandfindidealjobs.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       }
     },
     {

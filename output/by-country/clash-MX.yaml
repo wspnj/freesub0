@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 墨西哥 (Mexico) 01 - wspnj
-  server: 149.104.87.33
+  server: mx001.zestapp778.com
   port: 15083
   udp: true
   type: trojan
