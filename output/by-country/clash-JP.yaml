@@ -26,13 +26,37 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 04 - wspnj
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: '1'
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 05 - wspnj
+  server: 45.32.52.173
+  port: 8886
+  udp: true
+  type: trojan
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  sni: 45.32.52.173
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 06 - wspnj
   server: 84.247.155.196
   port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 05 - wspnj
+- name: 🇯🇵 日本 (Japan) 07 - wspnj
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: 8.211.175.236
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 08 - wspnj
   server: ga1data.xyy123.bid
   port: 443
   udp: true
@@ -45,38 +69,22 @@ proxies:
     short-id: 00b0389a
   servername: www.amzn.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 06 - wspnj
+- name: 🇯🇵 日本 (Japan) 09 - wspnj
   server: vp3.yysyy.online
   port: 443
   udp: true
   type: hysteria2
   password: 96ab5cd282733fd4c312a61f972f330a
   sni: vp3.yysyy.online
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 07 - wspnj
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 10 - wspnj
   server: 84.247.155.196
   port: 80
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 08 - wspnj
-  server: 45.32.52.173
-  port: 8886
-  udp: true
-  type: trojan
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  sni: 45.32.52.173
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 09 - wspnj
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: 138.3.208.26
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 10 - wspnj
+- name: 🇯🇵 日本 (Japan) 11 - wspnj
   server: 3.114.220.22
   port: 18007
   udp: true
@@ -88,8 +96,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 11 - wspnj
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 12 - wspnj
   server: freedom.chenlan.top
   port: 12765
   udp: true
@@ -97,30 +105,55 @@ proxies:
   password: STYyftThFn
   sni: freedom.chenlan.top
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 12 - wspnj
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: 8.211.175.236
-  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 13 - wspnj
-  server: 162.159.130.234
-  port: 2083
+  server: 3.114.220.22
+  port: 19645
   udp: true
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
   tls: true
-  servername: cdn.sfacg.uk
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: safari
+- name: 🇯🇵 日本 (Japan) 14 - wspnj
+  server: ench-snet-app.w-ctrip.cn
+  port: 24914
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: cm.g.doubleclick.net
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 15 - wspnj
+  server: 3.114.220.22
+  port: 10583
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 16 - wspnj
+  server: 152.69.200.216
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /or3
+    path: /tyxyws
     headers:
-      Host: or3.sfacg.uk
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -139,6 +172,9 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 11 - wspnj
   - 🇯🇵 日本 (Japan) 12 - wspnj
   - 🇯🇵 日本 (Japan) 13 - wspnj
+  - 🇯🇵 日本 (Japan) 14 - wspnj
+  - 🇯🇵 日本 (Japan) 15 - wspnj
+  - 🇯🇵 日本 (Japan) 16 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -157,5 +193,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 11 - wspnj
   - 🇯🇵 日本 (Japan) 12 - wspnj
   - 🇯🇵 日本 (Japan) 13 - wspnj
+  - 🇯🇵 日本 (Japan) 14 - wspnj
+  - 🇯🇵 日本 (Japan) 15 - wspnj
+  - 🇯🇵 日本 (Japan) 16 - wspnj
 rules:
 - MATCH,PROXIES
