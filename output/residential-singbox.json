@@ -6,13 +6,17 @@
     {
       "type": "trojan",
       "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - wspnj",
-      "server": "us001.zestapp778.com",
+      "server": "130.94.19.95",
       "server_port": 57277,
       "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
         "server_name": "us001.zestapp778.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -43,13 +47,52 @@
       }
     },
     {
+      "type": "anytls",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - wspnj",
+      "server": "684616s4.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "px.ads.linkedin.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - wspnj",
+      "server": "er8u54dh.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "px.ads.linkedin.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 06 (移动家宽) - wspnj",
+      "server": "us001.zestapp778.com",
+      "server_port": 57277,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "us001.zestapp778.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (移动家宽) - wspnj",
         "🇰🇷 韩国 (South Korea) 02 (家宽) - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj"
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - wspnj",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - wspnj",
+        "🇺🇸 美国 (United States) 06 (移动家宽) - wspnj"
       ]
     },
     {
@@ -58,7 +101,10 @@
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (移动家宽) - wspnj",
         "🇰🇷 韩国 (South Korea) 02 (家宽) - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj"
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wspnj",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - wspnj",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - wspnj",
+        "🇺🇸 美国 (United States) 06 (移动家宽) - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
