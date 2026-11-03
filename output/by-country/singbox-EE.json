@@ -4,26 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - wspnj",
-      "server": "45.207.207.25",
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - wspnj",
+      "server": "141.0.187.15",
       "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "gj1+XKulKV0nmw6IThckOkkJh5DSM7+C"
+      "password": "70043bfa-d6fb-4980-b27e-773e9e8b2004",
+      "tls": {
+        "enabled": true,
+        "server_name": "crt.onecloudstream.com",
+        "insecure": false
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 (Seychelles) 01 - wspnj"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 (Seychelles) 01 - wspnj"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
