@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 - wspnj",
-      "server": "192.142.23.46",
-      "server_port": 443,
-      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
-      "tls": {
-        "enabled": true,
-        "server_name": "diffoscope.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - wspnj",
+      "tag": "🇸🇪 瑞典 (Sweden) 01 - wspnj",
       "server": "70.34.207.14",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -28,24 +16,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - wspnj",
-      "server": "13.143.180.142",
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - wspnj",
+      "server": "192.142.23.46",
       "server_port": 443,
-      "uuid": "2614a96d-e39f-02f0-a9c7-467a178c2c0a",
-      "flow": "xtls-rprx-vision",
+      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
       "tls": {
         "enabled": true,
-        "server_name": "sw.lenvex.cc",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ",
-          "short_id": ""
-        }
+        "server_name": "diffoscope.com",
+        "insecure": false
       }
     },
     {
@@ -54,8 +33,7 @@
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 02 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 03 - wspnj"
+        "🇸🇪 瑞典 (Sweden) 02 - wspnj"
       ]
     },
     {
@@ -63,8 +41,7 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 02 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 03 - wspnj"
+        "🇸🇪 瑞典 (Sweden) 02 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
