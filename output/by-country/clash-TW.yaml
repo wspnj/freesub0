@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
+  sni: https://t.me/wangcai2
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - wspnj
   server: 160.187.100.109
@@ -18,23 +18,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - wspnj
-  server: 684616s4.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: px.ads.linkedin.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - wspnj
-  server: er8u54dh.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: px.ads.linkedin.com
+  sni: 160.187.100.109
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -43,8 +27,6 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - wspnj
   - 🇹🇼 中国台湾 (Taiwan) 02 - wspnj
-  - 🇹🇼 中国台湾 (Taiwan) 03 - wspnj
-  - 🇹🇼 中国台湾 (Taiwan) 04 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,7 +34,5 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - wspnj
   - 🇹🇼 中国台湾 (Taiwan) 02 - wspnj
-  - 🇹🇼 中国台湾 (Taiwan) 03 - wspnj
-  - 🇹🇼 中国台湾 (Taiwan) 04 - wspnj
 rules:
 - MATCH,PROXIES

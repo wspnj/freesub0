@@ -11,7 +11,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/oneclickvpnkeys",
+        "server_name": "https://t.me/wangcai2",
         "insecure": true
       }
     },
@@ -23,31 +23,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-tw-002.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
-      "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - wspnj",
-      "server": "684616s4.df6h451rh.xin",
-      "server_port": 443,
-      "password": "0324fbc29561",
-      "tls": {
-        "enabled": true,
-        "server_name": "px.ads.linkedin.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - wspnj",
-      "server": "er8u54dh.df6h451rh.xin",
-      "server_port": 443,
-      "password": "0324fbc29561",
-      "tls": {
-        "enabled": true,
-        "server_name": "px.ads.linkedin.com",
+        "server_name": "160.187.100.109",
         "insecure": true
       }
     },
@@ -57,9 +33,7 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 02 - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 03 - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 04 - wspnj"
+        "🇹🇼 中国台湾 (Taiwan) 02 - wspnj"
       ]
     },
     {
@@ -67,9 +41,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 02 - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 03 - wspnj",
-        "🇹🇼 中国台湾 (Taiwan) 04 - wspnj"
+        "🇹🇼 中国台湾 (Taiwan) 02 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
