@@ -4,20 +4,34 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇮🇳 印度 (India) 01 - wspnj",
-      "server": "in002.zestapp778.com",
-      "server_port": 42733,
-      "password": "5t6i121em5lkmsmk",
+      "server": "144.24.109.215",
+      "server_port": 51000,
+      "password": "d105c6ae-621b-47c1-b85b-075fd6a39aca",
       "tls": {
         "enabled": true,
-        "server_name": "in002.zestapp778.com",
-        "insecure": false
+        "server_name": "cn.cremedelamer.com",
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 02 - wspnj",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "13.140.56.100"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 03 - wspnj",
       "server": "in.smrtai.top",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
@@ -37,48 +51,26 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - wspnj",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
       "tag": "🇮🇳 印度 (India) 04 - wspnj",
-      "server": "144.24.109.215",
-      "server_port": 51000,
-      "password": "d105c6ae-621b-47c1-b85b-075fd6a39aca",
+      "server": "hydra.yokkastars.com",
+      "server_port": 2443,
+      "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
       "tls": {
         "enabled": true,
-        "server_name": "cn.cremedelamer.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05 - wspnj",
-      "server": "194.61.31.126",
-      "server_port": 2053,
-      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
-          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
-          "short_id": "9980e0609b0d3891"
+          "public_key": "h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg",
+          "short_id": "92c32de179e5d908"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "rex-eb0bf76b710ce763"
       }
     },
     {
@@ -89,8 +81,7 @@
         "🇮🇳 印度 (India) 01 - wspnj",
         "🇮🇳 印度 (India) 02 - wspnj",
         "🇮🇳 印度 (India) 03 - wspnj",
-        "🇮🇳 印度 (India) 04 - wspnj",
-        "🇮🇳 印度 (India) 05 - wspnj"
+        "🇮🇳 印度 (India) 04 - wspnj"
       ]
     },
     {
@@ -100,8 +91,7 @@
         "🇮🇳 印度 (India) 01 - wspnj",
         "🇮🇳 印度 (India) 02 - wspnj",
         "🇮🇳 印度 (India) 03 - wspnj",
-        "🇮🇳 印度 (India) 04 - wspnj",
-        "🇮🇳 印度 (India) 05 - wspnj"
+        "🇮🇳 印度 (India) 04 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
