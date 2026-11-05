@@ -6,7 +6,7 @@
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - wspnj",
-      "server": "104.21.91.53",
+      "server": "chatgpt.com",
       "server_port": 8443,
       "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
       "security": "auto",

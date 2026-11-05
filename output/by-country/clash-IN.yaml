@@ -15,9 +15,20 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - wspnj
-  server: in.smrtai.top
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 03 - wspnj
+  server: 178.212.35.198
   port: 443
   udp: true
   type: vless
@@ -27,8 +38,8 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - wspnj
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 04 - wspnj
   server: 122.176.216.52
   port: 443
   udp: true
@@ -43,23 +54,6 @@ proxies:
     path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
       Host: app-6ada5023.deploy.meerasolution.com
-- name: 🇮🇳 印度 (India) 04 - wspnj
-  server: 13.140.56.100
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇮🇳 印度 (India) 05 - wspnj
-  server: 144.24.109.215
-  port: 51000
-  udp: true
-  type: hysteria2
-  password: d105c6ae-621b-47c1-b85b-075fd6a39aca
-  sni: cn.cremedelamer.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,7 +63,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - wspnj
   - 🇮🇳 印度 (India) 03 - wspnj
   - 🇮🇳 印度 (India) 04 - wspnj
-  - 🇮🇳 印度 (India) 05 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,6 +72,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - wspnj
   - 🇮🇳 印度 (India) 03 - wspnj
   - 🇮🇳 印度 (India) 04 - wspnj
-  - 🇮🇳 印度 (India) 05 - wspnj
 rules:
 - MATCH,PROXIES

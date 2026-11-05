@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - wspnj
-  server: 104.21.91.53
+  server: chatgpt.com
   port: 8443
   udp: true
   type: vmess
