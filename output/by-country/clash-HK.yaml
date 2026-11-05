@@ -5,25 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - wspnj
-  server: 165.154.63.139
+  server: 202.146.222.29
   port: 443
   udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  servername: www.amazon.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2ôøωôøωôøωôøω
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
+  sni: vk.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
   server: 202.146.222.174
@@ -31,32 +26,18 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: 'off'
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
-  server: 202.146.222.29
-  port: 443
+  server: 152.175.6.229
+  port: 31884
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2ð\x9f\x87¨ð\x9f\x87³
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
-  server: rhHiErkwRf6fHs2H.v.3dns.vip
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   tls: true
-  servername: rhHiErkwRf6fHs2H.v.3dns.vip
+  servername: hk010.zestapp778.com
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: rhHiErkwRf6fHs2H.v.3dns.vip
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,7 +47,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,6 +56,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
 rules:
 - MATCH,PROXIES
