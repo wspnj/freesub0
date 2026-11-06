@@ -20,7 +20,7 @@
     {
       "type": "trojan",
       "tag": "🇫🇮 芬兰 (Finland) 02 - wspnj",
-      "server": "104.24.0.1",
+      "server": "172.66.0.1",
       "server_port": 2053,
       "password": "gHQP0D7D15",
       "tls": {
@@ -32,7 +32,7 @@
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
@@ -44,12 +44,25 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 03 - wspnj",
-      "server": "65.108.240.210",
-      "server_port": 39018,
-      "uuid": "77fb7a80-4724-4e33-9558-4f20c1634c5a",
-      "security": "auto"
+      "server": "6.bmi.ir.asopardaz.ir",
+      "server_port": 8443,
+      "uuid": "fe4d2b3e-965f-4389-a6e4-05887ef5fd2b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hostgator.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
+          "short_id": "e915"
+        }
+      }
     },
     {
       "type": "selector",
