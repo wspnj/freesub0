@@ -6,30 +6,6 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - wspnj",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "t.me",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - wspnj",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - wspnj",
       "server": "152.32.254.68",
       "server_port": 5010,
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
@@ -45,50 +21,38 @@
     },
     {
       "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - wspnj",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "202.146.222.89",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - wspnj",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/wangcai2🇨🇳",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 04 - wspnj",
       "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2üá",
+        "server_name": "https://t.me/wangcai2рҹүёрҹүі",
         "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - wspnj",
-      "server": "vipccc.cc",
-      "server_port": 443,
-      "uuid": "5bead32f-a987-4f57-b1a8-6698778facda",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "vipccc.cc",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ray_proxy",
-        "headers": {
-          "Host": "vipccc.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - wspnj",
-      "server": "152.175.6.229",
-      "server_port": 31884,
-      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk010.zestapp778.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
       }
     },
     {
@@ -99,9 +63,7 @@
         "🇭🇰 中国香港 (Hong Kong) 01 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 02 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 03 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 04 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 05 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 06 - wspnj"
+        "🇭🇰 中国香港 (Hong Kong) 04 - wspnj"
       ]
     },
     {
@@ -111,9 +73,7 @@
         "🇭🇰 中国香港 (Hong Kong) 01 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 02 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 03 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 04 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 05 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 06 - wspnj"
+        "🇭🇰 中国香港 (Hong Kong) 04 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,22 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - wspnj
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -30,40 +14,30 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2🇨🇳
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2üá
+  sni: https://t.me/wangcai2рҹүёрҹүі
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
-  server: vipccc.cc
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 5bead32f-a987-4f57-b1a8-6698778facda
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vipccc.cc
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ray_proxy
-    headers:
-      Host: vipccc.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
-  server: 152.175.6.229
-  port: 31884
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: hk010.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,8 +47,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,7 +56,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
 rules:
 - MATCH,PROXIES

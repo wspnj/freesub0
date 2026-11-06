@@ -4,33 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - wspnj
-  server: chatgpt.com
-  port: 8443
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - wspnj
+  server: 38.107.234.57
+  port: 80
   udp: true
   type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
   alterId: 0
   cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /vmess/
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: 38.107.234.57
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - wspnj
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - wspnj
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - wspnj
 rules:
 - MATCH,PROXIES
