@@ -18,8 +18,20 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 02 - wspnj",
+      "server": "179.253.82.47",
+      "server_port": 4444,
+      "password": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
+      "tls": {
+        "enabled": true,
+        "server_name": "fl3.nexfile.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - wspnj",
       "server": "172.66.0.1",
       "server_port": 2053,
       "password": "gHQP0D7D15",
@@ -40,27 +52,6 @@
         "path": "/",
         "headers": {
           "Host": "marvdasht.phonecomparisonblog.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - wspnj",
-      "server": "6.bmi.ir.asopardaz.ir",
-      "server_port": 8443,
-      "uuid": "fe4d2b3e-965f-4389-a6e4-05887ef5fd2b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "hostgator.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
-          "short_id": "e915"
         }
       }
     },
