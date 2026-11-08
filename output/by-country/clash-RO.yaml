@@ -12,13 +12,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: U83u9OGpvSatIUW7LsWffr
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - wspnj
-  server: 82.152.132.211
-  port: 8044
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: dCamglzrORaopqbpBlptzbt9QdiH4CSN
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - wspnj
   server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
@@ -32,7 +25,6 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - wspnj
   - 🇷🇴 罗马尼亚 (Romania) 02 - wspnj
-  - 🇷🇴 罗马尼亚 (Romania) 03 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -40,6 +32,5 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - wspnj
   - 🇷🇴 罗马尼亚 (Romania) 02 - wspnj
-  - 🇷🇴 罗马尼亚 (Romania) 03 - wspnj
 rules:
 - MATCH,PROXIES

@@ -5,29 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - wspnj
-  server: 13.140.83.153
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4IxReHOucKiwvosjoRXlLLpu20Pso-rZ
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -37,7 +14,44 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2��
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
+  server: t.cnmjcn.cyou
+  port: 16632
+  udp: true
+  type: vmess
+  uuid: 56a511bd-f207-48f4-be5b-4652afe178a4
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 686a7558df571afb1408b0e77ae4f687.mobgslb.tbcache.com
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
   server: 165.154.63.139
   port: 443
   udp: true
@@ -50,37 +64,6 @@ proxies:
     short-id: ca4aedd4
   servername: www.amazon.com
   client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
-  server: dddz-3-z.473221.xyz
-  port: 13212
-  udp: true
-  type: vless
-  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 4VguZbm-S2NkLpi7gLDsQMv2eDXP2LucxsvTiEt98yY
-    short-id: 961f7127a015ba
-  servername: v1-dy.ixigua.com
-  client-fingerprint: edge
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - wspnj
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - wspnj
-  server: 152.175.6.229
-  port: 31884
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: hk010.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,8 +75,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 07 - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 08 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -105,7 +86,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 07 - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 08 - wspnj
 rules:
 - MATCH,PROXIES

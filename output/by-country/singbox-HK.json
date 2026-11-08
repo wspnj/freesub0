@@ -4,40 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - wspnj",
-      "server": "13.140.83.153",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "4IxReHOucKiwvosjoRXlLLpu20Pso-rZ"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - wspnj",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/oneclickvpnkeys",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - wspnj",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "t.me",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - wspnj",
       "server": "152.32.254.68",
       "server_port": 5010,
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
@@ -52,8 +20,59 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - wspnj",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "202.146.222.89",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - wspnj",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/wangcai2",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - wspnj",
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/wangcai2��",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 05 - wspnj",
+      "server": "t.cnmjcn.cyou",
+      "server_port": 16632,
+      "uuid": "56a511bd-f207-48f4-be5b-4652afe178a4",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "686a7558df571afb1408b0e77ae4f687.mobgslb.tbcache.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - wspnj",
       "server": "165.154.63.139",
       "server_port": 443,
       "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
@@ -73,55 +92,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - wspnj",
-      "server": "dddz-3-z.473221.xyz",
-      "server_port": 13212,
-      "uuid": "65ec84f5-0dd4-4582-8b4f-592e50b22116",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "v1-dy.ixigua.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4VguZbm-S2NkLpi7gLDsQMv2eDXP2LucxsvTiEt98yY",
-          "short_id": "961f7127a015ba"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - wspnj",
-      "server": "202.146.222.29",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/wangcai2",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - wspnj",
-      "server": "152.175.6.229",
-      "server_port": 31884,
-      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk010.zestapp778.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -131,9 +101,7 @@
         "🇭🇰 中国香港 (Hong Kong) 03 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 04 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 05 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 06 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 07 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 08 - wspnj"
+        "🇭🇰 中国香港 (Hong Kong) 06 - wspnj"
       ]
     },
     {
@@ -145,9 +113,7 @@
         "🇭🇰 中国香港 (Hong Kong) 03 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 04 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 05 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 06 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 07 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 08 - wspnj"
+        "🇭🇰 中国香港 (Hong Kong) 06 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
