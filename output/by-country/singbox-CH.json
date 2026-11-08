@@ -28,8 +28,20 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇨🇭 瑞士 (Switzerland) 04 - wspnj",
+      "server": "208.69.78.33",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "courses.yourultimateprofessionalcareerhub.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - wspnj",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -50,19 +62,31 @@
     },
     {
       "type": "trojan",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - wspnj",
-      "server": "208.69.78.33",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06 - wspnj",
+      "server": "208.69.78.158",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "courses.yourultimateprofessionalcareerhub.com",
-        "insecure": true
+        "server_name": "api.yourultimateprofessionalcareerhub.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇭 瑞士 (Switzerland) 07 - wspnj",
+      "server": "208.69.78.60",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.yourultimateprofessionalcareerhub.com",
+        "insecure": false
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06 - wspnj",
+      "tag": "🇨🇭 瑞士 (Switzerland) 08 - wspnj",
       "server": "140.238.213.114",
       "server_port": 50160,
       "password": "84a506ca5aca505696a454d828420b3f",
@@ -73,27 +97,65 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇨🇭 瑞士 (Switzerland) 07 - wspnj",
-      "server": "208.69.78.208",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 09 - wspnj",
+      "server": "62.109.1.5",
+      "server_port": 2058,
+      "uuid": "4ad9f982-b56a-444a-9684-35ce51307a36",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "resources.yourultimateprofessionalcareerhub.com",
-        "insecure": false
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lJBsn9ndieTIUBzXkJUhf6O0OE8pm29_z1fUtARwL0s",
+          "short_id": "937255313d6ce673"
+        }
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇨🇭 瑞士 (Switzerland) 08 - wspnj",
-      "server": "208.69.78.60",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 10 - wspnj",
+      "server": "208.69.78.217",
+      "server_port": 2053,
+      "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.yourultimateprofessionalcareerhub.com",
-        "insecure": false
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0",
+          "short_id": "ad86e2d52ff40ebd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 11 - wspnj",
+      "server": "dddz-3-z.473221.xyz",
+      "server_port": 33169,
+      "uuid": "65ec84f5-0dd4-4582-8b4f-592e50b22116",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "download-porter.hoyoverse.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "A9EF_1fUwOcGSP6bmSmuAIls4XpgciihICNTarLZ-2o",
+          "short_id": "01f2513112301a"
+        }
       }
     },
     {
@@ -108,7 +170,10 @@
         "🇨🇭 瑞士 (Switzerland) 05 - wspnj",
         "🇨🇭 瑞士 (Switzerland) 06 - wspnj",
         "🇨🇭 瑞士 (Switzerland) 07 - wspnj",
-        "🇨🇭 瑞士 (Switzerland) 08 - wspnj"
+        "🇨🇭 瑞士 (Switzerland) 08 - wspnj",
+        "🇨🇭 瑞士 (Switzerland) 09 - wspnj",
+        "🇨🇭 瑞士 (Switzerland) 10 - wspnj",
+        "🇨🇭 瑞士 (Switzerland) 11 - wspnj"
       ]
     },
     {
@@ -122,7 +187,10 @@
         "🇨🇭 瑞士 (Switzerland) 05 - wspnj",
         "🇨🇭 瑞士 (Switzerland) 06 - wspnj",
         "🇨🇭 瑞士 (Switzerland) 07 - wspnj",
-        "🇨🇭 瑞士 (Switzerland) 08 - wspnj"
+        "🇨🇭 瑞士 (Switzerland) 08 - wspnj",
+        "🇨🇭 瑞士 (Switzerland) 09 - wspnj",
+        "🇨🇭 瑞士 (Switzerland) 10 - wspnj",
+        "🇨🇭 瑞士 (Switzerland) 11 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

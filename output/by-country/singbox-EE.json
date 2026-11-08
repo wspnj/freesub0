@@ -4,23 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇵🇪 秘鲁 (Peru) 01 - wspnj",
-      "server": "134.185.81.5",
-      "server_port": 47881,
-      "uuid": "59b203b2-b1bc-4e9c-a9e5-ccb8f691bf72",
-      "flow": "xtls-rprx-vision",
+      "type": "trojan",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - wspnj",
+      "server": "208.103.161.16",
+      "server_port": 2096,
+      "password": "hWsj5AwIRPF8",
       "tls": {
         "enabled": true,
-        "server_name": "www.tesla.com",
+        "server_name": "rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4",
-          "short_id": "38d72071"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV"
         }
       }
     },
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇪 秘鲁 (Peru) 01 - wspnj"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇪 秘鲁 (Peru) 01 - wspnj"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -64,34 +64,6 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - wspnj",
-      "server": "sclass-00.catcat321.com",
-      "server_port": 20123,
-      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk.catxstar.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇦🇪 阿联酋 (UAE) 07 - wspnj",
-      "server": "Sclass-C1.catcat321.com",
-      "server_port": 20086,
-      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk.catxstar.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -100,9 +72,7 @@
         "🇦🇪 阿联酋 (UAE) 02 - wspnj",
         "🇦🇪 阿联酋 (UAE) 03 - wspnj",
         "🇦🇪 阿联酋 (UAE) 04 - wspnj",
-        "🇦🇪 阿联酋 (UAE) 05 - wspnj",
-        "🇦🇪 阿联酋 (UAE) 06 - wspnj",
-        "🇦🇪 阿联酋 (UAE) 07 - wspnj"
+        "🇦🇪 阿联酋 (UAE) 05 - wspnj"
       ]
     },
     {
@@ -113,9 +83,7 @@
         "🇦🇪 阿联酋 (UAE) 02 - wspnj",
         "🇦🇪 阿联酋 (UAE) 03 - wspnj",
         "🇦🇪 阿联酋 (UAE) 04 - wspnj",
-        "🇦🇪 阿联酋 (UAE) 05 - wspnj",
-        "🇦🇪 阿联酋 (UAE) 06 - wspnj",
-        "🇦🇪 阿联酋 (UAE) 07 - wspnj"
+        "🇦🇪 阿联酋 (UAE) 05 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

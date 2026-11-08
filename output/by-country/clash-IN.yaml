@@ -25,23 +25,18 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 03 - wspnj
-  server: 122.176.216.52
-  port: 443
+  server: 194.61.31.126
+  port: 2053
   udp: true
   type: vless
-  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
   tls: true
-  servername: app-6ada5023.deploy.meerasolution.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
-    headers:
-      Host: app-6ada5023.deploy.meerasolution.com
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
