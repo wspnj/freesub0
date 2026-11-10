@@ -4,15 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - wspnj",
-      "server": "201.8.64.7",
-      "server_port": 443,
-      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
-      "tls": {
-        "enabled": true,
-        "server_name": "nlll.obxodvpn.us",
-        "insecure": true
+      "type": "vmess",
+      "tag": "🇨🇳 CN 01 - wspnj",
+      "server": "39.108.113.127",
+      "server_port": 10086,
+      "uuid": "b0253c6c-0b96-4950-bde1-669f13bc1a01",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - wspnj"
+        "🇨🇳 CN 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - wspnj"
+        "🇨🇳 CN 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
