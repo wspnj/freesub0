@@ -5,19 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - wspnj
-  server: 185.176.204.18
-  port: 19999
+  server: 172.66.44.98
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: trojan
+  password: Nd2bFutZK2ma29bYqC@z
+  sni: 4oKhrijUyjyTFlnvoWhL3ZFW5wSGI34O.PAGeS.DeV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tr/2W6ONoBA1CTMk80znuAVgQ9dvWey2KD8?ed=2560
 - name: 🇩🇪 德国 (Germany) 02 - wspnj
-  server: 23.157.88.43
-  port: 19999
+  server: 172.66.47.158
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: trojan
+  password: Nd2bFutZK2ma29bYqC@z
+  sni: 4oKhrijUyjyTFlnvoWhL3ZFW5wSGI34O.PAGeS.DeV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tr/2W6ONoBA1CTMk80znuAVgQ9dvWey2KD8?ed=2560
 - name: 🇩🇪 德国 (Germany) 03 - wspnj
   server: 193.108.119.3
   port: 19999
@@ -26,65 +34,55 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇩🇪 德国 (Germany) 04 - wspnj
+  server: 159.195.207.238
+  port: 49313
+  udp: true
+  type: vless
+  uuid: 855c7aaa-e7d6-463e-971e-d36032744428
+- name: 🇩🇪 德国 (Germany) 05 - wspnj
   server: 193.108.119.2
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇩🇪 德国 (Germany) 05 - wspnj
-  server: 193.108.119.15
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.iloverussia2026.com
-  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 06 - wspnj
-  server: 193.108.119.29
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.iloverussia2026.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 07 - wspnj
-  server: 9.247.23.209
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 08 - wspnj
-  server: 169.150.210.233
-  port: 8080
+  server: 185.176.204.18
+  port: 19999
   udp: true
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 09 - wspnj
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 (Germany) 07 - wspnj
   server: 185.226.172.8
   port: 8008
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
-- name: 🇩🇪 德国 (Germany) 10 - wspnj
-  server: 57.129.41.216
-  port: 80
+- name: 🇩🇪 德国 (Germany) 08 - wspnj
+  server: 23.157.88.43
+  port: 19999
   udp: true
-  type: vless
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 (Germany) 09 - wspnj
+  server: 153.52.85.66
+  port: 25267
+  udp: true
+  type: trojan
+  password: happybirthdaydaniel
+  sni: de-bots4.h1cloud.net
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 10 - wspnj
+  server: 193.108.119.96
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.iloverussia2026.com
+  skip-cert-verify: false
 - name: 🇩🇪 德国 (Germany) 11 - wspnj
   server: 146.70.20.147
   port: 8080
@@ -93,28 +91,14 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇩🇪 德国 (Germany) 12 - wspnj
-  server: 2.26.54.200
-  port: 8018
+  server: 169.150.210.233
+  port: 8080
   udp: true
-  type: vmess
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /websocket/transfer/gayporn
-    headers:
-      Host: shit.67133767.xyz
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇩🇪 德国 (Germany) 13 - wspnj
-  server: 5.45.100.100
-  port: 51511
-  udp: true
-  type: hysteria2
-  password: miaoge110
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 14 - wspnj
-  server: edge.bookmai.com
+  server: 163.245.42.5
   port: 443
   udp: true
   type: vless
@@ -125,42 +109,7 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: mother-earth.fyi
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 15 - wspnj
-  server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
-  port: 443
-  udp: true
-  type: trojan
-  password: 6cddea99-9b18-4d42-8638-131bd9f5374f
-  sni: 8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 16 - wspnj
-  server: steel7.hadsvpn.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 23c82941-70f4-4381-90db-bd28e9a902e9
-  sni: steel7.hadsvpn.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 17 - wspnj
-  server: derfderf.ru
-  port: 12824
-  udp: true
-  type: hysteria2
-  password: d62s7ghfehm742us
-  sni: derfderf.ru
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 18 - wspnj
-  server: 177.202.71.55
-  port: 2059
-  udp: true
-  type: vless
-  uuid: aada3b83-8862-484e-8ac4-31343acba3e1
-  flow: xtls-rprx-vision
-  tls: true
-  servername: angelvpn.angelmh.cv
-  skip-cert-verify: false
-  client-fingerprint: safari
-- name: 🇩🇪 德国 (Germany) 19 - wspnj
+- name: 🇩🇪 德国 (Germany) 14 - wspnj
   server: 5.252.179.15
   port: 443
   udp: true
@@ -173,13 +122,205 @@ proxies:
     short-id: 296f27de82dad7ff
   servername: www.bing.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 20 - wspnj
-  server: 167.233.129.126
-  port: 2474
+- name: 🇩🇪 德国 (Germany) 15 - wspnj
+  server: 9.247.23.209
+  port: 443
   udp: true
   type: vless
-  uuid: 287db857-de04-4212-bd69-5d14083e340e
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 16 - wspnj
+  server: 193.108.119.15
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.iloverussia2026.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 17 - wspnj
+  server: 2.26.54.200
+  port: 8018
+  udp: true
+  type: vmess
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /websocket/transfer/gayporn
+    headers:
+      Host: shit.67133767.xyz
+- name: 🇩🇪 德国 (Germany) 18 - wspnj
+  server: steel7.hadsvpn.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 23c82941-70f4-4381-90db-bd28e9a902e9
+  sni: steel7.hadsvpn.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 19 - wspnj
+  server: 193.108.119.193
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.iloverussia2026.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 20 - wspnj
+  server: 3.69.232.199
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 21 - wspnj
+  server: 3.76.221.4
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 3.76.221.4
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 22 - wspnj
+  server: vpn-de-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-de-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 23 - wspnj
+  server: 5.45.100.100
+  port: 51511
+  udp: true
+  type: hysteria2
+  password: miaoge110
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 24 - wspnj
+  server: edge.bookmai.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 25 - wspnj
+  server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
+  port: 443
+  udp: true
+  type: trojan
+  password: 6cddea99-9b18-4d42-8638-131bd9f5374f
+  sni: 8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 26 - wspnj
+  server: 150.241.79.124
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dlhvkjq7Sj-TT__FLwUJzFLMDCk8bgi85Uz4qDU-5FM
+    short-id: 5212dad2aa9723d7
+  servername: de1.waspnest.space
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 27 - wspnj
+  server: 5.83.129.236
+  port: 443
+  udp: true
+  type: vless
+  uuid: d86e6fda-e519-46ab-98eb-9ff9a9da5984
+  tls: true
+  servername: host-de-upscale.cdn.cachefleet.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: a9w9wmko0k2od14hv8v
+- name: 🇩🇪 德国 (Germany) 28 - wspnj
+  server: 18.193.79.104
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-de-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 29 - wspnj
+  server: 87.248.149.50
+  port: 443
+  udp: true
+  type: vless
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  tls: true
+  servername: base.hosamobenl.co.uk
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 30 - wspnj
+  server: music.3apes.online
+  port: 443
+  udp: true
+  type: vless
+  uuid: 12776e55-6230-48b9-b069-1bb8a04b4237
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: q4_o7NvD6vQg4hYsyO29Q6PVufjTJHDUbQTqstre9EQ
+  servername: music.3apes.online
+  client-fingerprint: qq
+- name: 🇩🇪 德国 (Germany) 31 - wspnj
+  server: 177.202.71.55
+  port: 2059
+  udp: true
+  type: vless
+  uuid: aada3b83-8862-484e-8ac4-31343acba3e1
+  flow: xtls-rprx-vision
+  tls: true
+  servername: angelvpn.angelmh.cv
+  skip-cert-verify: false
+  client-fingerprint: safari
+- name: 🇩🇪 德国 (Germany) 32 - wspnj
+  server: 193.108.119.134
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.iloverussia2026.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 33 - wspnj
+  server: 146.103.118.189
+  port: 443
+  udp: true
+  type: vless
+  uuid: 82382a00-3784-41e3-85d6-37f626263944
+  tls: true
+  servername: vpn.574ck.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vpn.574ck.xyz
+- name: 🇩🇪 德国 (Germany) 34 - wspnj
+  server: derfderf.ru
+  port: 12824
+  udp: true
+  type: hysteria2
+  password: d62s7ghfehm742us
+  sni: derfderf.ru
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 35 - wspnj
   server: 82.39.171.12
   port: 443
   udp: true
@@ -192,22 +333,63 @@ proxies:
     short-id: c39cc7310a
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 22 - wspnj
-  server: 3.69.232.199
+- name: 🇩🇪 德国 (Germany) 36 - wspnj
+  server: 104.17.70.206
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 1beed393-7c4d-4432-beee-f1026b72d0cf
+  tls: true
+  servername: free.sahanwickramasinghe.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- name: 🇩🇪 德国 (Germany) 37 - wspnj
+  server: 172.237.91.206
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 23 - wspnj
-  server: 153.52.85.66
-  port: 25267
+  type: vless
+  uuid: 4d945644-69ab-47e0-98b3-d43a6313135d
+  tls: true
+  servername: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/SaXqikbSPA3ImtmZKAFin?ed=2560
+    headers:
+      Host: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
+- name: 🇩🇪 德国 (Germany) 38 - wspnj
+  server: 79.182.39.109
+  port: 443
   udp: true
-  type: trojan
-  password: happybirthdaydaniel
-  sni: de-bots4.h1cloud.net
-  skip-cert-verify: true
+  type: vless
+  uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
+  tls: true
+  reality-opts:
+    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
+    short-id: e572b6579ea525d4
+  servername: 71b840t.de7.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 39 - wspnj
+  server: n2.topingr.ir
+  port: 443
+  udp: true
+  type: vless
+  uuid: d5748db0-0031-4b9e-b43c-6c3986a9b5ed
+  tls: true
+  servername: riga.zovip2.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /api/v3/pulse
+    headers:
+      Host: riga.zovip2.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -236,6 +418,22 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 21 - wspnj
   - 🇩🇪 德国 (Germany) 22 - wspnj
   - 🇩🇪 德国 (Germany) 23 - wspnj
+  - 🇩🇪 德国 (Germany) 24 - wspnj
+  - 🇩🇪 德国 (Germany) 25 - wspnj
+  - 🇩🇪 德国 (Germany) 26 - wspnj
+  - 🇩🇪 德国 (Germany) 27 - wspnj
+  - 🇩🇪 德国 (Germany) 28 - wspnj
+  - 🇩🇪 德国 (Germany) 29 - wspnj
+  - 🇩🇪 德国 (Germany) 30 - wspnj
+  - 🇩🇪 德国 (Germany) 31 - wspnj
+  - 🇩🇪 德国 (Germany) 32 - wspnj
+  - 🇩🇪 德国 (Germany) 33 - wspnj
+  - 🇩🇪 德国 (Germany) 34 - wspnj
+  - 🇩🇪 德国 (Germany) 35 - wspnj
+  - 🇩🇪 德国 (Germany) 36 - wspnj
+  - 🇩🇪 德国 (Germany) 37 - wspnj
+  - 🇩🇪 德国 (Germany) 38 - wspnj
+  - 🇩🇪 德国 (Germany) 39 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -264,5 +462,21 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 21 - wspnj
   - 🇩🇪 德国 (Germany) 22 - wspnj
   - 🇩🇪 德国 (Germany) 23 - wspnj
+  - 🇩🇪 德国 (Germany) 24 - wspnj
+  - 🇩🇪 德国 (Germany) 25 - wspnj
+  - 🇩🇪 德国 (Germany) 26 - wspnj
+  - 🇩🇪 德国 (Germany) 27 - wspnj
+  - 🇩🇪 德国 (Germany) 28 - wspnj
+  - 🇩🇪 德国 (Germany) 29 - wspnj
+  - 🇩🇪 德国 (Germany) 30 - wspnj
+  - 🇩🇪 德国 (Germany) 31 - wspnj
+  - 🇩🇪 德国 (Germany) 32 - wspnj
+  - 🇩🇪 德国 (Germany) 33 - wspnj
+  - 🇩🇪 德国 (Germany) 34 - wspnj
+  - 🇩🇪 德国 (Germany) 35 - wspnj
+  - 🇩🇪 德国 (Germany) 36 - wspnj
+  - 🇩🇪 德国 (Germany) 37 - wspnj
+  - 🇩🇪 德国 (Germany) 38 - wspnj
+  - 🇩🇪 德国 (Germany) 39 - wspnj
 rules:
 - MATCH,PROXIES

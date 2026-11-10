@@ -5,22 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - wspnj
-  server: 202.146.222.174
+  server: 104.18.15.19
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 226279dd-28b2-4b61-96be-a2a0b1afd522
+  tls: true
+  servername: hk.zhaoqing.city
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: hk.zhaoqing.city
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
+  server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
+  sni: https://t.me/clashv8
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%91%d1%80%d2%b9%d2%af%d1%96
+  sni: https3a2f2ft.me2fwangcai2efa3bfc3bcc3a1
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.174
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -30,14 +53,29 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
-  server: 202.146.222.89
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
+  server: 156.245.232.239
+  port: 35043
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8
-  skip-cert-verify: true
+  type: vmess
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - wspnj
+  server: 209.33.160.122
+  port: 39098
+  udp: true
+  type: vless
+  uuid: 7852e4df-db54-4f75-a35e-3b8fbe89e56d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DtOZ39u6MyQMG96tl13-M7-HeaqQzW2RLBVPk9py-Vg
+  servername: dash.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +85,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
+  - 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
+  - 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
+  - 🇭🇰 中国香港 (Hong Kong) 07 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,5 +97,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
+  - 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
+  - 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
+  - 🇭🇰 中国香港 (Hong Kong) 07 - wspnj
 rules:
 - MATCH,PROXIES
