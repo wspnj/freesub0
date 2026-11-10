@@ -30,6 +30,16 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 04 - wspnj
+  server: 16.106.7.232
+  port: 20123
+  udp: true
+  type: trojan
+  password: d9064589-74af-432a-9390-5d8a9da281bf
+  sni: hk.catxstar.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +48,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - wspnj
   - 🇦🇪 阿联酋 (UAE) 02 - wspnj
   - 🇦🇪 阿联酋 (UAE) 03 - wspnj
+  - 🇦🇪 阿联酋 (UAE) 04 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,5 +57,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - wspnj
   - 🇦🇪 阿联酋 (UAE) 02 - wspnj
   - 🇦🇪 阿联酋 (UAE) 03 - wspnj
+  - 🇦🇪 阿联酋 (UAE) 04 - wspnj
 rules:
 - MATCH,PROXIES
