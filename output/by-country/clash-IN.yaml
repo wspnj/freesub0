@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - wspnj
+  server: 194.61.31.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 02 - wspnj
   server: 178.212.35.198
   port: 443
   udp: true
@@ -16,17 +28,64 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 03 - wspnj
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇮🇳 印度 (India) 04 - wspnj
+  server: 13.140.253.35
+  port: 443
+  udp: true
+  type: vless
+  uuid: bcd3798c-a56f-6bfc-b738-a17c43bd4a50
+  tls: true
+  servername: xray-m0642ki4-silver-nebula-10.cloady.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /362b2b2c7197d648
+    headers:
+      Host: xray-m0642ki4-silver-nebula-10.cloady.io
+- name: 🇮🇳 印度 (India) 05 - wspnj
+  server: 85.234.100.32
+  port: 443
+  udp: true
+  type: vless
+  uuid: c1208c5a-2350-0003-affd-fc41b4319286
+  tls: true
+  servername: decdn-28.nome-rkp.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: decdn-28.nome-rkp.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇳 印度 (India) 01 - wspnj
+  - 🇮🇳 印度 (India) 02 - wspnj
+  - 🇮🇳 印度 (India) 03 - wspnj
+  - 🇮🇳 印度 (India) 04 - wspnj
+  - 🇮🇳 印度 (India) 05 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇳 印度 (India) 01 - wspnj
+  - 🇮🇳 印度 (India) 02 - wspnj
+  - 🇮🇳 印度 (India) 03 - wspnj
+  - 🇮🇳 印度 (India) 04 - wspnj
+  - 🇮🇳 印度 (India) 05 - wspnj
 rules:
 - MATCH,PROXIES
