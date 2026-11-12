@@ -19,6 +19,37 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 02 - wspnj
+  server: 188.225.37.43
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
+  tls: true
+  servername: torvani.cyou
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/boards/live
+    headers:
+      Host: torvani.cyou
+- name: 🇹🇷 土耳其 (Turkey) 03 - wspnj
+  server: 157.254.38.210
+  port: 20027
+  udp: true
+  type: trojan
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 04 - wspnj
+  server: sclass-b1.catcat321.com
+  port: 20028
+  udp: true
+  type: trojan
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 05 - wspnj
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -30,14 +61,6 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 03 - wspnj
-  server: sclass-b1.catcat321.com
-  port: 20028
-  udp: true
-  type: trojan
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  sni: hk.catxstar.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +69,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - wspnj
   - 🇹🇷 土耳其 (Turkey) 02 - wspnj
   - 🇹🇷 土耳其 (Turkey) 03 - wspnj
+  - 🇹🇷 土耳其 (Turkey) 04 - wspnj
+  - 🇹🇷 土耳其 (Turkey) 05 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +79,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - wspnj
   - 🇹🇷 土耳其 (Turkey) 02 - wspnj
   - 🇹🇷 土耳其 (Turkey) 03 - wspnj
+  - 🇹🇷 土耳其 (Turkey) 04 - wspnj
+  - 🇹🇷 土耳其 (Turkey) 05 - wspnj
 rules:
 - MATCH,PROXIES

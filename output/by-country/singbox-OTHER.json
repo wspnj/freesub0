@@ -5,14 +5,22 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇨🇳 CN 01 - wspnj",
-      "server": "39.108.113.127",
-      "server_port": 10086,
-      "uuid": "b0253c6c-0b96-4950-bde1-669f13bc1a01",
+      "tag": "🌐 其他地区 (Other) 01 - wspnj",
+      "server": "104.18.42.163",
+      "server_port": 443,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
       "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "guanwang.awsno.com",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/"
+        "path": "/hls/cctv5phd.m3u8",
+        "headers": {
+          "Host": "guanwang.awsno.com"
+        }
       }
     },
     {
@@ -20,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - wspnj"
+        "🌐 其他地区 (Other) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - wspnj"
+        "🌐 其他地区 (Other) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
