@@ -12,29 +12,22 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - wspnj",
-      "server": "62.182.193.228",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "2e555e46dbc421452416834962fd014f"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - wspnj",
-      "server": "62.93.166.184",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - wspnj",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - wspnj",
       "server": "138.124.86.230",
       "server_port": 48115,
       "uuid": "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b",
@@ -53,22 +46,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - wspnj",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - wspnj",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - wspnj",
       "server": "70.34.212.124",
       "server_port": 8388,
       "method": "aes-256-gcm",
@@ -82,9 +61,7 @@
         "🇸🇪 瑞典 (Sweden) 01 - wspnj",
         "🇸🇪 瑞典 (Sweden) 02 - wspnj",
         "🇸🇪 瑞典 (Sweden) 03 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 04 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 05 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 06 - wspnj"
+        "🇸🇪 瑞典 (Sweden) 04 - wspnj"
       ]
     },
     {
@@ -94,9 +71,7 @@
         "🇸🇪 瑞典 (Sweden) 01 - wspnj",
         "🇸🇪 瑞典 (Sweden) 02 - wspnj",
         "🇸🇪 瑞典 (Sweden) 03 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 04 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 05 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 06 - wspnj"
+        "🇸🇪 瑞典 (Sweden) 04 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
