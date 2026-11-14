@@ -6,16 +6,13 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - wspnj",
-      "server": "200.102.183.50",
-      "server_port": 443,
+      "server": "200.102.183.57",
+      "server_port": 80,
       "uuid": "664f65f4-33b3-43a3-b9e5-68192d1d428e",
       "tls": {
         "enabled": true,
-        "server_name": "f2hbck5x3c0g8pl7.cdn.cachefleet.com",
+        "server_name": "68r2nrw6avta71yq.cdn.cachefleet.com",
         "insecure": false,
-        "alpn": [
-          "h2"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -29,13 +26,16 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
-      "server": "200.102.183.57",
-      "server_port": 80,
+      "server": "200.102.183.50",
+      "server_port": 443,
       "uuid": "664f65f4-33b3-43a3-b9e5-68192d1d428e",
       "tls": {
         "enabled": true,
-        "server_name": "68r2nrw6avta71yq.cdn.cachefleet.com",
+        "server_name": "f2hbck5x3c0g8pl7.cdn.cachefleet.com",
         "insecure": false,
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -78,25 +78,12 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 05 - wspnj",
-      "server": "116.206.95.231",
-      "server_port": 43000,
-      "uuid": "4a923161-156f-4914-8cac-762fb2433bfb",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "116.206.95.231",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CG0mVPuvPcfZjplA21zehlqoDpGHihJBK8K_u1zfhgQ",
-          "short_id": "ee4ea980"
-        }
-      }
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU="
     },
     {
       "type": "selector",

@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 01 - wspnj",
-      "server": "185.95.231.156",
+      "tag": "🇨🇿 捷克 (Czech) 01 - wspnj",
+      "server": "194.87.109.106",
       "server_port": 443,
-      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
-      "flow": "xtls-rprx-vision",
+      "uuid": "d9274255-edf4-4944-bc62-6ef35cd2de40",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "currant.asynchronous.site",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-          "short_id": "a3a578ab"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01 - wspnj"
+        "🇨🇿 捷克 (Czech) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01 - wspnj"
+        "🇨🇿 捷克 (Czech) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
