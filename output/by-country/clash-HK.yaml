@@ -5,37 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - wspnj
-  server: 213.176.92.148
-  port: 40647
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
+  sni: vk.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%253a%252f%252ft.me%252fwangcai2%25d1%2580%25d2%25b9%25d2%25af%25d1%2591%25d1%2580%25d2%25b9%25d2%25af%25d1%2596
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -53,8 +38,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,7 +46,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
-  - 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
 rules:
 - MATCH,PROXIES
