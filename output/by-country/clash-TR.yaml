@@ -20,22 +20,30 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 02 - wspnj
+  server: tr3.h1cloud.net
+  port: 25515
+  udp: true
+  type: hysteria2
+  password: b36a14f8-fc3f-4142-968f-48031cf5f330
+  sni: 2c74e5t.tr3.h1clayd.click
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 03 - wspnj
   server: 157.254.38.210
   port: 20028
   udp: true
   type: trojan
   password: d7563108-615c-4338-a7bd-77f359869a4a
   sni: hk.catxstar.com
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 03 - wspnj
-  server: 157.254.38.210
+  skip-cert-verify: false
+- name: 🇹🇷 土耳其 (Turkey) 04 - wspnj
+  server: sclass-b1.catcat321.com
   port: 20027
   udp: true
   type: trojan
   password: d7563108-615c-4338-a7bd-77f359869a4a
   sni: hk.catxstar.com
-  skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 04 - wspnj
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 05 - wspnj
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -46,7 +54,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,6 +64,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - wspnj
   - 🇹🇷 土耳其 (Turkey) 03 - wspnj
   - 🇹🇷 土耳其 (Turkey) 04 - wspnj
+  - 🇹🇷 土耳其 (Turkey) 05 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -65,5 +74,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - wspnj
   - 🇹🇷 土耳其 (Turkey) 03 - wspnj
   - 🇹🇷 土耳其 (Turkey) 04 - wspnj
+  - 🇹🇷 土耳其 (Turkey) 05 - wspnj
 rules:
 - MATCH,PROXIES
