@@ -4,43 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - wspnj",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "45.144.234.157"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - wspnj",
-      "server": "135.181.187.44",
-      "server_port": 443,
-      "uuid": "beda6bd0-7ce4-477a-91f1-860d018dbfcb",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sizipe.hagrid-connected.com",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - wspnj",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - wspnj",
       "server": "94.183.164.119",
       "server_port": 24433,
       "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
@@ -52,7 +17,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - wspnj",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - wspnj",
       "server": "177.202.75.56",
       "server_port": 443,
       "password": "146d567c-6335-4e63-a8aa-7ec068642440",
@@ -64,7 +29,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - wspnj",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - wspnj",
       "server": "104.171.133.213",
       "server_port": 443,
       "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
@@ -85,22 +50,15 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - wspnj",
-      "server": "129.101.100.219",
-      "server_port": 443,
-      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "db-28.topp-con.xyz",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
+      "tag": "🇫🇮 芬兰 (Finland) 04 - wspnj",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
         }
       }
     },
@@ -112,9 +70,7 @@
         "🇫🇮 芬兰 (Finland) 01 - wspnj",
         "🇫🇮 芬兰 (Finland) 02 - wspnj",
         "🇫🇮 芬兰 (Finland) 03 - wspnj",
-        "🇫🇮 芬兰 (Finland) 04 - wspnj",
-        "🇫🇮 芬兰 (Finland) 05 - wspnj",
-        "🇫🇮 芬兰 (Finland) 06 - wspnj"
+        "🇫🇮 芬兰 (Finland) 04 - wspnj"
       ]
     },
     {
@@ -124,9 +80,7 @@
         "🇫🇮 芬兰 (Finland) 01 - wspnj",
         "🇫🇮 芬兰 (Finland) 02 - wspnj",
         "🇫🇮 芬兰 (Finland) 03 - wspnj",
-        "🇫🇮 芬兰 (Finland) 04 - wspnj",
-        "🇫🇮 芬兰 (Finland) 05 - wspnj",
-        "🇫🇮 芬兰 (Finland) 06 - wspnj"
+        "🇫🇮 芬兰 (Finland) 04 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

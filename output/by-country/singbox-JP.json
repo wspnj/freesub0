@@ -4,16 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 01 - wspnj",
-      "server": "138.3.208.26",
-      "server_port": 50160,
-      "password": "184cdec28da5a09450803c8debcd2cc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "138.3.208.26",
-        "insecure": true
-      }
+      "server": "168.138.205.100",
+      "server_port": 53758,
+      "method": "aes-128-gcm",
+      "password": "Bwlqh7GcFB"
     },
     {
       "type": "hysteria2",
@@ -23,17 +19,21 @@
       "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
       "tls": {
         "enabled": true,
-        "server_name": "bing.com",
+        "server_name": "8.211.175.236",
         "insecure": true
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇯🇵 日本 (Japan) 03 - wspnj",
-      "server": "84.247.155.196",
+      "server": "8.209.247.109",
       "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
+      "password": "usqmqUKJFIlCmvkCNSY64L3k",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
@@ -65,54 +65,19 @@
       "password": "3eOFeNssde7PYYMv"
     },
     {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 06 - wspnj",
-      "server": "104.21.0.1",
-      "server_port": 2083,
-      "uuid": "ac251237-576f-40c8-a543-554960c958b1",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "or3.sfacg.uk",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/or3",
-        "headers": {
-          "Host": "or3.sfacg.uk"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 07 - wspnj",
-      "server": "104.16.10.234",
+      "tag": "🇯🇵 日本 (Japan) 06 - wspnj",
+      "server": "104.16.10.185",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
         "server_name": "jp3.yohototo.top",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 08 - wspnj",
-      "server": "154.31.114.162",
-      "server_port": 8443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -124,11 +89,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 09 - wspnj",
-      "server": "168.138.205.100",
-      "server_port": 53758,
-      "method": "aes-128-gcm",
-      "password": "Bwlqh7GcFB"
+      "tag": "🇯🇵 日本 (Japan) 07 - wspnj",
+      "server": "84.247.155.196",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
     },
     {
       "type": "selector",
@@ -141,9 +106,7 @@
         "🇯🇵 日本 (Japan) 04 - wspnj",
         "🇯🇵 日本 (Japan) 05 - wspnj",
         "🇯🇵 日本 (Japan) 06 - wspnj",
-        "🇯🇵 日本 (Japan) 07 - wspnj",
-        "🇯🇵 日本 (Japan) 08 - wspnj",
-        "🇯🇵 日本 (Japan) 09 - wspnj"
+        "🇯🇵 日本 (Japan) 07 - wspnj"
       ]
     },
     {
@@ -156,9 +119,7 @@
         "🇯🇵 日本 (Japan) 04 - wspnj",
         "🇯🇵 日本 (Japan) 05 - wspnj",
         "🇯🇵 日本 (Japan) 06 - wspnj",
-        "🇯🇵 日本 (Japan) 07 - wspnj",
-        "🇯🇵 日本 (Japan) 08 - wspnj",
-        "🇯🇵 日本 (Japan) 09 - wspnj"
+        "🇯🇵 日本 (Japan) 07 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

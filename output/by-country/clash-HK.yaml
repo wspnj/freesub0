@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - wspnj
-  server: 202.146.222.174
-  port: 443
+  server: 47.242.93.89
+  port: 12012
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  type: trojan
+  password: '12012'
+  sni: ali-hk.b-gfw.cfd
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
   server: 202.146.222.89
@@ -18,17 +18,35 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8🇨🇳
+  sni: https://t.me/clashv8\u0001f1e8\u0001f1f3
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
-  server: 202.146.222.29
+  server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2рҹүрҹү
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
+  server: fb00fe3d-toq2o0-tpkogt-1ryup.hk2.hyhuawei.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
+  tls: true
+  reality-opts:
+    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
+  servername: download.windowsupdate.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
+  server: 213.176.92.148
+  port: 40647
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -47,6 +65,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
+  - 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
+  - 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,5 +76,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
+  - 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
+  - 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
 rules:
 - MATCH,PROXIES
