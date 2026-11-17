@@ -5,22 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇪 格鲁吉亚 (Georgia) 01 - wspnj",
-      "server": "194.135.119.135",
+      "tag": "🌐 其他地区 (Other) 01 - wspnj",
+      "server": "skk.moe",
       "server_port": 443,
-      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
-      "flow": "xtls-rprx-vision",
+      "uuid": "a25a71d1-10ed-4383-855a-f269a34ca691",
       "tls": {
         "enabled": true,
-        "server_name": "ge1.gofizzin.com",
+        "server_name": "ave-qualifications-choices-populations.trycloudflare.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fVo5hYUD3VkxEetcXSMVWp7hjvz4YrKLNHDhGhn-d3M",
-          "short_id": "0640a12b"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/a8b8606819ef",
+        "headers": {
+          "Host": "ave-qualifications-choices-populations.trycloudflare.com"
         }
       }
     },
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇪 格鲁吉亚 (Georgia) 01 - wspnj"
+        "🌐 其他地区 (Other) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇪 格鲁吉亚 (Georgia) 01 - wspnj"
+        "🌐 其他地区 (Other) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
