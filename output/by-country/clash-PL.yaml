@@ -17,20 +17,18 @@ proxies:
   servername: pl8.galioncc.com
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 02 - wspnj
-  server: 201.58.189.105
-  port: 2083
+  server: 212.87.190.249
+  port: 443
   udp: true
   type: vless
-  uuid: d7ddade6-b7a0-4cab-a910-d5d5c378d98a
+  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: B7x5bYp-YhtLeH31zYcilpKFCkGTMe3jtSECSw-bMC4
-    short-id: 8bd80253
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: google.storage.v2.Storage
+    public-key: 0dAUffCns_r-xP3QP1V8qy2P29vBN5ROOoX96TxpvXA
+    short-id: b545243c33282b73
+  servername: d4a338t.pl8.h1clayd.click
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
