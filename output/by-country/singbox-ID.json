@@ -5,24 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - wspnj",
-      "server": "104.18.10.66",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - wspnj",
+      "server": "104.17.3.81",
       "server_port": 443,
-      "uuid": "2874e26b-45e3-4d12-9e01-3f5a1c6a7105",
+      "uuid": "12d67d2b-ae5c-4d56-9f14-d71d96f7826f",
       "tls": {
         "enabled": true,
-        "server_name": "dietary-forms-begun-orientation.trycloudflare.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "natan.srpcom.cloud",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/d9fb7b4f14c1",
+        "path": "/vlessws",
         "headers": {
-          "Host": "dietary-forms-begun-orientation.trycloudflare.com"
+          "Host": "natan.srpcom.cloud"
         }
       }
     },
@@ -31,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - wspnj"
+        "🇮🇩 印尼 (Indonesia) 01 - wspnj"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - wspnj"
+        "🇮🇩 印尼 (Indonesia) 01 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

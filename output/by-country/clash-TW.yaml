@@ -5,6 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - wspnj
+  server: 85.237.207.221
+  port: 443
+  udp: true
+  type: vless
+  uuid: b59bcb5b-5150-4c6b-9227-681886197014
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lJz7AGWUC-ZTEIJaU5y1GRrROWJ9J_VzQRyrYPmOygs
+    short-id: fd2fa5e06670120b
+  servername: dl.google.com
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - wspnj
+  server: 160.187.100.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-tw-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - wspnj
   server: 103.115.109.49
   port: 443
   udp: true
@@ -12,15 +33,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - wspnj
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: whatsapp.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - wspnj
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - wspnj
   server: 60.248.219.78
   port: 443
   udp: true
@@ -42,6 +55,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - wspnj
   - 🇹🇼 中国台湾 (Taiwan) 02 - wspnj
   - 🇹🇼 中国台湾 (Taiwan) 03 - wspnj
+  - 🇹🇼 中国台湾 (Taiwan) 04 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,5 +64,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - wspnj
   - 🇹🇼 中国台湾 (Taiwan) 02 - wspnj
   - 🇹🇼 中国台湾 (Taiwan) 03 - wspnj
+  - 🇹🇼 中国台湾 (Taiwan) 04 - wspnj
 rules:
 - MATCH,PROXIES
