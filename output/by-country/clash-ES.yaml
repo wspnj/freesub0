@@ -5,34 +5,71 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - wspnj
-  server: 66.163.118.103
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇪🇸 西班牙 (Spain) 02 - wspnj
   server: 79.127.139.242
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇪🇸 西班牙 (Spain) 03 - wspnj
+- name: 🇪🇸 西班牙 (Spain) 02 - wspnj
   server: 167.17.71.167
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇪🇸 西班牙 (Spain) 04 - wspnj
-  server: 66.163.118.40
+- name: 🇪🇸 西班牙 (Spain) 03 - wspnj
+  server: 66.163.118.244
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.discovergreatjobsandadvanceyourcareer.com
+  sni: api.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 04 - wspnj
+  server: 66.163.118.244
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: 66.163.118.244
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 05 - wspnj
+  server: 66.163.118.103
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇪🇸 西班牙 (Spain) 06 - wspnj
+  server: 66.163.118.115
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 07 - wspnj
+  server: 66.163.118.166
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 08 - wspnj
+  server: 46.28.71.247
+  port: 443
+  udp: true
+  type: vless
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,6 +79,10 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - wspnj
   - 🇪🇸 西班牙 (Spain) 03 - wspnj
   - 🇪🇸 西班牙 (Spain) 04 - wspnj
+  - 🇪🇸 西班牙 (Spain) 05 - wspnj
+  - 🇪🇸 西班牙 (Spain) 06 - wspnj
+  - 🇪🇸 西班牙 (Spain) 07 - wspnj
+  - 🇪🇸 西班牙 (Spain) 08 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,5 +92,9 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - wspnj
   - 🇪🇸 西班牙 (Spain) 03 - wspnj
   - 🇪🇸 西班牙 (Spain) 04 - wspnj
+  - 🇪🇸 西班牙 (Spain) 05 - wspnj
+  - 🇪🇸 西班牙 (Spain) 06 - wspnj
+  - 🇪🇸 西班牙 (Spain) 07 - wspnj
+  - 🇪🇸 西班牙 (Spain) 08 - wspnj
 rules:
 - MATCH,PROXIES

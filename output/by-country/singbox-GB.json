@@ -20,18 +20,12 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 03 - wspnj",
-      "server": "57.129.132.223",
-      "server_port": 80,
-      "uuid": "9e20b04d-5a81-4e16-b421-01e502f0aac6",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/",
-        "headers": {
-          "Host": "google.com"
-        }
-      }
+      "server": "142.202.51.22",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "shadowsocks",
@@ -42,44 +36,16 @@
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 05 - wspnj",
-      "server": "51.38.71.147",
-      "server_port": 8443,
-      "uuid": "c08f0056-7a6d-4931-813b-aaa3cdd00aed",
-      "tls": {
-        "enabled": true,
-        "server_name": "node-uk.connectsuite.org",
-        "insecure": true,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 06 - wspnj",
+      "tag": "🇬🇧 英国 (United Kingdom) 05 - wspnj",
       "server": "98.98.207.163",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 07 - wspnj",
-      "server": "98.98.142.161",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 08 - wspnj",
+      "tag": "🇬🇧 英国 (United Kingdom) 06 - wspnj",
       "server": "213.176.92.168",
       "server_port": 14430,
       "uuid": "ba52cc43-700d-4040-9444-29214c98e6e0",
@@ -90,6 +56,35 @@
           "Host": "213.176.92.168"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 07 - wspnj",
+      "server": "13.143.239.148",
+      "server_port": 25090,
+      "uuid": "f3a227cb-8a8b-4ccb-b613-9143c4a1346c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dbb72fr.fi20.h1clayd.shop",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7G4Jpyi1yaMHx6mhqxcoF2DgpWrfGJl714sWzSRK_Ws",
+          "short_id": "c02d36577fecf7ca"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 08 - wspnj",
+      "server": "98.98.142.161",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "vless",
@@ -115,16 +110,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 10 - wspnj",
-      "server": "142.202.51.22",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 11 - wspnj",
+      "tag": "🇬🇧 英国 (United Kingdom) 10 - wspnj",
       "server": "138.124.125.193",
       "server_port": 10444,
       "uuid": "e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4",
@@ -140,6 +127,27 @@
           "enabled": true,
           "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
           "short_id": "8debcf36f1cc69ff"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 11 - wspnj",
+      "server": "107.181.151.128",
+      "server_port": 443,
+      "uuid": "88742d38-3f5c-4b9c-b256-7df5db8257ec",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
+          "short_id": "8f79726c5002"
         }
       }
     },

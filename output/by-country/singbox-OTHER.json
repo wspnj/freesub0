@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - wspnj",
-      "server": "skk.moe",
+      "server": "104.18.10.66",
       "server_port": 443,
-      "uuid": "a25a71d1-10ed-4383-855a-f269a34ca691",
+      "uuid": "2874e26b-45e3-4d12-9e01-3f5a1c6a7105",
       "tls": {
         "enabled": true,
-        "server_name": "ave-qualifications-choices-populations.trycloudflare.com",
+        "server_name": "dietary-forms-begun-orientation.trycloudflare.com",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/a8b8606819ef",
+        "path": "/d9fb7b4f14c1",
         "headers": {
-          "Host": "ave-qualifications-choices-populations.trycloudflare.com"
+          "Host": "dietary-forms-begun-orientation.trycloudflare.com"
         }
       }
     },

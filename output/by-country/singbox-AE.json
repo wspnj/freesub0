@@ -49,6 +49,32 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 05 - wspnj",
+      "server": "r0xnfzk9ud.newwl.pro",
+      "server_port": 443,
+      "uuid": "7955bf18-35c4-412d-aabd-c0b36c793063",
+      "tls": {
+        "enabled": true,
+        "server_name": "r0xnfzk9ud.newwl.pro",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/service/telemetry/045d381f1166/",
+        "headers": {
+          "Host": "r0xnfzk9ud.newwl.pro"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - wspnj",
       "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
@@ -69,7 +95,8 @@
         "🇦🇪 阿联酋 (UAE) 02 - wspnj",
         "🇦🇪 阿联酋 (UAE) 03 - wspnj",
         "🇦🇪 阿联酋 (UAE) 04 - wspnj",
-        "🇦🇪 阿联酋 (UAE) 05 - wspnj"
+        "🇦🇪 阿联酋 (UAE) 05 - wspnj",
+        "🇦🇪 阿联酋 (UAE) 06 - wspnj"
       ]
     },
     {
@@ -80,7 +107,8 @@
         "🇦🇪 阿联酋 (UAE) 02 - wspnj",
         "🇦🇪 阿联酋 (UAE) 03 - wspnj",
         "🇦🇪 阿联酋 (UAE) 04 - wspnj",
-        "🇦🇪 阿联酋 (UAE) 05 - wspnj"
+        "🇦🇪 阿联酋 (UAE) 05 - wspnj",
+        "🇦🇪 阿联酋 (UAE) 06 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,8 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "hysteria2",
       "tag": "🇯🇵 日本 (Japan) 01 - wspnj",
+      "server": "8.209.247.109",
+      "server_port": 443,
+      "password": "usqmqUKJFIlCmvkCNSY64L3k",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 02 - wspnj",
+      "server": "8.211.175.236",
+      "server_port": 8443,
+      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 03 - wspnj",
       "server": "168.110.63.247",
       "server_port": 8081,
       "uuid": "c3bde296-8e44-4b8c-a325-577d5b3cc7c8",
@@ -17,7 +41,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 02 - wspnj",
+      "tag": "🇯🇵 日本 (Japan) 04 - wspnj",
       "server": "45.77.8.233",
       "server_port": 443,
       "uuid": "242212a6-200b-4c09-b2e5-86a8dd490331",
@@ -44,7 +68,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 03 - wspnj",
+      "tag": "🇯🇵 日本 (Japan) 05 - wspnj",
       "server": "45.76.106.69",
       "server_port": 443,
       "uuid": "db102c51-5f7f-4283-b9c1-942c5c6e2616",
@@ -70,8 +94,51 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 06 - wspnj",
+      "server": "45.76.222.108",
+      "server_port": 443,
+      "uuid": "bd95a04e-e3e1-460e-b89d-e9a693d393e0",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE",
+          "short_id": "b5c85d2d"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 07 - wspnj",
+      "server": "84.247.155.196",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 08 - wspnj",
+      "server": "84.247.155.196",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 04 - wspnj",
+      "tag": "🇯🇵 日本 (Japan) 09 - wspnj",
       "server": "138.3.208.26",
       "server_port": 50160,
       "password": "184cdec28da5a09450803c8debcd2cc9",
@@ -82,15 +149,26 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 05 - wspnj",
-      "server": "8.211.175.236",
-      "server_port": 8443,
-      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 10 - wspnj",
+      "server": "152.69.200.216",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "8.211.175.236",
-        "insecure": true
+        "server_name": "jp3.yohototo.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
       }
     },
     {
@@ -102,7 +180,12 @@
         "🇯🇵 日本 (Japan) 02 - wspnj",
         "🇯🇵 日本 (Japan) 03 - wspnj",
         "🇯🇵 日本 (Japan) 04 - wspnj",
-        "🇯🇵 日本 (Japan) 05 - wspnj"
+        "🇯🇵 日本 (Japan) 05 - wspnj",
+        "🇯🇵 日本 (Japan) 06 - wspnj",
+        "🇯🇵 日本 (Japan) 07 - wspnj",
+        "🇯🇵 日本 (Japan) 08 - wspnj",
+        "🇯🇵 日本 (Japan) 09 - wspnj",
+        "🇯🇵 日本 (Japan) 10 - wspnj"
       ]
     },
     {
@@ -113,7 +196,12 @@
         "🇯🇵 日本 (Japan) 02 - wspnj",
         "🇯🇵 日本 (Japan) 03 - wspnj",
         "🇯🇵 日本 (Japan) 04 - wspnj",
-        "🇯🇵 日本 (Japan) 05 - wspnj"
+        "🇯🇵 日本 (Japan) 05 - wspnj",
+        "🇯🇵 日本 (Japan) 06 - wspnj",
+        "🇯🇵 日本 (Japan) 07 - wspnj",
+        "🇯🇵 日本 (Japan) 08 - wspnj",
+        "🇯🇵 日本 (Japan) 09 - wspnj",
+        "🇯🇵 日本 (Japan) 10 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
