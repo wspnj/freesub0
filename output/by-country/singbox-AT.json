@@ -12,29 +12,8 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 02 - wspnj",
-      "server": "67.159.17.252",
-      "server_port": 443,
-      "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sdfsdfsf.wey-land.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZSxFQHVt_avgBDW1Rbbn0SBDidOEftqHgAF9NH565kM",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇦🇹 奥地利 (Austria) 03 - wspnj",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - wspnj",
       "server": "154.47.19.225",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -51,8 +30,7 @@
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - wspnj",
-        "🇦🇹 奥地利 (Austria) 02 - wspnj",
-        "🇦🇹 奥地利 (Austria) 03 - wspnj"
+        "🇦🇹 奥地利 (Austria) 02 - wspnj"
       ]
     },
     {
@@ -60,8 +38,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - wspnj",
-        "🇦🇹 奥地利 (Austria) 02 - wspnj",
-        "🇦🇹 奥地利 (Austria) 03 - wspnj"
+        "🇦🇹 奥地利 (Austria) 02 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
