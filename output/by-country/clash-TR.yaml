@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇴 挪威 (Norway) 01 - wspnj
-  server: 185.213.23.63
-  port: 990
+- name: 🇹🇷 土耳其 (Turkey) 01 - wspnj
+  server: 31.210.78.66
+  port: 1080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  password: o3-9Eg79umh4CaY8sWC7b3
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇴 挪威 (Norway) 01 - wspnj
+  - 🇹🇷 土耳其 (Turkey) 01 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇴 挪威 (Norway) 01 - wspnj
+  - 🇹🇷 土耳其 (Turkey) 01 - wspnj
 rules:
 - MATCH,PROXIES
