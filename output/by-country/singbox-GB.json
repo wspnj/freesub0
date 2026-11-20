@@ -20,12 +20,14 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 03 - wspnj",
-      "server": "141.98.101.181",
+      "server": "161.35.37.106",
       "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
+      "uuid": "40992c2a-513e-4837-9594-23411fd42afd",
+      "transport": {
+        "type": "http"
+      }
     },
     {
       "type": "shadowsocks",
@@ -44,70 +46,16 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 06 - wspnj",
-      "server": "57.129.132.223",
-      "server_port": 80,
-      "uuid": "dbb78c94-9f87-4d7d-b945-2000b60352fd",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇬🇧 英国 (United Kingdom) 07 - wspnj",
-      "server": "142.202.51.42",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇬🇧 英国 (United Kingdom) 08 - wspnj",
-      "server": "57.129.132.223",
-      "server_port": 80,
-      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "google.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 09 - wspnj",
-      "server": "xray-ckc68nno-swift-harbor-8.cloady.io",
-      "server_port": 443,
-      "uuid": "b004e898-f6cf-54a5-d281-f063d741ad53",
-      "tls": {
-        "enabled": true,
-        "server_name": "xray-ckc68nno-swift-harbor-8.cloady.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/3e0261245277336d",
-        "headers": {
-          "Host": "xray-ckc68nno-swift-harbor-8.cloady.io"
-        }
-      }
+      "server": "146.70.61.37",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 10 - wspnj",
+      "tag": "🇬🇧 英国 (United Kingdom) 07 - wspnj",
       "server": "98.98.142.161",
       "server_port": 8080,
       "method": "rc4-md5",
@@ -115,35 +63,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 11 - wspnj",
-      "server": "51.38.71.147",
-      "server_port": 8443,
-      "uuid": "c08f0056-7a6d-4931-813b-aaa3cdd00aed",
-      "tls": {
-        "enabled": true,
-        "server_name": "node-uk.connectsuite.org",
-        "insecure": true,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 12 - wspnj",
-      "server": "98.98.207.163",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 13 - wspnj",
+      "tag": "🇬🇧 英国 (United Kingdom) 08 - wspnj",
       "server": "138.124.125.193",
       "server_port": 10444,
       "uuid": "e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4",
@@ -163,63 +83,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 14 - wspnj",
-      "server": "51.38.71.147",
-      "server_port": 443,
-      "uuid": "fda89998-7e9a-4494-857a-cd0d00661b58",
-      "tls": {
-        "enabled": true,
-        "server_name": "uk1.connectsuite.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn-cgi/ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 15 - wspnj",
-      "server": "107.181.151.128",
-      "server_port": 443,
-      "uuid": "88742d38-3f5c-4b9c-b256-7df5db8257ec",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
-          "short_id": "8f79726c5002"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 16 - wspnj",
-      "server": "94.156.250.148",
-      "server_port": 7001,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 17 - wspnj",
-      "server": "146.70.61.37",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -231,16 +94,7 @@
         "🇬🇧 英国 (United Kingdom) 05 - wspnj",
         "🇬🇧 英国 (United Kingdom) 06 - wspnj",
         "🇬🇧 英国 (United Kingdom) 07 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 08 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 09 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 10 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 11 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 12 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 13 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 14 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 15 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 16 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 17 - wspnj"
+        "🇬🇧 英国 (United Kingdom) 08 - wspnj"
       ]
     },
     {
@@ -254,16 +108,7 @@
         "🇬🇧 英国 (United Kingdom) 05 - wspnj",
         "🇬🇧 英国 (United Kingdom) 06 - wspnj",
         "🇬🇧 英国 (United Kingdom) 07 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 08 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 09 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 10 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 11 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 12 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 13 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 14 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 15 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 16 - wspnj",
-        "🇬🇧 英国 (United Kingdom) 17 - wspnj"
+        "🇬🇧 英国 (United Kingdom) 08 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
