@@ -25,20 +25,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
-      "server": "168.113.254.247",
-      "server_port": 443,
-      "password": "b006650f-8771-0001-b7fa-e18fc6e80ef1",
-      "tls": {
-        "enabled": true,
-        "server_name": "vcerx-ru-67sb.my-fade.cloud",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
       "server": "147.45.47.101",
       "server_port": 8443,
       "uuid": "27f26dee-9cf1-4cca-93f8-9ac23d311408",
@@ -48,7 +36,7 @@
         "server_name": "apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -59,66 +47,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - wspnj",
-      "server": "81.163.22.109",
-      "server_port": 443,
-      "uuid": "6b70d4ce-4bea-0001-a343-b852a792e69b",
-      "tls": {
-        "enabled": true,
-        "server_name": "jissa-ru-wl-47sel.my-fade.cloud",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - wspnj",
-      "server": "201.24.116.192",
-      "server_port": 443,
-      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
-      "tls": {
-        "enabled": true,
-        "server_name": "vps3.nemnogogo.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "mobile.api.Event"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - wspnj",
-      "server": "201.24.121.243",
-      "server_port": 443,
-      "uuid": "32b5ca9b-3f81-4031-965d-e8b074216e8d",
-      "tls": {
-        "enabled": true,
-        "server_name": "kk-ru24a1.testkknegr.online",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "vlgrpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 - wspnj",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
       "server": "200.169.179.233",
       "server_port": 443,
       "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
@@ -137,43 +66,62 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - wspnj",
+      "server": "srv-17e124.21freedom.net",
+      "server_port": 11592,
+      "password": "41edb44c8e",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-17e124.21freedom.net",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 08 - wspnj",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - wspnj",
+      "server": "122.8.93.4",
+      "server_port": 8443,
+      "uuid": "4fabeed0-790e-9724-8f12-138ed31ac60e",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.epson.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-GbQJg3bnEGEVFjVaRRu01cgF1f0K_maI4d5MWtMb28",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - wspnj",
       "server": "147.45.175.81",
       "server_port": 443,
       "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
       "tls": {
         "enabled": true,
-        "server_name": "xssite.webredirect.org",
+        "server_name": "xsru2.freeddns.org",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "grpc-ru"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 09 - wspnj",
-      "server": "xssite.webredirect.org",
-      "server_port": 443,
-      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
-      "tls": {
-        "enabled": true,
-        "server_name": "xssite.webredirect.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
+        "type": "ws",
+        "path": "/wsru",
+        "headers": {
+          "Host": "xsru2.freeddns.org"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-ru"
       }
     },
     {
@@ -186,10 +134,7 @@
         "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
         "🇷🇺 俄罗斯 (Russia) 04 - wspnj",
         "🇷🇺 俄罗斯 (Russia) 05 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 06 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 07 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 08 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 09 - wspnj"
+        "🇷🇺 俄罗斯 (Russia) 06 - wspnj"
       ]
     },
     {
@@ -201,10 +146,7 @@
         "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
         "🇷🇺 俄罗斯 (Russia) 04 - wspnj",
         "🇷🇺 俄罗斯 (Russia) 05 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 06 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 07 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 08 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 09 - wspnj"
+        "🇷🇺 俄罗斯 (Russia) 06 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
