@@ -6,48 +6,6 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - wspnj",
-      "server": "147.45.47.101",
-      "server_port": 8443,
-      "uuid": "27f26dee-9cf1-4cca-93f8-9ac23d311408",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
-      "server": "37.235.247.81",
-      "server_port": 8443,
-      "uuid": "2ae0670d-0bdf-409e-9a55-4e970252d378",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
       "server": "48.103.133.47",
       "server_port": 8443,
       "uuid": "2ed34e7c-45c5-4e0e-bcab-42fe99a7bd25",
@@ -68,24 +26,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - wspnj",
-      "server": "168.113.253.178",
-      "server_port": 443,
-      "uuid": "eb88bb1a-7bf0-0001-b9cd-4f97c89f0e9b",
-      "tls": {
-        "enabled": true,
-        "server_name": "uzndiuvzvqqljdyhzs.fcloudservices.site",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - wspnj",
-      "server": "201.24.116.192",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
+      "server": "201.51.12.98",
       "server_port": 443,
       "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
       "tls": {
@@ -94,7 +36,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         }
       },
       "transport": {
@@ -103,20 +45,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - wspnj",
-      "server": "srv-17e124.21freedom.net",
-      "server_port": 11592,
-      "password": "41edb44c8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv-17e124.21freedom.net",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 - wspnj",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
       "server": "xssite.webredirect.org",
       "server_port": 443,
       "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
@@ -135,41 +65,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 08 - wspnj",
-      "server": "147.45.175.81",
-      "server_port": 443,
-      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
-      "tls": {
-        "enabled": true,
-        "server_name": "xsru2.freeddns.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wsru",
-        "headers": {
-          "Host": "xsru2.freeddns.org"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - wspnj",
         "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 04 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 05 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 06 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 07 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 08 - wspnj"
+        "🇷🇺 俄罗斯 (Russia) 03 - wspnj"
       ]
     },
     {
@@ -178,12 +80,7 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - wspnj",
         "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 04 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 05 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 06 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 07 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 08 - wspnj"
+        "🇷🇺 俄罗斯 (Russia) 03 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
