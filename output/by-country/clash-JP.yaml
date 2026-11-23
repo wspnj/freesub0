@@ -5,14 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - wspnj
-  server: 149.22.87.241
+  server: 149.22.87.204
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 02 - wspnj
-  server: 149.22.87.204
+  server: 149.22.87.241
   port: 443
   udp: true
   type: ss
@@ -26,36 +26,30 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 04 - wspnj
-  server: 94.177.131.113
-  port: 443
+  server: 161.33.20.255
+  port: 8880
   udp: true
-  type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  tls: true
-  servername: kuruish.org
-  skip-cert-verify: false
+  type: vmess
+  uuid: e0856508-d693-450a-a099-455091dc4f25
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: e0856508-d693-450a-a099-455091dc4f25-vm
 - name: 🇯🇵 日本 (Japan) 05 - wspnj
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 06 - wspnj
-  server: jp2static.jumpernode.site
+  server: 158.101.151.157
   port: 443
   udp: true
   type: vless
-  uuid: f325fb7d-cad5-4ac8-8888-3f39b4b9d1ca
+  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: GeKuYNeAqQQkTN9OMJxXA9I-rXs7IiGh4Sl82crCITc
-    short-id: 6281f3ef81187ad8
-  servername: www.amzn.com
+    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
+    short-id: 684c7531e599dec0
+  servername: www.microsoft.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 07 - wspnj
+- name: 🇯🇵 日本 (Japan) 06 - wspnj
   server: 45.76.222.108
   port: 443
   udp: true
@@ -65,6 +59,23 @@ proxies:
   reality-opts:
     public-key: -_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE
     short-id: b5c85d2d
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 07 - wspnj
+  server: 198.13.53.39
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8f21c635-ef0a-4b05-8356-f44d463b6e34
+  tls: true
+  reality-opts:
+    public-key: xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k
+    short-id: 7a7cc838
   servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
@@ -90,23 +101,27 @@ proxies:
     headers:
       Host: itunes.apple.com
 - name: 🇯🇵 日本 (Japan) 09 - wspnj
-  server: 198.13.53.39
+  server: nb5rb.hikigo.com
   port: 443
   udp: true
-  type: vless
-  uuid: 8f21c635-ef0a-4b05-8356-f44d463b6e34
-  tls: true
-  reality-opts:
-    public-key: xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k
-    short-id: 7a7cc838
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
+  type: hysteria2
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: nb5rb.hikigo.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: yhlbhcysaba0wtn1
 - name: 🇯🇵 日本 (Japan) 10 - wspnj
+  server: 155.248.175.201
+  port: 23169
+  udp: true
+  type: vless
+  uuid: 7318caa1-93d1-4a9d-c481-504599902700
+  flow: xtls-rprx-vision
+  tls: true
+  servername: djj.zjlo.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 11 - wspnj
   server: 172.104.86.181
   port: 443
   udp: true
@@ -123,24 +138,74 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 11 - wspnj
+- name: 🇯🇵 日本 (Japan) 12 - wspnj
   server: 84.247.155.196
   port: 80
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 12 - wspnj
-  server: 155.248.175.201
-  port: 23169
+- name: 🇯🇵 日本 (Japan) 13 - wspnj
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 14 - wspnj
+  server: 94.177.131.113
+  port: 443
   udp: true
   type: vless
-  uuid: 7318caa1-93d1-4a9d-c481-504599902700
-  flow: xtls-rprx-vision
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   tls: true
-  servername: djj.zjlo.top
+  servername: kuruish.org
   skip-cert-verify: false
-  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 15 - wspnj
+  server: 104.16.111.195
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 16 - wspnj
+  server: 168.138.205.100
+  port: 53758
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
+- name: 🇯🇵 日本 (Japan) 17 - wspnj
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: 8.211.175.236
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 18 - wspnj
+  server: 162.159.130.234
+  port: 2083
+  udp: true
+  type: vmess
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: cdn.sfacg.uk
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
 proxy-groups:
 - name: PROXIES
   type: select
@@ -158,6 +223,12 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 10 - wspnj
   - 🇯🇵 日本 (Japan) 11 - wspnj
   - 🇯🇵 日本 (Japan) 12 - wspnj
+  - 🇯🇵 日本 (Japan) 13 - wspnj
+  - 🇯🇵 日本 (Japan) 14 - wspnj
+  - 🇯🇵 日本 (Japan) 15 - wspnj
+  - 🇯🇵 日本 (Japan) 16 - wspnj
+  - 🇯🇵 日本 (Japan) 17 - wspnj
+  - 🇯🇵 日本 (Japan) 18 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -175,5 +246,11 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 10 - wspnj
   - 🇯🇵 日本 (Japan) 11 - wspnj
   - 🇯🇵 日本 (Japan) 12 - wspnj
+  - 🇯🇵 日本 (Japan) 13 - wspnj
+  - 🇯🇵 日本 (Japan) 14 - wspnj
+  - 🇯🇵 日本 (Japan) 15 - wspnj
+  - 🇯🇵 日本 (Japan) 16 - wspnj
+  - 🇯🇵 日本 (Japan) 17 - wspnj
+  - 🇯🇵 日本 (Japan) 18 - wspnj
 rules:
 - MATCH,PROXIES
