@@ -5,31 +5,49 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - wspnj
-  server: 104.21.94.203
+  server: 172.64.229.21
   port: 443
   udp: true
-  type: vless
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: fr-free.fastestrelay.com
+  servername: vmess.lbw666.dpdns.org
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /700gvl
+    path: /ws
     headers:
-      Host: fr-free.fastestrelay.com
+      Host: vmess.lbw666.dpdns.org
+- name: 🌐 其他地区 (Other) 02 - wspnj
+  server: 104.17.70.206
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  tls: true
+  servername: free.sahanwickramasinghe.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - wspnj
+  - 🌐 其他地区 (Other) 02 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - wspnj
+  - 🌐 其他地区 (Other) 02 - wspnj
 rules:
 - MATCH,PROXIES
