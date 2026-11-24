@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - wspnj
-  server: 104.21.94.203
+  server: 172.67.139.189
   port: 443
   udp: true
   type: vless
