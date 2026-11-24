@@ -12,16 +12,8 @@
       "password": "5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog="
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
       "server": "201.51.12.98",
       "server_port": 443,
       "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
@@ -44,7 +36,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - wspnj",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
       "server": "103.88.243.142",
       "server_port": 11592,
       "password": "41edb44c8e",
@@ -55,9 +47,69 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - wspnj",
+      "server": "136.148.83.69",
+      "server_port": 443,
+      "password": "87bb2ac4-b7a1-0001-b11d-2107709ea6cb",
+      "tls": {
+        "enabled": true,
+        "server_name": "szqbx-ru-77dc.my-fade.cloud",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 05 - wspnj",
-      "server": "xssite.webredirect.org",
+      "server": "136.148.83.69",
+      "server_port": 443,
+      "uuid": "666821a2-5c3d-0001-a56f-5a3a562d7324",
+      "tls": {
+        "enabled": true,
+        "server_name": "szqbx-ru-77dc.my-fade.cloud",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - wspnj",
+      "server": "136.148.83.69",
+      "server_port": 443,
+      "uuid": "7dff1be7-b930-0001-a8ad-dc7850168215",
+      "tls": {
+        "enabled": true,
+        "server_name": "szqbx-ru-77dc.my-fade.cloud",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - wspnj",
+      "server": "136.148.83.69",
+      "server_port": 443,
+      "uuid": "666821a2-5c3d-0001-a56f-5a3a562d7324",
+      "tls": {
+        "enabled": true,
+        "server_name": "szqbx-ru-77dc.my-fade.cloud",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08 - wspnj",
+      "server": "147.45.175.81",
       "server_port": 443,
       "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
       "tls": {
@@ -76,19 +128,31 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - wspnj",
-      "server": "136.148.83.69",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09 - wspnj",
+      "server": "xssite.webredirect.org",
       "server_port": 443,
-      "uuid": "666821a2-5c3d-0001-a56f-5a3a562d7324",
+      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
       "tls": {
         "enabled": true,
-        "server_name": "szqbx-ru-77dc.my-fade.cloud",
+        "server_name": "xssite.webredirect.org",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "random"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-ru"
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 10 - wspnj",
+      "server": "90.156.203.62",
+      "server_port": 5112,
+      "method": "chacha20-ietf-poly1305",
+      "password": "VVlAff77CnAU43Aoc5j15Y"
     },
     {
       "type": "selector",
@@ -100,7 +164,11 @@
         "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
         "🇷🇺 俄罗斯 (Russia) 04 - wspnj",
         "🇷🇺 俄罗斯 (Russia) 05 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 06 - wspnj"
+        "🇷🇺 俄罗斯 (Russia) 06 - wspnj",
+        "🇷🇺 俄罗斯 (Russia) 07 - wspnj",
+        "🇷🇺 俄罗斯 (Russia) 08 - wspnj",
+        "🇷🇺 俄罗斯 (Russia) 09 - wspnj",
+        "🇷🇺 俄罗斯 (Russia) 10 - wspnj"
       ]
     },
     {
@@ -112,7 +180,11 @@
         "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
         "🇷🇺 俄罗斯 (Russia) 04 - wspnj",
         "🇷🇺 俄罗斯 (Russia) 05 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 06 - wspnj"
+        "🇷🇺 俄罗斯 (Russia) 06 - wspnj",
+        "🇷🇺 俄罗斯 (Russia) 07 - wspnj",
+        "🇷🇺 俄罗斯 (Russia) 08 - wspnj",
+        "🇷🇺 俄罗斯 (Russia) 09 - wspnj",
+        "🇷🇺 俄罗斯 (Russia) 10 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
