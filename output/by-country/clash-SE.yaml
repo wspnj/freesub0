@@ -23,28 +23,6 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 03 - wspnj
-  server: 138.199.55.230
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 04 - wspnj
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 05 - wspnj
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -57,16 +35,28 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 06 - wspnj
-  server: 92.63.189.39
-  port: 8443
+- name: 🇸🇪 瑞典 (Sweden) 04 - wspnj
+  server: 138.199.55.230
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 05 - wspnj
+  server: 5.178.109.174
+  port: 14430
   udp: true
   type: vless
-  uuid: 7aa77858-f235-0003-9434-7ab060848b17
-  flow: xtls-rprx-vision
-  tls: true
-  servername: avelon.onl
-  skip-cert-verify: false
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,7 +67,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - wspnj
   - 🇸🇪 瑞典 (Sweden) 04 - wspnj
   - 🇸🇪 瑞典 (Sweden) 05 - wspnj
-  - 🇸🇪 瑞典 (Sweden) 06 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -88,6 +77,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - wspnj
   - 🇸🇪 瑞典 (Sweden) 04 - wspnj
   - 🇸🇪 瑞典 (Sweden) 05 - wspnj
-  - 🇸🇪 瑞典 (Sweden) 06 - wspnj
 rules:
 - MATCH,PROXIES
