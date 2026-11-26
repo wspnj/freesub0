@@ -12,16 +12,17 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - wspnj",
-      "server": "62.93.166.184",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
       }
     },
     {
@@ -36,39 +37,12 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "grpc",
         "service_name": "138-124-86-230-sslip-io"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - wspnj",
-      "server": "138.199.55.230",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - wspnj",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
       }
     },
     {
@@ -78,9 +52,7 @@
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - wspnj",
         "🇸🇪 瑞典 (Sweden) 02 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 03 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 04 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 05 - wspnj"
+        "🇸🇪 瑞典 (Sweden) 03 - wspnj"
       ]
     },
     {
@@ -89,9 +61,7 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - wspnj",
         "🇸🇪 瑞典 (Sweden) 02 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 03 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 04 - wspnj",
-        "🇸🇪 瑞典 (Sweden) 05 - wspnj"
+        "🇸🇪 瑞典 (Sweden) 03 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

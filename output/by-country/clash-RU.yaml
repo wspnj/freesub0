@@ -5,26 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - wspnj
-  server: 147.45.221.225
-  port: 443
+  server: 194.87.69.12
+  port: 18443
   udp: true
-  type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  tls: true
-  servername: nl.lucheeebezlimitnoekino.stream
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /media/ws/
+  type: ss
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
 - name: 🇷🇺 俄罗斯 (Russia) 02 - wspnj
-  server: 201.51.12.98
+  server: 200.169.179.233
   port: 443
   udp: true
   type: vless
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   tls: true
   servername: vps3.nemnogogo.com
-  skip-cert-verify: true
+  skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
@@ -37,32 +33,6 @@ proxies:
   sni: szqbx-ru-77dc.my-fade.cloud
   skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 04 - wspnj
-  server: 147.45.175.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xssite.webredirect.org
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 05 - wspnj
-  server: xssite.webredirect.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xssite.webredirect.org
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 06 - wspnj
   server: dc.insidenet.ru
   port: 20443
   udp: true
@@ -75,6 +45,66 @@ proxies:
     short-id: f847646adc2b82fe
   servername: dc.insidenet.ru
   client-fingerprint: ''
+- name: 🇷🇺 俄罗斯 (Russia) 05 - wspnj
+  server: smartcdn.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 37af0181-5598-4aad-a040-d926bcb65757
+  tls: true
+  servername: smartcdn.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /useraction/collect/8a64b355ef0c/
+    headers:
+      Host: smartcdn.top
+- name: 🇷🇺 俄罗斯 (Russia) 06 - wspnj
+  server: 147.45.175.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xssite.webredirect.org
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 (Russia) 07 - wspnj
+  server: xssite.webredirect.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xssite.webredirect.org
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 (Russia) 08 - wspnj
+  server: 147.45.221.225
+  port: 443
+  udp: true
+  type: vless
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  tls: true
+  servername: nl.lucheeebezlimitnoekino.stream
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /media/ws/
+- name: 🇷🇺 俄罗斯 (Russia) 09 - wspnj
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,6 +116,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 05 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 06 - wspnj
+  - 🇷🇺 俄罗斯 (Russia) 07 - wspnj
+  - 🇷🇺 俄罗斯 (Russia) 08 - wspnj
+  - 🇷🇺 俄罗斯 (Russia) 09 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,5 +130,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 05 - wspnj
   - 🇷🇺 俄罗斯 (Russia) 06 - wspnj
+  - 🇷🇺 俄罗斯 (Russia) 07 - wspnj
+  - 🇷🇺 俄罗斯 (Russia) 08 - wspnj
+  - 🇷🇺 俄罗斯 (Russia) 09 - wspnj
 rules:
 - MATCH,PROXIES
