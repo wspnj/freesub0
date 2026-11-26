@@ -6,25 +6,21 @@
     {
       "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - wspnj",
-      "server": "194.87.69.12",
+      "server": "185.22.152.168",
       "server_port": 18443,
       "method": "aes-256-gcm",
-      "password": "5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe"
+      "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - wspnj",
-      "server": "200.169.179.233",
+      "server": "201.51.12.98",
       "server_port": 443,
       "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
       "tls": {
         "enabled": true,
         "server_name": "vps3.nemnogogo.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "insecure": true
       },
       "transport": {
         "type": "grpc",
@@ -32,87 +28,60 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - wspnj",
       "server": "136.148.83.69",
       "server_port": 443,
-      "password": "87bb2ac4-b7a1-0001-b11d-2107709ea6cb",
+      "uuid": "666821a2-5c3d-0001-a56f-5a3a562d7324",
       "tls": {
         "enabled": true,
         "server_name": "szqbx-ru-77dc.my-fade.cloud",
-        "insecure": true
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 04 - wspnj",
-      "server": "dc.insidenet.ru",
-      "server_port": 20443,
-      "uuid": "67a31bdf-5846-409d-8b49-3d795e1a2a4f",
-      "flow": "xtls-rprx-vision",
+      "server": "147.45.221.225",
+      "server_port": 443,
+      "uuid": "58e22afd-bf74-4736-984d-63a8ca03d7f0",
       "tls": {
         "enabled": true,
-        "server_name": "dc.insidenet.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xE2CNenfDgtu28WQ23Bq2KfdkEj3XN42P_ZVou1YRC4",
-          "short_id": "f847646adc2b82fe"
-        }
+        "server_name": "nl.lucheeebezlimitnoekino.stream",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/media/ws/"
       }
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 05 - wspnj",
-      "server": "smartcdn.top",
+      "server": "79.182.70.232",
       "server_port": 443,
-      "uuid": "37af0181-5598-4aad-a040-d926bcb65757",
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
       "tls": {
         "enabled": true,
-        "server_name": "smartcdn.top",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "5d0319t.nl7.h1clayd.click",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/useraction/collect/8a64b355ef0c/",
-        "headers": {
-          "Host": "smartcdn.top"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs",
+          "short_id": "361d0dd59c70516f"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 06 - wspnj",
-      "server": "147.45.175.81",
-      "server_port": 443,
-      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
-      "tls": {
-        "enabled": true,
-        "server_name": "xssite.webredirect.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-ru"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 - wspnj",
       "server": "xssite.webredirect.org",
       "server_port": 443,
       "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
@@ -132,27 +101,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 08 - wspnj",
-      "server": "147.45.221.225",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - wspnj",
+      "server": "147.45.175.81",
       "server_port": 443,
-      "uuid": "58e22afd-bf74-4736-984d-63a8ca03d7f0",
+      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
       "tls": {
         "enabled": true,
-        "server_name": "nl.lucheeebezlimitnoekino.stream",
-        "insecure": false
+        "server_name": "xssite.webredirect.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
       },
       "transport": {
-        "type": "ws",
-        "path": "/media/ws/"
+        "type": "grpc",
+        "service_name": "grpc-ru"
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 09 - wspnj",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog="
     },
     {
       "type": "selector",
@@ -165,9 +130,7 @@
         "🇷🇺 俄罗斯 (Russia) 04 - wspnj",
         "🇷🇺 俄罗斯 (Russia) 05 - wspnj",
         "🇷🇺 俄罗斯 (Russia) 06 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 07 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 08 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 09 - wspnj"
+        "🇷🇺 俄罗斯 (Russia) 07 - wspnj"
       ]
     },
     {
@@ -180,9 +143,7 @@
         "🇷🇺 俄罗斯 (Russia) 04 - wspnj",
         "🇷🇺 俄罗斯 (Russia) 05 - wspnj",
         "🇷🇺 俄罗斯 (Russia) 06 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 07 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 08 - wspnj",
-        "🇷🇺 俄罗斯 (Russia) 09 - wspnj"
+        "🇷🇺 俄罗斯 (Russia) 07 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
