@@ -13,30 +13,53 @@ proxies:
   sni: ali-hk.b-gfw.cfd
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - wspnj
+  server: 152.32.254.68
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8🇨🇳
+  sni: vk.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - wspnj
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  sni: https%3a%2f%2ft.me%2fwangcai2
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - wspnj
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
+  server: 116.213.43.43
+  port: 11102
+  udp: true
+  type: vless
+  uuid: 530d31fc-2690-49e4-bfc9-3f991e145008
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: oW6HMjniDmBJdjGKwhBAIS2zMS1VvHORubh9vdazqQ0
+    short-id: ed571d022f7bc3bf
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: vk.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - wspnj
   server: leviko-hk5202.shopingggg.ir
   port: 31001
   udp: true
@@ -49,23 +72,20 @@ proxies:
     short-id: 39793bc4708abbbb
   servername: mensura.cdn-apple.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - wspnj
+  server: waic.pro.main.sys-metric-report.com
+  port: 28014
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: abc62f00-95a8-4c2e-a85d-36a2cdc977da
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - wspnj
   server: 213.176.92.148
   port: 40647
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - wspnj
-  server: 152.32.254.68
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,6 +98,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 07 - wspnj
+  - 🇭🇰 中国香港 (Hong Kong) 08 - wspnj
+  - 🇭🇰 中国香港 (Hong Kong) 09 - wspnj
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -90,5 +112,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 06 - wspnj
   - 🇭🇰 中国香港 (Hong Kong) 07 - wspnj
+  - 🇭🇰 中国香港 (Hong Kong) 08 - wspnj
+  - 🇭🇰 中国香港 (Hong Kong) 09 - wspnj
 rules:
 - MATCH,PROXIES
