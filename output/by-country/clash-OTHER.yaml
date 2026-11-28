@@ -1,0 +1,85 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🌐 其他地区 (Other) 01 - wspnj
+  server: 188.114.98.0
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 02 - wspnj
+  server: 188.114.98.0
+  port: 443
+  udp: true
+  type: vless
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  tls: true
+  servername: freeceshi6.frii.site
+  skip-cert-verify: false
+  client-fingerprint: unsafe
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: freeceshi6.frii.site
+- name: 🌐 其他地区 (Other) 03 - wspnj
+  server: 188.114.98.0
+  port: 443
+  udp: true
+  type: vless
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  tls: true
+  servername: freeceshi6.frii.site
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /proxyip
+    headers:
+      Host: freeceshi6.frii.site
+- name: 🌐 其他地区 (Other) 04 - wspnj
+  server: 188.114.98.0
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🌐 其他地区 (Other) 01 - wspnj
+  - 🌐 其他地区 (Other) 02 - wspnj
+  - 🌐 其他地区 (Other) 03 - wspnj
+  - 🌐 其他地区 (Other) 04 - wspnj
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🌐 其他地区 (Other) 01 - wspnj
+  - 🌐 其他地区 (Other) 02 - wspnj
+  - 🌐 其他地区 (Other) 03 - wspnj
+  - 🌐 其他地区 (Other) 04 - wspnj
+rules:
+- MATCH,PROXIES

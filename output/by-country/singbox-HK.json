@@ -6,12 +6,12 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - wspnj",
-      "server": "202.146.222.174",
+      "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2%ef%a3%bf%c3%bc%c3%a1",
         "insecure": true
       }
     },
@@ -23,29 +23,13 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "t.me",
+        "server_name": "202.146.222.89",
         "insecure": true
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - wspnj",
-      "server": "213.176.92.148",
-      "server_port": 40647,
-      "method": "aes-256-gcm",
-      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - wspnj",
-      "server": "waic.pro.main.sys-metric-report.com",
-      "server_port": 28014,
-      "method": "chacha20-ietf-poly1305",
-      "password": "abc62f00-95a8-4c2e-a85d-36a2cdc977da"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - wspnj",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - wspnj",
       "server": "152.32.254.68",
       "server_port": 5010,
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
@@ -60,6 +44,54 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - wspnj",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/wangcai2🇨🇳",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - wspnj",
+      "server": "27.124.5.86",
+      "server_port": 8388,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "j4DddfVh3zON1s3Wfbmdn2WWhLCWAaOJyKqdeKvxh4A="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - wspnj",
+      "server": "23.141.172.229",
+      "server_port": 50541,
+      "password": "ePPsH1bMFD",
+      "tls": {
+        "enabled": true,
+        "server_name": "is1-ssl.mzstatic.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - wspnj",
+      "server": "213.176.92.148",
+      "server_port": 40647,
+      "method": "aes-256-gcm",
+      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - wspnj",
+      "server": "waic.pro.main.sys-metric-report.com",
+      "server_port": 28014,
+      "method": "chacha20-ietf-poly1305",
+      "password": "abc62f00-95a8-4c2e-a85d-36a2cdc977da"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -68,7 +100,10 @@
         "🇭🇰 中国香港 (Hong Kong) 02 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 03 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 04 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 05 - wspnj"
+        "🇭🇰 中国香港 (Hong Kong) 05 - wspnj",
+        "🇭🇰 中国香港 (Hong Kong) 06 - wspnj",
+        "🇭🇰 中国香港 (Hong Kong) 07 - wspnj",
+        "🇭🇰 中国香港 (Hong Kong) 08 - wspnj"
       ]
     },
     {
@@ -79,7 +114,10 @@
         "🇭🇰 中国香港 (Hong Kong) 02 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 03 - wspnj",
         "🇭🇰 中国香港 (Hong Kong) 04 - wspnj",
-        "🇭🇰 中国香港 (Hong Kong) 05 - wspnj"
+        "🇭🇰 中国香港 (Hong Kong) 05 - wspnj",
+        "🇭🇰 中国香港 (Hong Kong) 06 - wspnj",
+        "🇭🇰 中国香港 (Hong Kong) 07 - wspnj",
+        "🇭🇰 中国香港 (Hong Kong) 08 - wspnj"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
